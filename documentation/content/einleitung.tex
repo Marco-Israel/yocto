@@ -1,0 +1,66 @@
+\chapter{Einleitung} \label{chp:einleitung}
+
+
+\section{Über Yocto, OpenEmbedded, poky, meta-daten und Bitbake}
+
+Das Yocto Project bezeichnet eine Community Gruppe welche sich zur Aufgabe
+gemacht hat, dass erstellen von Linux Distributionen für eingebettet System
+zu vereinfachen.
+\\
+
+Zusammen mit der OpenEmbedded Community pflegt das \gls{Yocto Project} eine
+Software Build Umgebung mit dem Namen \gls{Bitbake}, bestehend aus
+Pythonskripten, welches das Erstellen von Linux Distributionen koordiniert.
+Des Weiteren pflegen beiden Communities Dateien mit \gls{Metadaten}
+(\gls{Metadatendatei} die in Form von Regeln  beschreiben wie Software Pakte
+innerhalb für unterschiedliche Distribution und Hardware durch Bitbake gebaut
+werden müssen.  erforderlich sind.
+
+\ac{PDF}
+\\
+
+Diese Regeln  werden \gls{Recipes} genannt. Regeln bzw. diese Metadaten und
+somit auch das Build-System Bitbake arbeiten nach einen Schichten Modell.
+Dabei beschreiben Meta-Daten auf unterster Schicht allgemeine grundlegende
+Anleitungen zum Übersetzten der wichtigsten Funktionen eines Betriebssystems.
+Höhere Schichten erweitern (detaillieren) oder überschreiben diese grundlegenden
+Rezepte in immer höheren Schichten. So setzt auf Beschreibungen der Hardware
+(BSP, Board Support packed Schichten) Schichten der Software- und
+Anwendungsschicht auf. Ein solches Schichtenmodell ermöglicht es, einzelne
+Schichten auszutauschen oder darunterliegende Einstellungen abzuändern.
+Die Yocto community stellt Meta-Daten / Recipes bereit, um ein
+minimalistisches Betriebssystem mit grundlegenden  Linux Tools unter der
+Virtualisierungsumgebung QEMU für verschiedene Architekturen starten zu können.
+Die OpenEmbedded Community stellt Meta-Daten Rezepte bereit, die auf dieses
+minimalistische Betriebssystem aufsetzten und genutzt werden können um ein
+Betriebssystem nach eigenen Wünschen gestalten ( zusammen setzten) und für
+Hardware Plattformen konfigurieren zu können. Hierzu gehören sowohl Hardware als
+auch open Source Software Beschreibungen. Beide Communities pflegen und
+erweitern das Build Umgebung „Bitbake“, welches verschiedene Aufgaben in
+geregelter
+Reihenfolge im Multicore Betrieb durchführt:
+
+\begin{itemize}
+    \item Herunterladen (fetchen) und Sammeln von Source Dateien
+        (z.B. Git Repositorien, ftp Servern oder lokalen Dateien.)
+    \item Übersetzten, konfigurieren, patchen, installieren, verifizieren usw.
+        von Paketen auf mehreren Prozessor Kernen
+    \item Bereitstellen von Entwicklung und Verwaltungstools
+\end{itemize}
+
+Das Minimalisten Betriebssystem der Yocto Community wird „poky“ genannt.
+
+
+\section{Docker} \label{sec:docker}
+Bitbake benötigt, neben einem aktuellen Python 2 Interpreter, verschiedene
+Tools. So u.a. Git zum Herunterladen von Source Detain. Alle diese
+Abhängigkeiten wurden in einem \gls{Docker} Container zusammengefasst.  Bitbake kann
+unter unschädlichen Betriebssystemen und Plattformen auf gleiche Weise genutzt
+werden, ohne dass es und seine Abhängigkeiten neu konfiguriert werden müssen.
+Im Gegensatz zu anderen Virtualisierungstechniken hat Docker trotz
+Virtualisierungstechniken keinen großartigen Performance Verlust.
+Von einem Gebrauch von klassischen Virtualisierungstechniken ist aus
+Performance Gründen dringend abzuraten.
+
+
+

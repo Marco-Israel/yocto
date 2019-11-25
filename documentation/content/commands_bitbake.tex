@@ -1,0 +1,64 @@
+
+
+################################################################################
+########## Nice to know ########################################################
+- An 'image' wich will be build is also described by recipes. So all commands
+  you find next can be used for an image to build as well as for a recipes
+
+
+
+
+################################################################################
+########## Commands ############################################################
+
+# create a Yocto (default) layer interactivly and add it to /build/bblayer.conf
+# global active/used project layer configuration. You don't have do write 
+# "meta" in front of"
+yokto-layer create <myLayer>
+bitbake-layers create-layer <mylayer>
+bitbake-layers add-layer <layername>
+
+
+
+
+#show all project layer
+bitbake-layers show-layers
+
+
+
+# show all recipes and the location layer it belongs to. You can grep for a kind
+# of recipes type. 
+bitbake-layer show-recipes [<recipes>]
+bitbake-layer show-recipes [<recipes>] | grep image
+
+
+#show all tasks for a recipes
+bitbake -c listtasks <recipes>
+
+
+#run Command <cmd>. Commands/tasks depend on the recipes.
+bitbake -c listtasks <recipes>
+bitbake -c <cmd> <recipes>
+
+
+#print a bitbake/yokto environment variable (used and set inside the project)
+bitbake -e <recipes> | grep ^<ENVVARIABLE>
+
+
+
+#compile the recipes and jump into its temporary "working directory". Either
+# by a normal development (bash) shell or a python shell.
+bitbake -c devshell <recipes>
+bitbake -c devpyshell <recipes>
+
+
+#get the linux kernel version and provider used in a project
+bitbake -e virtual/kernel | grep ^SRC_URI=
+bitbake virtual/kernel -e | grep  "PREFERRED_PROVIDER_virtual/kernel"
+
+
+
+
+
+
+

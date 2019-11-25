@@ -1,0 +1,23 @@
+================================================================================
+
+                    Yokto / Bitbake / Openembedded 
+                        PITFALLS, do and do not
+
+                            Marco Israel, 2019
+
+
+
+================================================================================
+1 Never do
+
+- never give a recipes the name wit "_" (underscore). Only the "-" is allowed.
+- never give a name to a recipes in camelCase. Only use small letters.
+- never rename a (project) folder after you build the image, sdk or whatever.
+  Because absolute pathes are past into the enviroment scripts, your toolbox
+  will not work anymore correct.
+
+================================================================================
+
+
+
+
