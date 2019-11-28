@@ -9,6 +9,7 @@ then
 fi
 
 
+
 if ( $# -gt 0 )
 then
     docker run --name $TASK -it --rm -v $PWD:/$TASK/input $TASK:$VERSION

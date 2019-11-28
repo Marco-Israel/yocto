@@ -1,5 +1,106 @@
+\chapter{Setup your host}%
+\label{cha:setup_host}
 
 
+\section{Erforderliche Pakete}%
+\label{sec:erforderliche_pakete}
 
-1. downloading poky and meta data files. You can use the phyInit script
-2. install and configre tft and nfs server
+Das yocto Docker file zeigt eine Liste aller nötigen Ubuntu Pakte die zum
+Arbeiten mit der Yocto / OpenEmbedded Build Umgebung auf einem  Host benötigt
+werden, sollte nicht mit dem Docker Image gearbeitet werden wollen. \\
+
+
+\textbf{Zusätzlich} sind die nachfolgenden Pakete werden zum Arbeiten auf dem lokalen
+Host benötigt. Nähere Informationen zu den Paketen, Quellen, Konfigurationen
+usw. sind auf verschiedenen Internetseiten zu finden.
+
+\begin{itemize}
+    \item git
+    \item docker
+    \item TFTP Server
+    \item NFS Server
+    \item microcom
+    \item eclipse
+    \item qt5
+    \item qt5Creator
+    \item openssh-server
+\end{itemize}
+
+\section{Host Konfiguration}%
+\label{sec:host_konfiguration}
+
+Nachfolgende Pakete benötigen weitere Konfigurationen
+\begin{description}
+    \item[Docker: ]
+        \begin{itemize}
+            \item[ ]
+            \item Docker Service starten
+            \item Docker-yocto Image bauen:
+                \glqq docker build -t yocto . \grqq
+            \item Hilfe liefert docker --help oder die Internetseite
+            \item Image starten durch ausführen von \glqq ./run.sh bash \grqq
+        \end{itemize}
+
+    \item[TFTP Server:]
+        \begin{itemize}
+            \item[ ]
+            \item TFTP Austausch Ordner anlegen und Zugriffsrechte definieren
+            \item stat-alone deamon (/etc/default/tftpd-hpa) oder xinitd Service
+                (/etc/xintd.d/tftp) konfigurieren
+            \item Server neu starten
+            \item \textbf{BEISPIEL} im \glqq BSP Manual\grqq unter  phytec.de;
+                    Stichwort \glqq Booting the Kernel from Network\grqq
+                (Booting\_the\_Kernel\_from\_Network)
+        \end{itemize}
+
+    \item[NFS Server:]
+        \begin{itemize}
+            \item[ ]
+            \item NFS Server konfigurieren (/etc/exports)
+            \item NFS Server neu starten
+            \item \textbf{BEISPIEL} im \glqq BSP Manual\grqq unter  phytec.de;
+                    Stichwort \glqq Booting the Kernel from Network\grqq
+                (Booting\_the\_Kernel\_from\_Network)
+        \end{itemize}
+    \item[Microcom]
+        \begin{itemize}
+            \item[ ]
+            \item Der Parameter --port Definiert die Serielle Schnittstelle.
+            \item Weiteres ist unter Manual Seite zu finden.
+        \end{itemize}
+    \item[Eclipe]
+        \begin{itemize}
+            \item Weiters im Kapitel \ref{cha:setup_eclipse}; Seite
+                \pageref{cha:setup_eclipse}
+        \end{itemize}
+    \item[QT5Creator]
+        \begin{itemize}
+            \item[ ]
+            \item Weiters im Kapitel \ref{cha:setup_qtcreator}; Seite
+                \pageref{cha:setup_qtcreator}
+        \end{itemize}
+    \item[Yocto Areitsverzeichnis]
+        \begin{itemize}
+            \item[ ]
+            \item Erstellen eines globalen Arbeitsverzeichnisses.  Z.B.
+                /opt/yocto \item Setzten der Rechte rwx Rechte für alle user
+                (\glqq others\grqq).
+        \end{itemize}
+    \item[Python2 als standart interpreter] Yocto/Openembedded Tools bauen auf
+        Python2 auf. Daher ist es nötig einen  symlink  oder alias
+        auf Python2 zu setzten. Z.b. \textit{alias python=python2}
+    \item[Proxy und Routen]
+    Je nach Netzwerkinfrastruktur müssen Proxy und Netzwerkrouten auf
+    dem lokalen Host gesetzt werden. Beispielsweise für die Tools:
+        \begin{itemize}
+            \item Git
+            \item wget
+            \item apt-get
+            \item https\_proxy und http\_proxy
+        \end{itemize}
+        \textbf{Informationen} hierzu liefert die das Yocto Manual oder das
+            Yocto Wiki unter dem Stichwort \glqq \textbf{Working Working Behind
+            a Network Proxy} \grqq (Working\_Behind\_a\_Network\_Proxy)
+
+\end{description}
+

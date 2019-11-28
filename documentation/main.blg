@@ -5,6 +5,9 @@ A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: content/abstract.aux
 A level-1 auxiliary file: content/abbreviations.aux
 A level-1 auxiliary file: content/einleitung.aux
+A level-1 auxiliary file: content/setup_host.aux
+A level-1 auxiliary file: content/setup_eclipse.aux
+A level-1 auxiliary file: content/cross_development.aux
 The style file: alphadin.bst
 I found no \citation commands---while reading file main.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -15,7 +18,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibtex.bib
 You've used 0 entries,
             4793 wiz_defined-function locations,
-            893 strings with 6326 characters,
+            896 strings with 6402 characters,
 and the built_in function-call counts, 39 in all, are:
 = -- 0
 > -- 0
