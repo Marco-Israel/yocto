@@ -5,19 +5,20 @@
 
 Das Yocto Project bezeichnet eine Community Gruppe welche sich zur Aufgabe
 gemacht hat, dass erstellen von Linux Distributionen für eingebettet System
-zu vereinfachen.
-\\
+zu vereinfachen.  \\
 
 Zusammen mit der OpenEmbedded Community pflegt das \gls{Yocto Project} eine
-Software Build Umgebung mit dem Namen \gls{Bitbake}, bestehend aus
-Pythonskripten, welches das Erstellen von Linux Distributionen koordiniert.
+Software Build Umgebung mit dem Namen \gls{Bitbake}, bestehend aus Python- und
+Shell-Scripten, welches das Erstellen von Linux Distributionen koordiniert.
+Parallel zu Bitbake  entstehen und wachsen innerhalb der Yocto Community
+verschiedene tools wie z.B. Wrapper, welchen das Arbeiten mit Bitbake
+vereinfachen sollen, indem diese Tools beispielsweise einzelne \glspl{Workflow}
+abbilden.\\
+
 Des Weiteren pflegen beiden Communities Dateien mit \gls{Metadaten}
 (\gls{Metadatendatei} die in Form von Regeln  beschreiben wie Software Pakte
 innerhalb für unterschiedliche Distribution und Hardware durch Bitbake gebaut
-werden müssen.  erforderlich sind.
-
-\ac{PDF}
-\\
+werden müssen.  erforderlich sind.  \\
 
 Diese Regeln  werden \gls{Recipes} genannt. Regeln bzw. diese Metadaten und
 somit auch das Build-System Bitbake arbeiten nach einen Schichten Modell.
@@ -52,15 +53,15 @@ Das Minimalisten Betriebssystem der Yocto Community wird „poky“ genannt.
 
 
 \section{Docker} \label{sec:docker}
-Bitbake benötigt, neben einem aktuellen Python 2 Interpreter, verschiedene
+Bitbake benötigt, neben einem aktuellen Python (2) Interpreter, verschiedene
 Tools. So u.a. Git zum Herunterladen von Source Detain. Alle diese
-Abhängigkeiten wurden in einem \gls{Docker} Container zusammengefasst.  Bitbake kann
-unter unschädlichen Betriebssystemen und Plattformen auf gleiche Weise genutzt
-werden, ohne dass es und seine Abhängigkeiten neu konfiguriert werden müssen.
-Im Gegensatz zu anderen Virtualisierungstechniken hat Docker trotz
-Virtualisierungstechniken keinen großartigen Performance Verlust.
-Von einem Gebrauch von klassischen Virtualisierungstechniken ist aus
-Performance Gründen dringend abzuraten.
+Abhängigkeiten wurden in einem \gls{Docker} Container zusammengefasst. Bitbake
+kann unter unschädlichen Betriebssystemen und Plattformen auf gleiche Weise
+genutzt werden, ohne dass es und seine Abhängigkeiten neu konfiguriert werden
+müssen.  Im Gegensatz zu anderen Virtualisierungstechniken hat Docker trotz
+Virtualisierungstechniken keinen großartigen Performance Verlust.  Von einem
+Gebrauch von klassischen Virtualisierungstechniken ist aus Performance Gründen
+dringend abzuraten.
 
 
 

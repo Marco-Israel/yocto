@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.22)  27 NOV 2019 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.22)  28 NOV 2019 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1176,9 +1176,7 @@ ngerman -- \language number for French undefined, default 255 used.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux (./title.aux) (./content/abstract.aux)
-(./content/abbreviations.aux) (./content/einleitung.aux)
-(./content/setup_host.aux) (./content/setup_eclipse.aux)
-(./content/cross_development.aux))
+(./content/abbreviations.aux) (./content/einleitung.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1355,10 +1353,9 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <18> not available
 ]
 \openout2 = `content/abstract.aux'.
 
-
-No file content/abstract.tex.
-(./main.toc
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ (./content/abstract.tex) (./main.toc)
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
  [1
 
@@ -1367,60 +1364,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-])
-\tf@toc=\write7
-\openout7 = `main.toc'.
+] [2
 
 
-[2] (./main.lof)
+] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [3
-
-
-] [4
+ [3] [4
 
 
 ]
 \openout2 = `content/abbreviations.aux'.
 
- (./content/abbreviations.tex
+
+(./content/abbreviations.tex
 chapter without number
 ) [5
 
 
 
-] (./main.gls [6
+] (./main.gls) [6
 
 
 
 ]
-Package acronym Info: Label `acro:SDK' newly defined as it shall be overridden
-although it is yet undefined on input line 23.
-
-Overfull \hbox (6.42007pt too wide) in paragraph at lines 23--23
-\T1/cmss/m/n/12 kon-fi-gu-rier-te) Samm-lun-gen von aus-ge-wähl-ten Programmier
--werkzeugen oder auch
- []
-
-[7
-
-
-]) [8]
 \openout2 = `content/einleitung.aux'.
 
  (./content/einleitung.tex
 chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
-although it is yet undefined on input line 19.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 10--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
@@ -1428,24 +1412,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 
+l.43 
       [1
 
 
 
 
 
-
-
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 45.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 44.
+LaTeX Font Info:    No file OMScmss.fd. on input line 45.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 44.
+(Font)              for symbol `textbullet' on input line 45.
 
 )pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
@@ -1453,9 +1435,13 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
                    \relax 
 l.77 \include{content/einleitung}
                                   [2]
+\openout2 = `content/grundlagen.aux'.
+
+ (./content/grundlagen.tex)
 \openout2 = `content/setup_host.aux'.
 
- (./content/setup_host.tex
+
+(./content/setup_host.tex
 chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
@@ -1467,7 +1453,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
 
 
+
+
 ]
+
+LaTeX Warning: Reference `cha:setup_eclipse' on page 4 undefined on input line 
+73.
+
+
+LaTeX Warning: Reference `cha:setup_eclipse' on page 4 undefined on input line 
+74.
+
 
 LaTeX Warning: Reference `cha:setup_qtcreator' on page 4 undefined on input lin
 e 79.
@@ -1503,9 +1499,9 @@ http://downloads.yoctoproject.org/releases/eclipse-
  []
 
 ) [7]
-\openout2 = `content/cross_development.aux'.
+\openout2 = `content/commands_bitbake.aux'.
 
- (./content/cross_development.tex [8
+ (./content/commands_bitbake.tex [8
 
 
 
@@ -1513,74 +1509,42 @@ http://downloads.yoctoproject.org/releases/eclipse-
 ]
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--23
-
- []
-
-LaTeX Font Info:    Try loading font information for U+ark on input line 31.
-(/usr/share/texlive/texmf-dist/tex/latex/dingbat/uark.fd
-File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
-) [9]) [10] (./main.ind) (./main.bbl
-chapter without number
-
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 10.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
- [11
+LaTeX Warning: Reference `sec:meta_layer_zum_build_hinzufugen' on page 9 undefi
+ned on input line 21.
 
 
+LaTeX Warning: Reference `sec:meta_layer_zum_build_hinzufugen' on page 9 undefi
+ned on input line 22.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
- (./main.aux (./title.aux) (./content/abstract.aux)
-(./content/abbreviations.aux) (./content/einleitung.aux)
-(./content/setup_host.aux) (./content/setup_eclipse.aux)
-(./content/cross_development.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+[9]
+
+LaTeX Warning: Reference `sec:ausfuhren_bestimmter_tasks_eines_recipies' on pag
+e 10 undefined on input line 70.
 
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.26pt have occurred.
+LaTeX Warning: Reference `sec:ausfuhren_bestimmter_tasks_eines_recipies' on pag
+e 10 undefined on input line 71.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...virtual/kernel | grep \textbf{\^SRC_URI=}
+                                                  
+? 
+! Emergency stop.
+<inserted text> 
+                $
+l.102 ...virtual/kernel | grep \textbf{\^SRC_URI=}
+                                                  
+End of file on the terminal!
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 33351 strings out of 494508
- 593249 string characters out of 6175044
- 950505 words of memory out of 5000000
- 36501 multiletter control sequences out of 15000+600000
- 546664 words of font info for 51 fonts, out of 8000000 for 9000
+ 32945 strings out of 494508
+ 589755 string characters out of 6175044
+ 944455 words of memory out of 5000000
+ 36155 multiletter control sequences out of 15000+600000
+ 543787 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,12n,95p,9083b,1499s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/public/dingbat/ark10.720
-pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.60
-0pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1200.6
-00pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.
-600pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440
-.600pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss120
-0.600pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss17
-28.600pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx2
-074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb>
-Output written on main.pdf (21 pages, 181491 bytes).
-PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 266 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 62i,11n,73p,9083b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

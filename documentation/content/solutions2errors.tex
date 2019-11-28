@@ -1,22 +1,23 @@
+\chapter{Lösung für bekannte Fehler}%
+\label{cha:losung_fur_bekannte_fehler}
 
 
-################################################################################
-########## ERRORS ##############################################################
-1. Try to run 'bitbake -c cleanall <recipes> 
-
-2. If this not work, clean (deleate) all:
-- delete sstate folder
-- delete deploy folder
-- delete everything in build except the conf directory
-
-2. If this not work, clean (deleate) all:
+\section{\textbf{ERROR:} Fehler beim Bauen eines recipes>}
+\label{sec:fehler_beim_bauen_eines_images}
 
 
+\subsection{lösung}%
+\label{sub:losung_fehler_beim_bauen_eines_images}
 
 
-
-
-
-
-
-
+\begin{enumerate}
+    \item Run \textit{bitbake -c cleanall <recipes>}
+    \item If this not work, clean (deleate) all:
+    \begin{itemize}
+        \item \textit{sstate} folder
+        \item \textit{deploy} folder
+        \item \textit{tmp} folder
+        \item everythink else in the project folder, exapting / but not the conf
+            folder
+    \end{itemize}
+\end{enumerate}
