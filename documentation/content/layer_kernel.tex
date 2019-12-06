@@ -13,12 +13,78 @@
 \subsection{Kernel anpssen - features aktivieren}%
 \label{sub:kernel_anpssen_features_aktivieren}
 
+Wie unter \cite[109]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+beshrieben, existieren verschiedene Möglichkeiten ein bereits im Linux Kernel
+vorhandenes Modul oder \gls{Feature} zu aktivieren. Z.B.
+
+\begin{itemize}
+    \item manuelles Anpassen der .config datei
+    \item GUI/Menü basiert mittels Befehl
+        \begin{itemize}
+            \item menuconfig
+            \item xconfig
+            \item gconfig
+        \end{itemize}
+    \item bitbake -c menuconfig virtual/kernel
+\end{itemize}
+
+Seite \cite[S. 114 und S. 118]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+zeigt letzters beispielhaft und beschreibt wie \textbf{Änderungen dauerhaft
+    gespeichert werden können}
+
 
 \section{Software Module}%
 \label{sec:software_module}
 
+Neue, selbst erstellte Kernel Module lassen sich durch die nachfolgenden
+Konfigurations\-variablen zum Image \textit{rootfs} hinzufügen.
 
-\section{Flashen  des image}%
+Die Variablen können beispielhaft in einem Image-Recipe oder in einer der
+Konfigurationsdateien wie \textit{./conf/local.conf} oder
+\textit{machine/<yourMachine.conf>}  definiert werden.
+
+\begin{itemize}
+    \item MACHINE\_ESSENTIAL\_EXTRA\_RDEPENDS\_append +=  <module-recipe>
+    \item MACHINE\_ESSENTIAL\_EXTRA\_RRECOMMENDS\_append += <module-recipe>
+    \item MACHINE\_EXTRA\_RDEPENDS\_append += <module-recipe>
+    \item MACHINE\_EXTRA\_RRECOMMENDS\_append += <module-recipe>
+\end{itemize}
+
+Um das Modul \textit{automatisch, beim booten des Kernels} zu laden, muss
+zusätzlich definiert werden:
+
+\begin{itemize}
+    \item KERNEL\_MODULE\_AUTOLOAD
+\end{itemize}
+
+
+\subsection{Eigene Kernel modul erstellen und einbinden}%
+\label{sub:eigene_kernel_modul_erstellen_und_einbinden}
+
+
+Seite \cite[121-125]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+zeigt beipielhaft, wie sich ein eigenes Kernelmodul erstellen und in die
+Buildumgebung Bitbake einminden lässt. Der \textit{poky} meta-layer beinhaltet
+zudem ein beispielhaftes \textit{hello-world} Kernel Modul, mitsamt
+beispielhafter \textit{Makefile} und \textit{recipe.bb} Datei.
+\\
+Ein umfangreiches Handbuch zur Linux Kernel und Modulentwicklung stellen die
+beiden Bücher dar:
+\begin{itemize}
+    \item \ref{Quade2015}
+    \item \ref{Corbet2005}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\section{Flashen des image}%
 \label{sec:flashen_des_image}
 
 Es existieren verschiedene Wege einen Linux Kernel über das Netzwerk zu booten
@@ -48,23 +114,3 @@ oder in den Speicher zu schreiben.
 
 
 
-%
-%to add the modules into your kernel image root fs, you need to define one of the
-%following variables in your machine/<yourMachine.conf> configuration file
-%
-%MACHINE_ESSENTIAL_EXTRA_RDEPENDS
-%
-%MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS
-%
-%MACHINE_EXTRA_RDEPENDS
-%
-%ACHINE_EXTRA_RRECOMMENDS
-%
-%
-%If you like to load the module during startup, you also need to define the
-%following variable in your machine/<yourMachine.conf> file.
-%
-%KERNEL_MODULE_AUTOLOAD
-%
-%For further information please grep the yocto mega manual in "Variables Glossary"
-%
