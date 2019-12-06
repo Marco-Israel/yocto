@@ -1,6 +1,6 @@
 ================================================================================
 
-                    Yokto / Bitbake / Openembedded 
+                    Yokto / Bitbake / Openembedded
                         PITFALLS, do and do not
 
                             Marco Israel, 2019
@@ -19,5 +19,9 @@
 ================================================================================
 
 
+Nach änderungen des Kernels \textit{menuconfig} oder \textit{bitbake -c
+    configure virtual/kernel} oder durch einbindinden mit
+\textit{autoload} Funktion von neuen Modulen in den Kernel,  \textbf{muss} der \textit{sstatechache} manuell
+gelöscht werden bevor das Image neu gebaut wird!
 
 

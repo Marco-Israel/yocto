@@ -50,6 +50,9 @@
 % Deutsche Anfuehrungszeichen
 \usepackage[babel, german=quotes]{csquotes}
 
+% Zitate
+%\usepackage[round]{natbib}
+
 % Pakte zur Index-Erstellung (Schlagwortverzeichnis)
 \usepackage{index}
 \makeindex
@@ -272,7 +275,14 @@
 % Literaturverzeichnis
 % ##################################################
 
-\usepackage{bibgerm}
+\usepackage[
+]{bibgerm}
+
+%\usepackage[backend=biber, %% Hilfsprogramm "biber" (statt "biblatex" oder "bibtex")
+%style=authoryear, %% Zitierstil (siehe Dokumentation)
+%natbib=true, %% Bereitstellen von natbib-kompatiblen Zitierkommandos
+%hyperref=true, %% hyperref-Paket verwenden, um Links zu erstellen
+%]{biblatex}
 
 % ##################################################
 % PDF / Dokumenteninternelinks
@@ -295,14 +305,16 @@
     pdfauthor={\docVorname~\docNachname},
     pdfcreator={\docVorname~\docNachname}]{hyperref}
 
+
+
 % ##################################################
 % Glossrry
 % Muss nach "hyperref"
 % ##################################################
     \usepackage{hyperref}
     \usepackage{glossaries}
-    \glossarystyle{listhypergroup}
-    \makeglossaries
+    \setglossarystyle{listhypergroup}
+%    \makeglossaries
 %    \loadglsentries{content/glossary} %Glossary in externer Datei...
     \input{content/glossary} % ...oder alternativ input statt loadglsentries
 

@@ -6,18 +6,79 @@
 \label{sec:fehler_beim_bauen_eines_images}
 
 
-\subsection{lösung}%
+\subsection{Lösung}%
 \label{sub:losung_fehler_beim_bauen_eines_images}
 
 
 \begin{enumerate}
-    \item Run \textit{bitbake -c cleanall <recipes>}
-    \item If this not work, clean (deleate) all:
+    \item Ausführen von \textit{bitbake -c cleanall <recipes>}
+    \item \textit {Force} kompilieren mit  \textit{bitbake -f <recipes>}
+    \item Sollte nichts helfen, je nach situation einen oder alle der
+        nachfolgenden Ordner löschen.
     \begin{itemize}
-        \item \textit{sstate} folder
-        \item \textit{deploy} folder
-        \item \textit{tmp} folder
-        \item everythink else in the project folder, exapting / but not the conf
-            folder
+        \item \textit{sstate} Ordner
+        \item \textit{deploy} Ordner
+        \item \textit{tmp} Ordner
+        \item Alles weitere im Projekt Ordner, mit Ausnahme des \textit{conf}
+            Ordners.
     \end{itemize}
 \end{enumerate}
+
+
+
+\section{Logging in Recipes}%
+\label{sec:logging}
+In Bitbake recipes lässt sich \textbf{python} oder \textbf{bash} \textbf{loggig}
+nutzen. Dabei werden durch die Yocto und und OpenEbedded Community bereits
+vordefinierte \textit{Logging Classes} (*.bbclass) bereit gestellt die
+unterschiedliche Informationen loggen können, angefangen von:
+\begin{itemize}
+    \item \textit{plain} und \textit{notes}
+    \item über \textit{warnings} und \textit{(fatal-) errors}
+    \item bis bin zu \textit{debug} informationen
+\end{itemize}
+ Eine Übersicht ist gelistet unter
+ \cite[S.79-80]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}.
+
+% gefolgt von Anwendungsbeispielen unter \cite[S.80-82]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}.
+
+
+\section{Abhängigkeiten (Dependencies) visualisieren }%
+\label{sec:abhangigkeiten_dependencies_visualisieren_}
+Bitbake ist in der Lage, Abhängigkeiten zwischen Recipes bzw. zwischen Software
+Componenten als Graphen zu visualisieren. Hierbei wird mittels \textit{Graphvz}
+{.dot} files zwischen den Abhängigkeiten generiert. \textit{*.dot} Dateien
+lassen sich anschließend in eine Grafik oder PDF umwandeln. Beispielhaft:
+
+
+\begin{lstlisting}[frame=single,language=bash,caption={Dependency Graph}]
+[user@host]/yoctopath $: source ./[<path>]enviroment-setup-*.sh
+[user@host]/yoctopath $: bitbake -g <recipes> [-I <dependencie to ignore> ]
+[user@host]/yoctopath $: dot -Tpng *.dot -o dependancy.png
+[user@host]/yoctopath $: dot -Tpdf *.dot -o dependancy.pdf.
+\end{lstlisting}
+
+Alternativ stellt Yocto/Openembedded einen \textit{dependency explorer} bereit.
+Hierzu Bitbake aufrufen mit
+\begin{itemize}
+    \item bitbake -g \textbf{-u taskexp} <recipe>
+\end{itemize}
+
+Weitere Abhängikeits-Probleme zwischen Dateien/Versionen lassen sich ermitteln
+über die Dateien:
+\begin{itemize}
+    \item ./tmp/stamps/sigdata
+    \item ./tmp/stamps/siginfo
+\end{itemize}
+
+Hierbei handelt es sich um \textit{Python-Datenbanken} die sich wie folgt
+ausgeben und mit dem aktuellen Abseitsstand vergleichen lassen:
+
+\begin{itemize}
+    \item bitbake-dumpsig [sigdata / siginfo]
+    \item bitbake-diffsig [sigdata / siginfo]
+\end{itemize}
+
+
+
+

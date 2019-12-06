@@ -68,7 +68,7 @@
 % %https://en.wikibooks.org/wiki/LaTeX/Glossary
 %\include{content/glossary}
 %\glossarystyle{altlistgroup}
-%\glossarystyle{listhypergroup}
+%\setglossarystyle{listhypergroup}
 \printglossaries
 \addcontentsline{toc}{chapter}{Glossar}  %after print
 \cleardoubleemptypage
@@ -76,7 +76,7 @@
 \mainmatter
 \include{content/einleitung}
 \include{content/grundlagen}
-\include{content/setup_host}
+%\include{content/setup_host}
 %\include{content/setup_bitbake}
 \include{content/setup_eclipse}
 %\include{content/setup_qt5}
@@ -87,6 +87,7 @@
 %\include{content/pitfalls}
 \include{content/solutions2errors}
 \include{content/cross_development}
+\include{content/ausbilck}
 
 %Bereites in Grundlagen includet.
 %\input{./content/grundlagen/someFile}
@@ -101,9 +102,22 @@
 %http://be-jo.net/2013/08/latex-welchen-bibliographystyle-wahlen/
 \singlespacing
 
-\bibliographystyle{alphadin}  %Sortierung: Kürzel des Autors, Referenzierung: Kürzel des Autors und Jahreszahl (zweistellig), Deutsch, Darstellung im Literaturverzeichnis:  Autoren Kapitälchen, Titel kursiv
-%\bibliographystyle{abbrvdin*}  %Sortierung: Name des Autors, Referenzierung: Nummer, Deutsch, Darstellung im Literaturverzeichnis: Autor in Kapitälchen, Initialen des Vornamens, Titel in kursiv
 \bibliography{bibtex}
+\bibliographystyle{alphadin}  %Sortierung: Kürzel des Autors, Referenzierung: Kürzel des Autors und Jahreszahl (zweistellig), Deutsch, Darstellung im Literaturverzeichnis:  Autoren Kapitälchen, Titel kursiv
+%
+%addbibresource{bibtex} %% Einbinden der bib-Datei
+%
+
+%\bibliographystyle{abbrvdin*}  %Sortierung: Name des Autors, Referenzierung: Nummer, Deutsch, Darstellung im Literaturverzeichnis: Autor in Kapitälchen, Initialen des Vornamens, Titel in kursiv
+%\bibliographystyle{abbrvdin*}  %Sortierung: Name des Autors, Referenzierung: Nummer, English, Darstellung im Literaturverzeichnis: Vorname als Initialen, Titel kursiv.
+%\printbibliography[type=article,title={Articles}]
+%\printbibliography[type=book,title={Books}]
+%\printbibliography[type=Webpage,title={Online Webpages}]
+%
+%\printbibliography[keyword={physics},title={Physics-related only}]
+%\printbibliography[keyword={latex},title={\LaTeX-related only}]
+%
+
 
 % Eidesstattliche Erklärung
 % \include{content/affirmation}

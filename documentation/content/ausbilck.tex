@@ -1,0 +1,98 @@
+
+\chapter{Ausblick}%
+\label{cha:ausblick}
+
+
+
+
+\section{Nächste Schritte}%
+\label{sec:naeste_schritte}
+
+\subsection{Entwicklungswerkzeuge als Docker Container}%
+\label{sub:developmenthost}
+
+Es wäre sinnvoll die Entwicklungstools in einem oder mehrere Docker
+container vorkonfiguiert zur verfügug zu stellen. Hierzu zählen unter anderem:
+
+\begin{description}
+    \item[Eclipse] Vorkonfiguriertes Eclipse inclusieve Plugins, Cross-Compile
+        und Remote debugging Einstellungen.
+    \item[QT5] Vorkonfiguiertes QT mit Crosscompile und Remot Debugging
+    \item TFTboot und NFSROOT Server in einem Container vorkonfiguriert bereitstellen
+\end{description}
+
+
+\subsection{Erweiterung der Scripte}%
+\label{sub:erweiterung_der_scripte}
+
+Das \textit{run.sh} script sollte so erweitert werden, das es \glq post\grq
+oder \glq pre\grq Aufgaben vor oder nach dem aufrufen der \textit{dockerjobs.sh}
+durchführt oder andere postbuild oder prebuild scripte aufruft. Denkbar wären:
+
+\begin{itemize}
+    \item Kopieren des zImages und \ac{DTB} in das \textit{TFT-boot} Verzeichnis
+    \item Kopieren und extrahieren des rootfs in das nfs-rootfs Verzeichnis
+\end{itemize}
+
+
+Das \textit{run.sh} script erzeugt das \textit{dockerjobs.sh} Script sollte dem
+run.sh script parameter übergeben werden. Anschließend startet das run.sh script
+den Docker container in definierter version (gesetzt über Parameter oder direkt
+innerhalb des run.sh scripts). Das dockerjobs.sh wird innerhalb docker durch das
+image aufgerufen und enthält alle aufgaben welche durch den Container in
+batchmode erfüllt werden sollen. Das dockerjobs.sh script lässt sich manuell
+erweitern / erstellen. Es wird nur überschrieben, wenn dem run.sh
+Ausführungs\-befehle übergeben werden.
+
+
+
+\section{Security}%
+Gerade zu Beginn der Entwicklung bietet sich an, zunächst auf viele
+Sicherheit\-funktionen zu verzichten, da der gesamte Entwicklungs\-prozess
+bereits komplex ist und ausreichend potentielle Fehlerquellen besitzt.
+\\
+
+Dennoch ist mindestens zum Ende eines Projektes, vor Veröffentlichung, das
+Sicherheits\-konzept überarbeitet werden.
+So müssen beispielsweise nachfolgende Themen bewertet und bearbeitet werden
+\label{sec:security}
+
+\begin{itemize}
+    \item Linux Kernel härten
+    \item SELinux
+    \item Gesamt System härten
+    \item SMACK
+    \item Benutzer, Passwörter, Zugrifffsrechte, ACLs
+    \item Netzwerkschnittstellen und Kommunikation absichern. Beispielweise
+        durch verschlüsselte Datenübertragung
+    \item Debugging, Flashing, Tracing Schnittstellen entfernen oder
+        einschränken
+\end{itemize}
+
+
+\section{Lizenzen}%
+\label{sec:lizenzen}
+
+Eine wichtiges Thema ist die Lizensierung neuer Softwarekomponenten, welche
+zusammen mit Open-Source paketen (i.d.R. mindestens dem Linux Kernel) genutzt
+werden und mit diesen Kompatible sein muss. So muss ich über folgende
+Kombinationen gedanken gemacht werden.
+
+Lizenverwaltung und Kompatibilität von:
+\begin{itemize}
+    \item Neuen Sofwarekomponenten
+    \item Bestehenden  Sofwarekomponenten
+    \item Verwendeten / Eingebundenen Softwarepaketen, z.B. über genutzte
+        meta-datan Layer aus Community Quellen.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+

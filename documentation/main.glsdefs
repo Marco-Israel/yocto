@@ -1,16 +1,16 @@
-\ifglsentryexists{Mircosoft Office}{}%
+\ifglsentryexists{Poky}{}%
 {%
-\gls@defglossaryentry{Mircosoft Office}%
+\gls@defglossaryentry{Poky}%
 {%
-name={Mircosoft Office},%
-sort={Mircosoft Office},%
+name={Poky},%
+sort={Poky},%
 type={main},%
-first={Mircosoft Office},%
-firstplural={Mircosoft Offices},%
-text={Mircosoft Office},%
-plural={Mircosoft Offices},%
-description={Ein Softwarepaket, welches verschiedene Programme für unterschiedliche Aufgaben enthält. Weiteres ist unter \cite {ms1}},%
-descriptionplural={Ein Softwarepaket, welches verschiedene Programme für unterschiedliche Aufgaben enthält. Weiteres ist unter \cite {ms1}},%
+first={Poky},%
+firstplural={Pokys},%
+text={Poky},%
+plural={Pokys},%
+description={XXX},%
+descriptionplural={XXX},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -28,19 +28,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Portables Job Definition Format}{}%
+\ifglsentryexists{Yocto Project}{}%
 {%
-\gls@defglossaryentry{Portables Job Definition Format}%
+\gls@defglossaryentry{Yocto Project}%
 {%
-name={Portables Job Definition Format},%
-sort={Portables Job Definition Format},%
+name={Yocto Project},%
+sort={Yocto Project},%
 type={main},%
-first={Portables Job Definition Format},%
-firstplural={Portables Job Definition Formats},%
-text={Portables Job Definition Format},%
-plural={Portables Job Definition Formats},%
-description={ \ac {PJDF} ist ein von Adobe entwickeltes Format zur Speicherung technischer Produktions- und Auftragsdaten auf Basis der PDF Format Syntax. \cite {pjdf1}},%
-descriptionplural={ \ac {PJDF} ist ein von Adobe entwickeltes Format zur Speicherung technischer Produktions- und Auftragsdaten auf Basis der PDF Format Syntax. \cite {pjdf1}},%
+first={Yocto Project},%
+firstplural={Yocto Projects},%
+text={Yocto Project},%
+plural={Yocto Projects},%
+description={Eine Community Gruppe welche eine Software Buildumgebung pflegt und weiterentwickelt, sowie Metadaten für diese Buildumgebung zur verfügung stellt um ein minimalistisches Linux system mit grundlegenden Tools unter der virtuallisierungsumgebung QEMU zu starten.},%
+descriptionplural={Eine Community Gruppe welche eine Software Buildumgebung pflegt und weiterentwickelt, sowie Metadaten für diese Buildumgebung zur verfügung stellt um ein minimalistisches Linux system mit grundlegenden Tools unter der virtuallisierungsumgebung QEMU zu starten.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -58,19 +58,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{32-Bit Architektur}{}%
+\ifglsentryexists{Bitbake}{}%
 {%
-\gls@defglossaryentry{32-Bit Architektur}%
+\gls@defglossaryentry{Bitbake}%
 {%
-name={32-Bit Architektur},%
-sort={32-Bit Architektur},%
+name={Bitbake},%
+sort={Bitbake},%
 type={main},%
-first={32-Bit Architektur},%
-firstplural={32-Bit Architekturen},%
-text={32-Bit Architektur},%
-plural={32-Bit Architekturen},%
-description={32-Bit kennzeichnet eine PC bzw. Prozessor oder Platinen Architektur. Sie kennzeichnet die Breite des Adressbusses und gibt somit vor, wie viel Speicher (adressierbare Blöcke oder Einheiten mit jeweils einem Byte) eine Architektur ansprechen und verarbeiten kann. Mit einem 32-Bit-Adressbus lassen sich maximal 2e32 Byte adressieren. Dies sind 232 Speicherstellen mit jeweils einem Byte. Oder umgerechnet 4 GiB. Die Architekturform hat vor allem Einfluss auf die Prozessor- und Busarchitektur. Diese hängen unmittelbar zusammen und sind in Bezug auf Ihre Geschwindigkeit abhängig von der Architekturform (in diesem Fall beschränkt auf 32 Bit). Hieraus ergibt sich auch der Begriff \glqq 32-Bit Betriebssystem\grqq \, welches auf die Prozessor- und Busarchitektur aufsetzt. Einem 32-Bit Betriebssystem ist es somit auch nur möglich, Max. 4 GB (bzw. GiB) Arbeitsspeicher anzusprechen und zu verarbeiten (teilweise sogar weniger).},%
-descriptionplural={32-Bit kennzeichnet eine PC bzw. Prozessor oder Platinen Architektur. Sie kennzeichnet die Breite des Adressbusses und gibt somit vor, wie viel Speicher (adressierbare Blöcke oder Einheiten mit jeweils einem Byte) eine Architektur ansprechen und verarbeiten kann. Mit einem 32-Bit-Adressbus lassen sich maximal 2e32 Byte adressieren. Dies sind 232 Speicherstellen mit jeweils einem Byte. Oder umgerechnet 4 GiB. Die Architekturform hat vor allem Einfluss auf die Prozessor- und Busarchitektur. Diese hängen unmittelbar zusammen und sind in Bezug auf Ihre Geschwindigkeit abhängig von der Architekturform (in diesem Fall beschränkt auf 32 Bit). Hieraus ergibt sich auch der Begriff \glqq 32-Bit Betriebssystem\grqq \, welches auf die Prozessor- und Busarchitektur aufsetzt. Einem 32-Bit Betriebssystem ist es somit auch nur möglich, Max. 4 GB (bzw. GiB) Arbeitsspeicher anzusprechen und zu verarbeiten (teilweise sogar weniger).},%
+first={Bitbake},%
+firstplural={Bitbakes},%
+text={Bitbake},%
+plural={Bitbakes},%
+description={Bitbake ist ein Framework ähnlich wie GNU Make, bestehend aus Phython Srcipten welche das Erstellen von Linux Distributionen mittels Metadaten koordiniert. },%
+descriptionplural={Bitbake ist ein Framework ähnlich wie GNU Make, bestehend aus Phython Srcipten welche das Erstellen von Linux Distributionen mittels Metadaten koordiniert. },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -88,19 +88,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{32-Bit Betriebssystem}{}%
+\ifglsentryexists{OpenEmbedded}{}%
 {%
-\gls@defglossaryentry{32-Bit Betriebssystem}%
+\gls@defglossaryentry{OpenEmbedded}%
 {%
-name={32-Bit Betriebssystem},%
-sort={32-Bit Betriebssystem},%
+name={OpenEmbedded},%
+sort={OpenEmbedded},%
 type={main},%
-first={32-Bit Betriebssystem},%
-firstplural={32-Bit Betriebssysteme},%
-text={32-Bit Betriebssystem},%
-plural={32-Bit Betriebssysteme},%
-description={Siehe \gls {32-Bit Architektur}},%
-descriptionplural={Siehe \gls {32-Bit Architektur}},%
+first={OpenEmbedded},%
+firstplural={OpenEmbeddeds},%
+text={OpenEmbedded},%
+plural={OpenEmbeddeds},%
+description={ Eine Community Gruppe welche eine Softwareware Buildumgebung namens Bitbake pflegt und Metatdaten für dieses Buildsystem bereitstellt, welche von dieser Buildumgebung verwendet wird um Softwarepakete zu übersetzen},%
+descriptionplural={ Eine Community Gruppe welche eine Softwareware Buildumgebung namens Bitbake pflegt und Metatdaten für dieses Buildsystem bereitstellt, welche von dieser Buildumgebung verwendet wird um Softwarepakete zu übersetzen},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -118,19 +118,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Datentyp}{}%
+\ifglsentryexists{Recipes}{}%
 {%
-\gls@defglossaryentry{Datentyp}%
+\gls@defglossaryentry{Recipes}%
 {%
-name={Datentyp},%
-sort={Datentyp},%
+name={Recipies},%
+sort={Recipies},%
 type={main},%
-first={Datentyp},%
-firstplural={Datentypen},%
-text={Datentyp},%
-plural={Datentypen},%
-description={Datentyp beschreibt den Wertebereich von \glspl {Variable}. Sie werden daher auch als Werteart oder Datenart beschrieben. Sie sind gekennzeichnet durch einen Wertebereich, einen Name, einen Geltungsbereich, einer Konstruktionsregel, und einer gültigen (zulässige) Menge von Operationen über diese Wertemenge. Es wird zwischen numerische, boolesche, alphanumerische, abstrakte, elementare, zusammengesetzte und benutzerdefinierte Datentypen unterschieden. },%
-descriptionplural={Datentyp beschreibt den Wertebereich von \glspl {Variable}. Sie werden daher auch als Werteart oder Datenart beschrieben. Sie sind gekennzeichnet durch einen Wertebereich, einen Name, einen Geltungsbereich, einer Konstruktionsregel, und einer gültigen (zulässige) Menge von Operationen über diese Wertemenge. Es wird zwischen numerische, boolesche, alphanumerische, abstrakte, elementare, zusammengesetzte und benutzerdefinierte Datentypen unterschieden. },%
+first={Recipies},%
+firstplural={Recipiess},%
+text={Recipies},%
+plural={Recipiess},%
+description={Rezepte oder Anleitungen},%
+descriptionplural={Rezepte oder Anleitungen},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -148,19 +148,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Variable}{}%
+\ifglsentryexists{Metadaten}{}%
 {%
-\gls@defglossaryentry{Variable}%
+\gls@defglossaryentry{Metadaten}%
 {%
-name={Variable},%
-sort={Variable},%
+name={Metadaten},%
+sort={Metadaten},%
 type={main},%
-first={Variable},%
-firstplural={Variablen},%
-text={Variable},%
-plural={Variablen},%
-description={Eine Variable ist in der Informatik ein Platzhalter. Er ist gekennzeichnet durch einen Namen und häufig durch einen Datentyp. Variablen werden (temporäre) Werte zugeordnet. Diese können verändert, überschrieben oder gelöscht werden. Sie dienen häufig als (Zwischen-) Speicher, z.B. für eine Berechnung. },%
-descriptionplural={Eine Variable ist in der Informatik ein Platzhalter. Er ist gekennzeichnet durch einen Namen und häufig durch einen Datentyp. Variablen werden (temporäre) Werte zugeordnet. Diese können verändert, überschrieben oder gelöscht werden. Sie dienen häufig als (Zwischen-) Speicher, z.B. für eine Berechnung. },%
+first={Metadaten},%
+firstplural={Metadatens},%
+text={Metadaten},%
+plural={Metadatens},%
+description={Metadaten oder Metainformationen sind Informationen über andere Daten},%
+descriptionplural={Metadaten oder Metainformationen sind Informationen über andere Daten},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -178,19 +178,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Konversationen}{}%
+\ifglsentryexists{Docker}{}%
 {%
-\gls@defglossaryentry{Konversationen}%
+\gls@defglossaryentry{Docker}%
 {%
-name={Konversationen},%
-sort={Konversationen},%
+name={Docker},%
+sort={Docker},%
 type={main},%
-first={Konversationen},%
-firstplural={Konversationens},%
-text={Konversationen},%
-plural={Konversationens},%
-description={Einigung, Normung oder Übereinkunft z.B. über einen Zeichensatzes. Zu dieser Einigung ist man gemeinsam in einem Gespräch (Konversation) gekommen. Diese Einigung ist häufig zu einer De-facto- oder Quasi-Vorgabe geworden.},%
-descriptionplural={Einigung, Normung oder Übereinkunft z.B. über einen Zeichensatzes. Zu dieser Einigung ist man gemeinsam in einem Gespräch (Konversation) gekommen. Diese Einigung ist häufig zu einer De-facto- oder Quasi-Vorgabe geworden.},%
+first={Docker},%
+firstplural={Dockers},%
+text={Docker},%
+plural={Dockers},%
+description={Docker ist eine Software zur virtualisierung von einzelnen Anwendungen},%
+descriptionplural={Docker ist eine Software zur virtualisierung von einzelnen Anwendungen},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -208,19 +208,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Forms Data Format}{}%
+\ifglsentryexists{SDK}{}%
 {%
-\gls@defglossaryentry{Forms Data Format}%
+\gls@defglossaryentry{SDK}%
 {%
-name={Forms Data Format},%
-sort={Forms Data Format},%
+name={SDK},%
+sort={SDK},%
 type={main},%
-first={Forms Data Format},%
-firstplural={Forms Data Formats},%
-text={Forms Data Format},%
-plural={Forms Data Formats},%
-description={\ac {FDF} ist ein Format zur (Serverseitigen-) Verarbeitung der Formulardaten innerhalb eines PDF Dokumenten \cite {fdf1} \cite {fdf3} \cite {fdf2}},%
-descriptionplural={\ac {FDF} ist ein Format zur (Serverseitigen-) Verarbeitung der Formulardaten innerhalb eines PDF Dokumenten \cite {fdf1} \cite {fdf3} \cite {fdf2}},%
+first={SDK},%
+firstplural={SDKs},%
+text={SDK},%
+plural={SDKs},%
+description={Ein \ac {SDK} ist eine gekapselte bzw. vordefinierte Umgebung zur Entwicklung von Software\-komponenten. Die Umgebung stellt (vorkonfigurierte) Sammlungen von ausgewählten Programmier\-werkzeugen oder auch Liberias bereit, die zur Entwicklung für eine Zielplattform benötigt werden.},%
+descriptionplural={Ein \ac {SDK} ist eine gekapselte bzw. vordefinierte Umgebung zur Entwicklung von Software\-komponenten. Die Umgebung stellt (vorkonfigurierte) Sammlungen von ausgewählten Programmier\-werkzeugen oder auch Liberias bereit, die zur Entwicklung für eine Zielplattform benötigt werden.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -238,19 +238,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{String}{}%
+\ifglsentryexists{rootfs}{}%
 {%
-\gls@defglossaryentry{String}%
+\gls@defglossaryentry{rootfs}%
 {%
-name={String},%
-sort={String},%
+name={rootfs},%
+sort={rootfs},%
 type={main},%
-first={String},%
-firstplural={Strings},%
-text={String},%
-plural={Strings},%
-description={Ein String bezeichnet eine Zeichenkette in der Informatik. Sie repräsentiert z.B. ein Wort oder einen Satz.},%
-descriptionplural={Ein String bezeichnet eine Zeichenkette in der Informatik. Sie repräsentiert z.B. ein Wort oder einen Satz.},%
+first={rootfs},%
+firstplural={rootfss},%
+text={rootfs},%
+plural={rootfss},%
+description={Unter Linux wird das urspüngliche \textit {rootfs} als der Ort bezeichnet, von dem \textbf {ausgehend} alle weiteren Verzeichnissbäume eingehängt sind/werden. Beispielweise liegen direkt unterhalb des rootfs die Ordner /home, /boot /root oder /bin.},%
+descriptionplural={Unter Linux wird das urspüngliche \textit {rootfs} als der Ort bezeichnet, von dem \textbf {ausgehend} alle weiteren Verzeichnissbäume eingehängt sind/werden. Beispielweise liegen direkt unterhalb des rootfs die Ordner /home, /boot /root oder /bin.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -268,19 +268,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Hypertext Transfer Protocol}{}%
+\ifglsentryexists{Workflow}{}%
 {%
-\gls@defglossaryentry{Hypertext Transfer Protocol}%
+\gls@defglossaryentry{Workflow}%
 {%
-name={Hypertext Transfer Protocol},%
-sort={Hypertext Transfer Protocol},%
+name={Workflow},%
+sort={Workflow},%
 type={main},%
-first={Hypertext Transfer Protocol},%
-firstplural={Hypertext Transfer Protocols},%
-text={Hypertext Transfer Protocol},%
-plural={Hypertext Transfer Protocols},%
-description={Das Hypertext Transfer Protocol (HTTP) ist ein Protokoll zur Übertragung von Daten auf der Anwendungsschicht in Rechnernetzen. Meistens wird es genutzt Hypertext-Dokumente (Webseiten) aus dem World Wide Web (WWW) in einen Webbrowser zu laden. Das Protokoll ist Zustandslos},%
-descriptionplural={Das Hypertext Transfer Protocol (HTTP) ist ein Protokoll zur Übertragung von Daten auf der Anwendungsschicht in Rechnernetzen. Meistens wird es genutzt Hypertext-Dokumente (Webseiten) aus dem World Wide Web (WWW) in einen Webbrowser zu laden. Das Protokoll ist Zustandslos},%
+first={Workflow},%
+firstplural={Workflows},%
+text={Workflow},%
+plural={Workflows},%
+description={Ein Wokflow ist ein Arbeitsablauf und beschreibt Schritte in ihrer Reihenfolge die nötig sind, um eine Aufgabe, Arbeitspaket oder etwa eine Anweisung zu erfüllen. Dabei sind die Arbeitsschritte häufig wiederkehrend in anderen Arbeitsabläufen. },%
+descriptionplural={Ein Wokflow ist ein Arbeitsablauf und beschreibt Schritte in ihrer Reihenfolge die nötig sind, um eine Aufgabe, Arbeitspaket oder etwa eine Anweisung zu erfüllen. Dabei sind die Arbeitsschritte häufig wiederkehrend in anderen Arbeitsabläufen. },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -298,1669 +298,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Backdoor}{}%
+\ifglsentryexists{dummy}{}%
 {%
-\gls@defglossaryentry{Backdoor}%
+\gls@defglossaryentry{dummy}%
 {%
-name={Backdoor},%
-sort={Backdoor},%
+name={dummy},%
+sort={dummy},%
 type={main},%
-first={Backdoor},%
-firstplural={Backdoors},%
-text={Backdoor},%
-plural={Backdoors},%
-description={Hintertür für Angreifer, damit diese sich zu dem Rechner verbinden und diesen eindringen können.},%
-descriptionplural={Hintertür für Angreifer, damit diese sich zu dem Rechner verbinden und diesen eindringen können.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Owner}{}%
-{%
-\gls@defglossaryentry{Owner}%
-{%
-name={Owner},%
-sort={Owner},%
-type={main},%
-first={Owner},%
-firstplural={Owners},%
-text={Owner},%
-plural={Owners},%
-description={Als \glqq Owner\grqq \ wird der Besitzer von etwas bezeichnet. Z.b. der Besitzer (Owner) einer Datei oder eines Dokumentes. Er ist oft gleichzusetzen mit einem Administrator. Der Owner besitzt i.d.R. die vollen Zugriffsrechte, inklusive Rechte zum Verändern der Inhalte oder Löschen der kompletten Datei.},%
-descriptionplural={Als \glqq Owner\grqq \ wird der Besitzer von etwas bezeichnet. Z.b. der Besitzer (Owner) einer Datei oder eines Dokumentes. Er ist oft gleichzusetzen mit einem Administrator. Der Owner besitzt i.d.R. die vollen Zugriffsrechte, inklusive Rechte zum Verändern der Inhalte oder Löschen der kompletten Datei.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Pubic-Private Key Verfahren}{}%
-{%
-\gls@defglossaryentry{Pubic-Private Key Verfahren}%
-{%
-name={Pubic-Private Key Verfahren},%
-sort={Pubic-Private Key Verfahren},%
-type={main},%
-first={Pubic-Private Key Verfahren},%
-firstplural={Pubic-Private Key Verfahrens},%
-text={Pubic-Private Key Verfahren},%
-plural={Pubic-Private Key Verfahrens},%
-description={Ein Public-Privat-Key Verschlüsselungsverfahren (kurz Public-Key Verfahren) ein kryptographisches Schutz Verfahren. Bei diesem wird mit einem veröffentlichten (öffentlicher) Schlüssel eine Klartextdatei in eine verschlüsselte Datei umgewandelt. Die Datei kann nur wieder durch einen zweiten, geheimen Schlüssel in Klartextform umgewandelt werden. Dieses wird asymmetrisches Verschlüsselungsverfahren bezeichnet, da zwei unterschiedliche Schlüssel (ein öffentlicher und ein geheimer) benötigt werden um ein Dokument zu verschlüsseln und weder zu entschlüsseln.},%
-descriptionplural={Ein Public-Privat-Key Verschlüsselungsverfahren (kurz Public-Key Verfahren) ein kryptographisches Schutz Verfahren. Bei diesem wird mit einem veröffentlichten (öffentlicher) Schlüssel eine Klartextdatei in eine verschlüsselte Datei umgewandelt. Die Datei kann nur wieder durch einen zweiten, geheimen Schlüssel in Klartextform umgewandelt werden. Dieses wird asymmetrisches Verschlüsselungsverfahren bezeichnet, da zwei unterschiedliche Schlüssel (ein öffentlicher und ein geheimer) benötigt werden um ein Dokument zu verschlüsseln und weder zu entschlüsseln.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{User}{}%
-{%
-\gls@defglossaryentry{User}%
-{%
-name={User},%
-sort={User},%
-type={main},%
-first={User},%
-firstplural={Users},%
-text={User},%
-plural={Users},%
-description={Als \glqq User\grqq \ wird ein normaler Benutzer bezeichnet. Er besitzt häufig weniger, bzw. eingeschränkte (Zugriffs-) Rechte, etwa auf eine Datei oder Ordner. (Im Gegensatz zu einem Owner oder Administrator.) Häufig darf er etwa Dateien nur lesen oder eingeschränkt bearbeiten und verwenden.},%
-descriptionplural={Als \glqq User\grqq \ wird ein normaler Benutzer bezeichnet. Er besitzt häufig weniger, bzw. eingeschränkte (Zugriffs-) Rechte, etwa auf eine Datei oder Ordner. (Im Gegensatz zu einem Owner oder Administrator.) Häufig darf er etwa Dateien nur lesen oder eingeschränkt bearbeiten und verwenden.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Adobe Reader}{}%
-{%
-\gls@defglossaryentry{Adobe Reader}%
-{%
-name={Adobe Reader},%
-sort={Adobe Reader},%
-type={main},%
-first={Adobe Reader},%
-firstplural={Adobe Readers},%
-text={Adobe Reader},%
-plural={Adobe Readers},%
-description={Software zu Anzeigen von PDF Dateien. Es stammt vom Hersteller Adobe, welcher auch das \ac {PDF} Format entworfen hat.},%
-descriptionplural={Software zu Anzeigen von PDF Dateien. Es stammt vom Hersteller Adobe, welcher auch das \ac {PDF} Format entworfen hat.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Layout}{}%
-{%
-\gls@defglossaryentry{Layout}%
-{%
-name={Layout},%
-sort={Layout},%
-type={main},%
-first={Layout},%
-firstplural={Layouts},%
-text={Layout},%
-plural={Layouts},%
-description={Das Layout beschreibt die Gestaltung oder das Aussehen z.B. einer (Internet-) Seite oder einer Programmoberfläche(GUI). Hierzu zählen Formatierungen und Anordnung der Inhalte, wie z.B. Schriftarten, Schriftgrößen, die Seitengröße oder Farben und andere Designelemente.},%
-descriptionplural={Das Layout beschreibt die Gestaltung oder das Aussehen z.B. einer (Internet-) Seite oder einer Programmoberfläche(GUI). Hierzu zählen Formatierungen und Anordnung der Inhalte, wie z.B. Schriftarten, Schriftgrößen, die Seitengröße oder Farben und andere Designelemente.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{virtuelle Maschine}{}%
-{%
-\gls@defglossaryentry{virtuelle Maschine}%
-{%
-name={virtuelle Maschine},%
-sort={virtuelle Maschine},%
-type={main},%
-first={virtuelle Maschine},%
-firstplural={virtuelle Maschinen},%
-text={virtuelle Maschine},%
-plural={virtuelle Maschinen},%
-description={Eine virtuelle Maschine (VM) bildet die Rechnerarchitektur (Hardware) eines realen Rechners in einer abstrahierende Schicht virtuell nach. So wird es möglich, die Hardwareperformance eines realen Rechners auf mehre virtuelle Maschinen aufzuteilen und so einen realen Rechner in mehrere virtuelle, eigenständige und unabhängige virtuelle Rechner aufzuteilen.},%
-descriptionplural={Eine virtuelle Maschine (VM) bildet die Rechnerarchitektur (Hardware) eines realen Rechners in einer abstrahierende Schicht virtuell nach. So wird es möglich, die Hardwareperformance eines realen Rechners auf mehre virtuelle Maschinen aufzuteilen und so einen realen Rechner in mehrere virtuelle, eigenständige und unabhängige virtuelle Rechner aufzuteilen.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF-Viewer}{}%
-{%
-\gls@defglossaryentry{PDF-Viewer}%
-{%
-name={PDF-Viewer},%
-sort={PDF-Viewer},%
-type={main},%
-first={PDF-Viewer},%
-firstplural={PDF-Viewers},%
-text={PDF-Viewer},%
-plural={PDF-Viewers},%
-description={Ein PDF-Viewer oder auch PDF Reader genannt, ist in Programme zum Betrachten von PDF-Dokumente},%
-descriptionplural={Ein PDF-Viewer oder auch PDF Reader genannt, ist in Programme zum Betrachten von PDF-Dokumente},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Tag}{}%
-{%
-\gls@defglossaryentry{Tag}%
-{%
-name={Tag},%
-sort={Tag},%
-type={main},%
-first={Tag},%
-firstplural={Tags},%
-text={Tag},%
-plural={Tags},%
-description={Ein Tag ist ein Schlüsselwort (Keywort) das eine definierte Aufgabe oder Funktion, im Kontext in dem es genutzt wird, besitzt. },%
-descriptionplural={Ein Tag ist ein Schlüsselwort (Keywort) das eine definierte Aufgabe oder Funktion, im Kontext in dem es genutzt wird, besitzt. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Multimedia}{}%
-{%
-\gls@defglossaryentry{Multimedia}%
-{%
-name={Multimedia},%
-sort={Multimedia},%
-type={main},%
-first={Multimedia},%
-firstplural={Multimedias},%
-text={Multimedia},%
-plural={Multimedias},%
-description={Dateien, die gleichzeitig aus unterschiedlichen, i.d.r digitalen Medien zusammenwirken. Z.B. Text, Grafik, Audio, Video oder Animation.},%
-descriptionplural={Dateien, die gleichzeitig aus unterschiedlichen, i.d.r digitalen Medien zusammenwirken. Z.B. Text, Grafik, Audio, Video oder Animation.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Content stream}{}%
-{%
-\gls@defglossaryentry{Content stream}%
-{%
-name={Content stream},%
-sort={Content stream},%
-type={main},%
-first={Content stream},%
-firstplural={Content streams},%
-text={Content stream},%
-plural={Content streams},%
-description={Ein Content stream liefert den Inhalt einer PDF Seite. Er enthält eine Sequenz von Anweisungen welche zum einen das Layout einer Seite beschreiben. Zum anderen liefern Content streams die Inhalte der PDF Seiten. Z.B Bilder oder Texte.},%
-descriptionplural={Ein Content stream liefert den Inhalt einer PDF Seite. Er enthält eine Sequenz von Anweisungen welche zum einen das Layout einer Seite beschreiben. Zum anderen liefern Content streams die Inhalte der PDF Seiten. Z.B Bilder oder Texte.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Library}{}%
-{%
-\gls@defglossaryentry{Library}%
-{%
-name={Library},%
-sort={Library},%
-type={main},%
-first={Library},%
-firstplural={Libraries},%
-text={Library},%
-plural={Libraries},%
-description={Bibliothek welche eine Sammlung von Unterprogrammen/-Routinen enthält},%
-descriptionplural={Bibliothek welche eine Sammlung von Unterprogrammen/-Routinen enthält},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{verkettete Liste}{}%
-{%
-\gls@defglossaryentry{verkettete Liste}%
-{%
-name={verkettete Liste},%
-sort={verkettete Liste},%
-type={main},%
-first={verkettete Liste},%
-firstplural={verkettete Listen},%
-text={verkettete Liste},%
-plural={verkettete Listen},%
-description={Eine (zyklisch) verkettete Liste ist eine dynamische Datenstruktur zur Speicherung von Objekten. Dabei muss die Anzahl der Objekte im Vorfeld nicht bestimmt werden. Es können beliebig viele Objekte nachträglich in die Liste aufgenommen werden. Durch einen Zeiger wird jeweils auf das nachfolgende Objekt der Liste (bzw. Element oder Knoten) gezeigt. Oder auf dessen Speicherzellen im Arbeitsspeicher. Anders als (Objekt-) Bäumen sind Listen linear, dass heisst ein Element hat genau einen Nachfolger. Bei einer zyklischen Liste zeigt das letzte Element auf ein vorheriges Element (oftmals das erste Element in der Liste). Bei einer doppelt verketten (zyklischen) Liste existiert ein zweiter Zeiger, welcher auf das vorherige Element einer Liste zeigt. },%
-descriptionplural={Eine (zyklisch) verkettete Liste ist eine dynamische Datenstruktur zur Speicherung von Objekten. Dabei muss die Anzahl der Objekte im Vorfeld nicht bestimmt werden. Es können beliebig viele Objekte nachträglich in die Liste aufgenommen werden. Durch einen Zeiger wird jeweils auf das nachfolgende Objekt der Liste (bzw. Element oder Knoten) gezeigt. Oder auf dessen Speicherzellen im Arbeitsspeicher. Anders als (Objekt-) Bäumen sind Listen linear, dass heisst ein Element hat genau einen Nachfolger. Bei einer zyklischen Liste zeigt das letzte Element auf ein vorheriges Element (oftmals das erste Element in der Liste). Bei einer doppelt verketten (zyklischen) Liste existiert ein zweiter Zeiger, welcher auf das vorherige Element einer Liste zeigt. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Feature}{}%
-{%
-\gls@defglossaryentry{Feature}%
-{%
-name={Feature},%
-sort={Feature},%
-type={main},%
-first={Feature},%
-firstplural={Features},%
-text={Feature},%
-plural={Features},%
-description={Merkmal oder Eigenschaft, wie eine besondere Funktionalität},%
-descriptionplural={Merkmal oder Eigenschaft, wie eine besondere Funktionalität},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ExtensionLevel}{}%
-{%
-\gls@defglossaryentry{ExtensionLevel}%
-{%
-name={ExtensionLevel},%
-sort={ExtensionLevel},%
-type={main},%
-first={ExtensionLevel},%
-firstplural={ExtensionLevels},%
-text={ExtensionLevel},%
-plural={ExtensionLevels},%
-description={Erweiterungen oder Änderungen der letzten Revision des PDF Formates. Diese werden als eigene Dokumente veröffentlicht.},%
-descriptionplural={Erweiterungen oder Änderungen der letzten Revision des PDF Formates. Diese werden als eigene Dokumente veröffentlicht.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Acrobat}{}%
-{%
-\gls@defglossaryentry{Acrobat}%
-{%
-name={Adobe Acrobat},%
-sort={Adobe Acrobat},%
-type={main},%
-first={Adobe Acrobat},%
-firstplural={Adobe Acrobats},%
-text={Adobe Acrobat},%
-plural={Adobe Acrobats},%
-description={Adobe Acrobat ist eine Gruppe von Programmen mit welcher PDF-Datei erstellt, verwalten, kommentiert und verteilt werden können. Dieses kostenpflichtige Programmpaket des Software-Unternehmens Adobe Systems enthält ein Anwendungsprogramm zum Erstellen und Bearbeiten von PDF-Dokumenten.},%
-descriptionplural={Adobe Acrobat ist eine Gruppe von Programmen mit welcher PDF-Datei erstellt, verwalten, kommentiert und verteilt werden können. Dieses kostenpflichtige Programmpaket des Software-Unternehmens Adobe Systems enthält ein Anwendungsprogramm zum Erstellen und Bearbeiten von PDF-Dokumenten.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{deklariert}{}%
-{%
-\gls@defglossaryentry{deklariert}%
-{%
-name={deklariert},%
-sort={deklariert},%
-type={main},%
-first={deklariert},%
-firstplural={deklarieren},%
-text={deklariert},%
-plural={deklarieren},%
-description={etwas bekannt geben},%
-descriptionplural={etwas bekannt geben},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{deklaration}{}%
-{%
-\gls@defglossaryentry{deklaration}%
-{%
-name={Deklaration},%
-sort={Deklaration},%
-type={main},%
-first={Deklaration},%
-firstplural={deklarieren},%
-text={Deklaration},%
-plural={deklarieren},%
-description={Bekanntmachung},%
-descriptionplural={Bekanntmachung},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Header}{}%
-{%
-\gls@defglossaryentry{Header}%
-{%
-name={Header},%
-sort={Header},%
-type={main},%
-first={Header},%
-firstplural={Headers},%
-text={Header},%
-plural={Headers},%
-description={Kopfteil einer Datei, welcher oft Grundlegende Einstellungen definiert.},%
-descriptionplural={Kopfteil einer Datei, welcher oft Grundlegende Einstellungen definiert.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Body}{}%
-{%
-\gls@defglossaryentry{Body}%
-{%
-name={Body},%
-sort={Body},%
-type={main},%
-first={Body},%
-firstplural={Bodys},%
-text={Body},%
-plural={Bodys},%
-description={Hauptteil einer Datei.},%
-descriptionplural={Hauptteil einer Datei.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Cross Referenz Tabelle}{}%
-{%
-\gls@defglossaryentry{Cross Referenz Tabelle}%
-{%
-name={Cross Referenz Tabelle},%
-sort={Cross Referenz Tabelle},%
-type={main},%
-first={Cross Referenz Tabelle},%
-firstplural={Cross Referenz Tabellen},%
-text={Cross Referenz Tabelle},%
-plural={Cross Referenz Tabellen},%
-description={Cross Reference Tabellen oder Kreuztabellen, kurz XRef, enthalten Verweise auf definierte Stellen in einer Datei. Dieses ermöglicht einen schnelleren Zugriff auf diese Bereiche.},%
-descriptionplural={Cross Reference Tabellen oder Kreuztabellen, kurz XRef, enthalten Verweise auf definierte Stellen in einer Datei. Dieses ermöglicht einen schnelleren Zugriff auf diese Bereiche.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Trailer}{}%
-{%
-\gls@defglossaryentry{Trailer}%
-{%
-name={Trailer},%
-sort={Trailer},%
-type={main},%
-first={Trailer},%
-firstplural={Trailers},%
-text={Trailer},%
-plural={Trailers},%
-description={Schlussteil oder Anhang einer Datei. Beschreibt zusätzlichen Informationen zu einer Datei.},%
-descriptionplural={Schlussteil oder Anhang einer Datei. Beschreibt zusätzlichen Informationen zu einer Datei.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Root}{}%
-{%
-\gls@defglossaryentry{Root}%
-{%
-name={Root},%
-sort={Root},%
-type={main},%
-first={Root},%
-firstplural={Roots},%
-text={Root},%
-plural={Roots},%
-description={Wurzel, Ursprung von dem alles ausgeht. Im Unix Betriebssystem der erste Benutzer, von welchem alles ausgeht. Er besitzt i.d.R die meisten Rechte.},%
-descriptionplural={Wurzel, Ursprung von dem alles ausgeht. Im Unix Betriebssystem der erste Benutzer, von welchem alles ausgeht. Er besitzt i.d.R die meisten Rechte.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Integritaet}{}%
-{%
-\gls@defglossaryentry{Integritaet}%
-{%
-name={Datenintegrität},%
-sort={Datenintegrität},%
-type={main},%
-first={Datenintegrit\IeC {\"a}t},%
-firstplural={Datenintegrit\IeC {\"a}ts},%
-text={Datenintegrit\IeC {\"a}t},%
-plural={Datenintegrit\IeC {\"a}ts},%
-description={Verhinderung vor unautorisierter Modifikation von Information},%
-descriptionplural={Verhinderung vor unautorisierter Modifikation von Information},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Vertraulichkeit}{}%
-{%
-\gls@defglossaryentry{Vertraulichkeit}%
-{%
-name={Vertraulichkeit},%
-sort={Vertraulichkeit},%
-type={main},%
-first={Vertraulichkeit},%
-firstplural={Vertraulichkeits},%
-text={Vertraulichkeit},%
-plural={Vertraulichkeits},%
-description={Informationen sind nur für einen beschränkten Empfängerkreis einsehbar. Weitergabe und Veröffentlichung sind dabei i.d.R. nicht erlaubt.},%
-descriptionplural={Informationen sind nur für einen beschränkten Empfängerkreis einsehbar. Weitergabe und Veröffentlichung sind dabei i.d.R. nicht erlaubt.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Verfuegbarkeit}{}%
-{%
-\gls@defglossaryentry{Verfuegbarkeit}%
-{%
-name={Verfügbarkeit},%
-sort={Verfügbarkeit},%
-type={main},%
-first={Verf\IeC {\"u}gbarkeit},%
-firstplural={Verf\IeC {\"u}gbarkeits},%
-text={Verf\IeC {\"u}gbarkeit},%
-plural={Verf\IeC {\"u}gbarkeits},%
-description={Gewährleistung, das ein System oder Service nach definierten Anforderungen verfügbar ist},%
-descriptionplural={Gewährleistung, das ein System oder Service nach definierten Anforderungen verfügbar ist},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Verbindlichkeit}{}%
-{%
-\gls@defglossaryentry{Verbindlichkeit}%
-{%
-name={Verbindlichkeit},%
-sort={Verbindlichkeit},%
-type={main},%
-first={Verbindlichkeit},%
-firstplural={Verbindlichkeits},%
-text={Verbindlichkeit},%
-plural={Verbindlichkeits},%
-description={Verbindlichkeit oder auch Nichtabstreitbarkeit bedeutet in der Informationstechnik, dass eine (durchgeführte) Sache eindeutig dem Urheber zugeordnet werden kann und er es nicht abstreiten kann.},%
-descriptionplural={Verbindlichkeit oder auch Nichtabstreitbarkeit bedeutet in der Informationstechnik, dass eine (durchgeführte) Sache eindeutig dem Urheber zugeordnet werden kann und er es nicht abstreiten kann.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Authentizitaet}{}%
-{%
-\gls@defglossaryentry{Authentizitaet}%
-{%
-name={Authentizität},%
-sort={Authentizität},%
-type={main},%
-first={Authentizit\IeC {\"a}t},%
-firstplural={Authentizit\IeC {\"a}ts},%
-text={Authentizit\IeC {\"a}t},%
-plural={Authentizit\IeC {\"a}ts},%
-description={Authentizität, beschreibt die Echtheit von etwas. Z.B. einer Datei oder eines Dokumentes. Authentizität beutet sinngemäß: \glqq als Original befunden\grqq \ },%
-descriptionplural={Authentizität, beschreibt die Echtheit von etwas. Z.B. einer Datei oder eines Dokumentes. Authentizität beutet sinngemäß: \glqq als Original befunden\grqq \ },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{AES}{}%
-{%
-\gls@defglossaryentry{AES}%
-{%
-name={AES},%
-sort={AES},%
-type={main},%
-first={AES},%
-firstplural={AESs},%
-text={AES},%
-plural={AESs},%
-description={Der \ac {AES} ist eine symmetrische Blockchiffre mit 128-256 Bit Schlüssellänge},%
-descriptionplural={Der \ac {AES} ist eine symmetrische Blockchiffre mit 128-256 Bit Schlüssellänge},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{RC4}{}%
-{%
-\gls@defglossaryentry{RC4}%
-{%
-name={RC4},%
-sort={RC4},%
-type={main},%
-first={RC4},%
-firstplural={RC4s},%
-text={RC4},%
-plural={RC4s},%
-description={\ac {RC4} ist eine symmetrische Stromverschlüsselung. Der Klartext wird Bit für Bit per XOR mit der Zufallsfolge verknüpft},%
-descriptionplural={\ac {RC4} ist eine symmetrische Stromverschlüsselung. Der Klartext wird Bit für Bit per XOR mit der Zufallsfolge verknüpft},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Flag}{}%
-{%
-\gls@defglossaryentry{Flag}%
-{%
-name={Flag},%
-sort={Flag},%
-type={main},%
-first={Flag},%
-firstplural={Flags},%
-text={Flag},%
-plural={Flags},%
-description={Ein Flag ist ein Statusindikator. Er dient zur Kennzeichnung bestimmter Zustände (z.B. 0 = Licht aus, 1 = Licht an)},%
-descriptionplural={Ein Flag ist ein Statusindikator. Er dient zur Kennzeichnung bestimmter Zustände (z.B. 0 = Licht aus, 1 = Licht an)},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ASCII}{}%
-{%
-\gls@defglossaryentry{ASCII}%
-{%
-name={ASCII},%
-sort={ASCII},%
-type={main},%
-first={ASCII},%
-firstplural={ASCIIs},%
-text={ASCII},%
-plural={ASCIIs},%
-description={\ac {ASCII} ist eine Hexadezimale Zeichencodierung auf ursprünglich 7 Bit Ebene. Dies entspricht 128 druckbare Zeichen die durch einen individuellen Hexadezimalen Wert dargestellt werden können.},%
-descriptionplural={\ac {ASCII} ist eine Hexadezimale Zeichencodierung auf ursprünglich 7 Bit Ebene. Dies entspricht 128 druckbare Zeichen die durch einen individuellen Hexadezimalen Wert dargestellt werden können.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Plugin}{}%
-{%
-\gls@defglossaryentry{Plugin}%
-{%
-name={Plugin},%
-sort={Plugin},%
-type={main},%
-first={Plugin},%
-firstplural={pluins},%
-text={Plugin},%
-plural={pluins},%
-description={Ein Plugin (oder Plug-in) erweitert oder verändert eine bestehende Software. Z.B. um neue oder veränderte Funktionen. Es ist ein optionales zusätzliches Software-Modul für diese Software, dass nicht ohne eine Hauptanwendung ausgeführt werden kann. Teilweise wird statt Plugin auch der Begriff Addon oder Add-on verwendet.},%
-descriptionplural={Ein Plugin (oder Plug-in) erweitert oder verändert eine bestehende Software. Z.B. um neue oder veränderte Funktionen. Es ist ein optionales zusätzliches Software-Modul für diese Software, dass nicht ohne eine Hauptanwendung ausgeführt werden kann. Teilweise wird statt Plugin auch der Begriff Addon oder Add-on verwendet.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Addon}{}%
-{%
-\gls@defglossaryentry{Addon}%
-{%
-name={Addon},%
-sort={Addon},%
-type={main},%
-first={Addon},%
-firstplural={Addons},%
-text={Addon},%
-plural={Addons},%
-description={Ein Addon (oder Add-on) erweitert (oder verändert) eine bestehende Software. Z.B. um neue oder veränderte Funktionen. Es ist ein optionales zusätzliches Modul dass nicht ohne eine Hauptanwendung genutzt werden kann. Häufig, speziell in der Informatik, wird statt Plugin auch der Begriff Plugin oder Plug-in verwendet.},%
-descriptionplural={Ein Addon (oder Add-on) erweitert (oder verändert) eine bestehende Software. Z.B. um neue oder veränderte Funktionen. Es ist ein optionales zusätzliches Modul dass nicht ohne eine Hauptanwendung genutzt werden kann. Häufig, speziell in der Informatik, wird statt Plugin auch der Begriff Plugin oder Plug-in verwendet.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Wiki}{}%
-{%
-\gls@defglossaryentry{Wiki}%
-{%
-name={Wiki},%
-sort={Wiki},%
-type={main},%
-first={Wiki},%
-firstplural={Wikis},%
-text={Wiki},%
-plural={Wikis},%
-description={Ein Wiki ist ein Webseitensystem. Die Inhalte (Texte, Grafiken,.. ) der Webseiten können von andern Benutzern gelesen auch auch direkt online im Webbrowser geändert werden. Ohne eine zusätzliche Software zu benötigen. Es wird häufig genutzt, um Erfahrung und Wissen (gemeinschaftlich) zu sammeln und (verständlich) zu dokumentieren.},%
-descriptionplural={Ein Wiki ist ein Webseitensystem. Die Inhalte (Texte, Grafiken,.. ) der Webseiten können von andern Benutzern gelesen auch auch direkt online im Webbrowser geändert werden. Ohne eine zusätzliche Software zu benötigen. Es wird häufig genutzt, um Erfahrung und Wissen (gemeinschaftlich) zu sammeln und (verständlich) zu dokumentieren.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Forum}{}%
-{%
-\gls@defglossaryentry{Forum}%
-{%
-name={Forum},%
-sort={Forum},%
-type={main},%
-first={Forum},%
-firstplural={Foren},%
-text={Forum},%
-plural={Foren},%
-description={Ein Forum ist ein realer oder virtueller (online) Ort, an dem Meinungen zwischen vermieden Personen ausgetauscht werden können, Fragen gestellt und beantwortet werden können oder Themen diskutiert werden können. },%
-descriptionplural={Ein Forum ist ein realer oder virtueller (online) Ort, an dem Meinungen zwischen vermieden Personen ausgetauscht werden können, Fragen gestellt und beantwortet werden können oder Themen diskutiert werden können. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PostScript}{}%
-{%
-\gls@defglossaryentry{PostScript}%
-{%
-name={PostScript},%
-sort={PostScript},%
-type={main},%
-first={PostScript},%
-firstplural={PostScripts},%
-text={PostScript},%
-plural={PostScripts},%
-description={PostScript ist eine Programmiersprache, spezialisiert auf Bilder, Texte oder andere Grafische Formen. Diese können z.B. auf einer digitalen Seite dargestellt, oder an einen Drucker weitergeleitet werden. PostScript ist unter \cite {post3} von Adobe spezifiziert. Weitere Informationen sind auch unter \cite {post1} und \cite {post2} zu finden. PostScript ist Grundlage, auf welche das \ac {PDF} aufsetzt.},%
-descriptionplural={PostScript ist eine Programmiersprache, spezialisiert auf Bilder, Texte oder andere Grafische Formen. Diese können z.B. auf einer digitalen Seite dargestellt, oder an einen Drucker weitergeleitet werden. PostScript ist unter \cite {post3} von Adobe spezifiziert. Weitere Informationen sind auch unter \cite {post1} und \cite {post2} zu finden. PostScript ist Grundlage, auf welche das \ac {PDF} aufsetzt.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Hexadezimal}{}%
-{%
-\gls@defglossaryentry{Hexadezimal}%
-{%
-name={Hexadeimal},%
-sort={Hexadeimal},%
-type={main},%
-first={Hexadeimal},%
-firstplural={Hexadeimaler},%
-text={Hexadeimal},%
-plural={Hexadeimaler},%
-description={Beim Hexadezimalsystem in einem Stellenwertsystem die Zahlen jeweils zur Basis 16 dargestellt. Dieses ist komfortablere Darstellung als Binärsystems (0 und 1) welches speziell in der eine Rolle spielt. So müssen die Oktette beim Hexadezimalsystem nicht als acht stellige Binärzahlen sonder nur als zweistellige Hexadezimalzahlen dargestellt werden.},%
-descriptionplural={Beim Hexadezimalsystem in einem Stellenwertsystem die Zahlen jeweils zur Basis 16 dargestellt. Dieses ist komfortablere Darstellung als Binärsystems (0 und 1) welches speziell in der eine Rolle spielt. So müssen die Oktette beim Hexadezimalsystem nicht als acht stellige Binärzahlen sonder nur als zweistellige Hexadezimalzahlen dargestellt werden.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Oktal}{}%
-{%
-\gls@defglossaryentry{Oktal}%
-{%
-name={Oktal},%
-sort={Oktal},%
-type={main},%
-first={Oktal},%
-firstplural={octalen},%
-text={Oktal},%
-plural={octalen},%
-description={Das Oktale Zahlensystem wird zur Basis 8 dargestellt. Genau wie die Hexadezimale Schreibweise ist es eine komfortablere Darstellung als Binärsystems (0 und 1). Beim Oktalen Zahlensystem werden Zeichen nicht als acht stellige Binärzahlen sonder als dreistellige Oktalzahlen dargestellt.},%
-descriptionplural={Das Oktale Zahlensystem wird zur Basis 8 dargestellt. Genau wie die Hexadezimale Schreibweise ist es eine komfortablere Darstellung als Binärsystems (0 und 1). Beim Oktalen Zahlensystem werden Zeichen nicht als acht stellige Binärzahlen sonder als dreistellige Oktalzahlen dargestellt.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Integer}{}%
-{%
-\gls@defglossaryentry{Integer}%
-{%
-name={Integer},%
-sort={Integer},%
-type={main},%
-first={Integer},%
-firstplural={Integers},%
-text={Integer},%
-plural={Integers},%
-description={Eine Ganzzahl. Also eine Zahl ohne Komma und Nachkommastellen.},%
-descriptionplural={Eine Ganzzahl. Also eine Zahl ohne Komma und Nachkommastellen.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Reale Zahl}{}%
-{%
-\gls@defglossaryentry{Reale Zahl}%
-{%
-name={Reale Zahl},%
-sort={Reale Zahl},%
-type={main},%
-first={Reale Zahl},%
-firstplural={Reale Zahlen},%
-text={Reale Zahl},%
-plural={Reale Zahlen},%
-description={Eine Reahle Zahl ist eine Zahl mit Nachkommastellen},%
-descriptionplural={Eine Reahle Zahl ist eine Zahl mit Nachkommastellen},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Escapezeichen}{}%
-{%
-\gls@defglossaryentry{Escapezeichen}%
-{%
-name={Escapezeichen},%
-sort={Escapezeichen},%
-type={main},%
-first={Escapezeichen},%
-firstplural={escaped},%
-text={Escapezeichen},%
-plural={escaped},%
-description={Escapezeichen Leiten in der Informatik eine Sonderfunktion ein. Der Anschließende Buchstabe wird dabei nicht mehr als Buchstabe interpretiert, sonder hat eine definierte Funktionalität. Z.B. $\backslash $n für eine neue Zeile oder $\backslash $r für einen Zeilenrücksprung},%
-descriptionplural={Escapezeichen Leiten in der Informatik eine Sonderfunktion ein. Der Anschließende Buchstabe wird dabei nicht mehr als Buchstabe interpretiert, sonder hat eine definierte Funktionalität. Z.B. $\backslash $n für eine neue Zeile oder $\backslash $r für einen Zeilenrücksprung},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Key-Value-Paar}{}%
-{%
-\gls@defglossaryentry{Key-Value-Paar}%
-{%
-name={Key-Value-Paar},%
-sort={Key-Value-Paar},%
-type={main},%
-first={Key-Value-Paar},%
-firstplural={Key-Value-Paare},%
-text={Key-Value-Paar},%
-plural={Key-Value-Paare},%
-description={Einem Schlüsselwort/Bezeichner/Variable (Key) wird ein Wert (Value) zugeordnet. Es erfolgt also eine Art von Definition, bei der zu einem Schlüssel ein bestimmten Wert festgelegt (definiert) wird},%
-descriptionplural={Einem Schlüsselwort/Bezeichner/Variable (Key) wird ein Wert (Value) zugeordnet. Es erfolgt also eine Art von Definition, bei der zu einem Schlüssel ein bestimmten Wert festgelegt (definiert) wird},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Abwaertskompatibel}{}%
-{%
-\gls@defglossaryentry{Abwaertskompatibel}%
-{%
-name={Abwärtskompatibel},%
-sort={Abwärtskompatibel},%
-type={main},%
-first={Abw\IeC {\"a}rtskompatibel},%
-firstplural={Abw\IeC {\"a}rtskompatibilit\IeC {\"a}t},%
-text={Abw\IeC {\"a}rtskompatibel},%
-plural={Abw\IeC {\"a}rtskompatibilit\IeC {\"a}t},%
-description={Ein Objekt (z.B. ein Programm) kann andere Objekte (z.B. eine Datei) richtig verarbeiten, die von einer älteren Version stammen und somit anders zu interpretieren ist oder weniger bzw. andere Funktionalitäten besitzt.},%
-descriptionplural={Ein Objekt (z.B. ein Programm) kann andere Objekte (z.B. eine Datei) richtig verarbeiten, die von einer älteren Version stammen und somit anders zu interpretieren ist oder weniger bzw. andere Funktionalitäten besitzt.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Aufwaertskompatibel}{}%
-{%
-\gls@defglossaryentry{Aufwaertskompatibel}%
-{%
-name={Aufwärtskompatibel},%
-sort={Aufwärtskompatibel},%
-type={main},%
-first={Aufw\IeC {\"a}rtskompatibel},%
-firstplural={Aufw\IeC {\"a}rtskompatibilit\IeC {\"a}t},%
-text={Aufw\IeC {\"a}rtskompatibel},%
-plural={Aufw\IeC {\"a}rtskompatibilit\IeC {\"a}t},%
-description={Ein Objekt (z.B. ein Programm) kann andere Objekte (z.B. eine Datei) richtig verarbeiten, die von einer neueren Version sind, als es selbst. Neuere Versionen können unbekannte Funktionalitäten besitzt oder anders zu interpretieren sein. Dieses macht eine Aufwärtskompatibilität schwierig},%
-descriptionplural={Ein Objekt (z.B. ein Programm) kann andere Objekte (z.B. eine Datei) richtig verarbeiten, die von einer neueren Version sind, als es selbst. Neuere Versionen können unbekannte Funktionalitäten besitzt oder anders zu interpretieren sein. Dieses macht eine Aufwärtskompatibilität schwierig},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Zeilenruecksprung}{}%
-{%
-\gls@defglossaryentry{Zeilenruecksprung}%
-{%
-name={Zeilenrücksprung},%
-sort={Zeilenrücksprung},%
-type={main},%
-first={Zeilenr\IeC {\"u}cksprung},%
-firstplural={Zeilenr\IeC {\"u}cksprungs},%
-text={Zeilenr\IeC {\"u}cksprung},%
-plural={Zeilenr\IeC {\"u}cksprungs},%
-description={Dieser Befehl besagt, das der Curser zum Anfang der Zeile Springen soll, bzw. das mit einer neuen Zeile begonnen werden soll. Häufig wird es durch ein $\backslash $r gekennzeichnet.},%
-descriptionplural={Dieser Befehl besagt, das der Curser zum Anfang der Zeile Springen soll, bzw. das mit einer neuen Zeile begonnen werden soll. Häufig wird es durch ein $\backslash $r gekennzeichnet.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Zeilenumbruch}{}%
-{%
-\gls@defglossaryentry{Zeilenumbruch}%
-{%
-name={Zeilenumbruch},%
-sort={Zeilenumbruch},%
-type={main},%
-first={Zeilenumbruch},%
-firstplural={Zeilenumbruchs},%
-text={Zeilenumbruch},%
-plural={Zeilenumbruchs},%
-description={Dieser Befehl besagt, das der Curser in der nächsten Zeile beginnen soll. Häufig wird es durch ein $\backslash $n gekennzeichnet. Bei Windowssystem inkludiert ein Zeilenumbruch auch immer einen Zeilenrücksprung durch $\backslash $r. Dieses wird bei Unixsystemen getrennt},%
-descriptionplural={Dieser Befehl besagt, das der Curser in der nächsten Zeile beginnen soll. Häufig wird es durch ein $\backslash $n gekennzeichnet. Bei Windowssystem inkludiert ein Zeilenumbruch auch immer einen Zeilenrücksprung durch $\backslash $r. Dieses wird bei Unixsystemen getrennt},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Encodieren}{}%
-{%
-\gls@defglossaryentry{Encodieren}%
-{%
-name={Encodieren},%
-sort={Encodieren},%
-type={main},%
-first={Encodieren},%
-firstplural={encodieren},%
-text={Encodieren},%
-plural={encodieren},%
-description={Ein Datenpaket (wie z.B. einen Text) mit einem Code verschlüsseln},%
-descriptionplural={Ein Datenpaket (wie z.B. einen Text) mit einem Code verschlüsseln},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF Processor}{}%
-{%
-\gls@defglossaryentry{PDF Processor}%
-{%
-name={PDF Processor},%
-sort={PDF Processor},%
-type={main},%
-first={PDF Processor},%
-firstplural={PDF Prozessoren},%
-text={PDF Processor},%
-plural={PDF Prozessoren},%
-description={Ein PDF Processor ist jede Art von Software oder Hardware, welche PDF Dateien schreiben, lesen aktualisieren (updaten) oder anderweitig verarbeitet. Grundlegend wird zwischen \gls {PDF Writer} (PDF Software oder Hardware zum Schreiben von PDF Dateien) und PDF Readern (PDF Software oder Hardware zum Anzeigen von PDF Dateien) unterschieden. },%
-descriptionplural={Ein PDF Processor ist jede Art von Software oder Hardware, welche PDF Dateien schreiben, lesen aktualisieren (updaten) oder anderweitig verarbeitet. Grundlegend wird zwischen \gls {PDF Writer} (PDF Software oder Hardware zum Schreiben von PDF Dateien) und PDF Readern (PDF Software oder Hardware zum Anzeigen von PDF Dateien) unterschieden. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{escape}{}%
-{%
-\gls@defglossaryentry{escape}%
-{%
-name={escape},%
-sort={escape},%
-type={main},%
-first={escape},%
-firstplural={escaped},%
-text={escape},%
-plural={escaped},%
-description={Unter escape (Escapen) versteht man in der Informationstechnik den Vorgang, eine Sonderfunktion, z.B. eines Zeichens, zu ignorieren und das Zeichen als normales Textzeichen darzustellen, anstatt die Sonderfunktion auszuführen. Hierzu wird wiederum ein Zeichen mit Sonderfunktion benötigt, welche als Escapezeichen bezeichnet wird. },%
-descriptionplural={Unter escape (Escapen) versteht man in der Informationstechnik den Vorgang, eine Sonderfunktion, z.B. eines Zeichens, zu ignorieren und das Zeichen als normales Textzeichen darzustellen, anstatt die Sonderfunktion auszuführen. Hierzu wird wiederum ein Zeichen mit Sonderfunktion benötigt, welche als Escapezeichen bezeichnet wird. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{case-sensitive}{}%
-{%
-\gls@defglossaryentry{case-sensitive}%
-{%
-name={case-sensitve},%
-sort={case-sensitve},%
-type={main},%
-first={case-sensitve},%
-firstplural={case-sensitves},%
-text={case-sensitve},%
-plural={case-sensitves},%
-description={Unter case-sensitve versteht man, das die Groß und Kleinschreibung berücksichtigt wird \glqq Hallo\grqq \ entspricht somit nicht! dem Wort \glqq hallo\grqq \. Es sind 2 unterschiedliche Wörter. },%
-descriptionplural={Unter case-sensitve versteht man, das die Groß und Kleinschreibung berücksichtigt wird \glqq Hallo\grqq \ entspricht somit nicht! dem Wort \glqq hallo\grqq \. Es sind 2 unterschiedliche Wörter. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF Writer}{}%
-{%
-\gls@defglossaryentry{PDF Writer}%
-{%
-name={PDF Writer},%
-sort={PDF Writer},%
-type={main},%
-first={PDF Writer},%
-firstplural={PDF Writers},%
-text={PDF Writer},%
-plural={PDF Writers},%
-description={Ein PDF Writer ist eine Software oder Hardware, mit welcher PDF Dateien erstellt oder erzeugt (z.B. ein PDF Printer) werden können },%
-descriptionplural={Ein PDF Writer ist eine Software oder Hardware, mit welcher PDF Dateien erstellt oder erzeugt (z.B. ein PDF Printer) werden können },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF Reader}{}%
-{%
-\gls@defglossaryentry{PDF Reader}%
-{%
-name={PDF Reader},%
-sort={PDF Reader},%
-type={main},%
-first={PDF Reader},%
-firstplural={PDF Readers},%
-text={PDF Reader},%
-plural={PDF Readers},%
-description={Ein PDF Reader (oder auch PDF Viewer) Software oder Hardware zum Anzeigen und Verarbeiten (\gls {PDF Converter}) von PDF Dateien. Abhängig vom Funktionsumfang des PDF Readers können mit diesem auch Formulare ausgefüllt, Inhalte extrahiert, Multimediainhalte wieder gegen werden oder Eingebettete Inhalte und Funktionen geöffnet oder Ausgeführt werden, wie das öffnen einer Internetseite oder eines Dokumentes oder das Ausführen von Programmen},%
-descriptionplural={Ein PDF Reader (oder auch PDF Viewer) Software oder Hardware zum Anzeigen und Verarbeiten (\gls {PDF Converter}) von PDF Dateien. Abhängig vom Funktionsumfang des PDF Readers können mit diesem auch Formulare ausgefüllt, Inhalte extrahiert, Multimediainhalte wieder gegen werden oder Eingebettete Inhalte und Funktionen geöffnet oder Ausgeführt werden, wie das öffnen einer Internetseite oder eines Dokumentes oder das Ausführen von Programmen},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF Converter}{}%
-{%
-\gls@defglossaryentry{PDF Converter}%
-{%
-name={PDF Converter},%
-sort={PDF Converter},%
-type={main},%
-first={PDF Converter},%
-firstplural={PDF Converters},%
-text={PDF Converter},%
-plural={PDF Converters},%
-description={Software oder Hardware, welche PDF Dateien in andere Dateiformate umwandelt. Oder andere Dateiformate in PDF Dateien umwandelt.},%
-descriptionplural={Software oder Hardware, welche PDF Dateien in andere Dateiformate umwandelt. Oder andere Dateiformate in PDF Dateien umwandelt.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF Printer}{}%
-{%
-\gls@defglossaryentry{PDF Printer}%
-{%
-name={PDF Printer},%
-sort={PDF Printer},%
-type={main},%
-first={PDF Printer},%
-firstplural={PDF Printers},%
-text={PDF Printer},%
-plural={PDF Printers},%
-description={Ein virtueller Drucker (oder vielmer Druckertreiber), welcher empfangene Daten in PDF Syntax umwandelt und das Ergebniss als PDF Dateien abspeichert. Es wird somit ein PDF Dokument erzeugt, anstatt Inhalte Physikalisch auszudrucken.},%
-descriptionplural={Ein virtueller Drucker (oder vielmer Druckertreiber), welcher empfangene Daten in PDF Syntax umwandelt und das Ergebniss als PDF Dateien abspeichert. Es wird somit ein PDF Dokument erzeugt, anstatt Inhalte Physikalisch auszudrucken.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{PDF Drucker}{}%
-{%
-\gls@defglossaryentry{PDF Drucker}%
-{%
-name={PDF Drucker},%
-sort={PDF Drucker},%
-type={main},%
-first={PDF Drucker},%
-firstplural={PDF Druckers},%
-text={PDF Drucker},%
-plural={PDF Druckers},%
-description={Ein virtueller Drucker (oder vielmer Druckertreiber), welcher empfangene Daten in PDF Syntax umwandelt und das Ergebniss als PDF Dateien abspeichert. Es wird somit ein PDF Dokument erzeugt, anstatt Inhalte Physikalisch auszudrucken.},%
-descriptionplural={Ein virtueller Drucker (oder vielmer Druckertreiber), welcher empfangene Daten in PDF Syntax umwandelt und das Ergebniss als PDF Dateien abspeichert. Es wird somit ein PDF Dokument erzeugt, anstatt Inhalte Physikalisch auszudrucken.},%
+first={dummy},%
+firstplural={dummys},%
+text={dummy},%
+plural={dummys},%
+description={dummy{ }},%
+descriptionplural={dummy{ }},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2008,349 +358,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{Metadatei}{}%
+\ifglsentryexists{Metadatendatei}{}%
 {%
-\gls@defglossaryentry{Metadatei}%
+\gls@defglossaryentry{Metadatendatei}%
 {%
-name={Metadaten},%
-sort={Metadaten},%
+name={Metadatendatei},%
+sort={Metadatendatei},%
 type={main},%
-first={Metadaten},%
-firstplural={Metadatens},%
-text={Metadaten},%
-plural={Metadatens},%
-description={Eine Datei, welche \glspl {Meta} (Informationen zu anderen Daten) über andere Daten enthält.},%
-descriptionplural={Eine Datei, welche \glspl {Meta} (Informationen zu anderen Daten) über andere Daten enthält.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{End Of Line}{}%
-{%
-\gls@defglossaryentry{End Of Line}%
-{%
-name={End Of Line},%
-sort={End Of Line},%
-type={main},%
-first={End Of Line},%
-firstplural={End Of Lines},%
-text={End Of Line},%
-plural={End Of Lines},%
-description={Symbolisiert das \glqq Ende einer Zeile\grqq \.},%
-descriptionplural={Symbolisiert das \glqq Ende einer Zeile\grqq \.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Token}{}%
-{%
-\gls@defglossaryentry{Token}%
-{%
-name={Token},%
-sort={Token},%
-type={main},%
-first={Token},%
-firstplural={Tokens},%
-text={Token},%
-plural={Tokens},%
-description={PDF Dateien bestehen aus einer Sequenz von 8 Bit Binärbytes. Sie werden zu Gruppen zusammen gefasst die Schlüsselwörter, Strings, Numbers, usw repräsentieren. Eine Gruppe von Byte wird in PDF als Tokens definiert \cite [S. 48]{pdf}},%
-descriptionplural={PDF Dateien bestehen aus einer Sequenz von 8 Bit Binärbytes. Sie werden zu Gruppen zusammen gefasst die Schlüsselwörter, Strings, Numbers, usw repräsentieren. Eine Gruppe von Byte wird in PDF als Tokens definiert \cite [S. 48]{pdf}},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Font}{}%
-{%
-\gls@defglossaryentry{Font}%
-{%
-name={Font},%
-sort={Font},%
-type={main},%
-first={Font},%
-firstplural={Fonts},%
-text={Font},%
-plural={Fonts},%
-description={Als Font wird der Informationstechnik jede Schriftart bezeichnet, die auf einem Computer oder Peripheriegerät vorhandene ist.},%
-descriptionplural={Als Font wird der Informationstechnik jede Schriftart bezeichnet, die auf einem Computer oder Peripheriegerät vorhandene ist.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{decodieren}{}%
-{%
-\gls@defglossaryentry{decodieren}%
-{%
-name={decodieren},%
-sort={decodieren},%
-type={main},%
-first={decodieren},%
-firstplural={decodiert},%
-text={decodieren},%
-plural={decodiert},%
-description={Eine Datei oder Nachricht wieder Entschlüsseln und ins ursprüngliche Format zurück übersetzten.},%
-descriptionplural={Eine Datei oder Nachricht wieder Entschlüsseln und ins ursprüngliche Format zurück übersetzten.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Offset}{}%
-{%
-\gls@defglossaryentry{Offset}%
-{%
-name={Offset},%
-sort={Offset},%
-type={main},%
-first={Offset},%
-firstplural={Offsets},%
-text={Offset},%
-plural={Offsets},%
-description={Eine bestimmte Speicheradresse oder eine Anzahl Bits, Bytes, ..., die i.d.R vom Beginn einer Datei berechnet berechnet wird. },%
-descriptionplural={Eine bestimmte Speicheradresse oder eine Anzahl Bits, Bytes, ..., die i.d.R vom Beginn einer Datei berechnet berechnet wird. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Hybride PDF Datei}{}%
-{%
-\gls@defglossaryentry{Hybride PDF Datei}%
-{%
-name={Hybride PDF Datei},%
-sort={Hybride PDF Datei},%
-type={main},%
-first={Hybride PDF Datei},%
-firstplural={hybriden PDF Dateien},%
-text={Hybride PDF Datei},%
-plural={hybriden PDF Dateien},%
-description={PDFs, die zusätzlich zu Objektstreams und einem \gls {XRef} Stream (verfügbar ab PDF Version 1.5), auch normale Objekte und eine normale \gls {XRef} Tabelle enthalten (bis PDF Version 1.4 die einzige Form). Siehe hierzu das Kabitel \glqq Compatibility with Applications That Do Not Support PDF 1.5\grqq \ der Adobe Referenz unter \cite [S. 109 ff]{pdf2}},%
-descriptionplural={PDFs, die zusätzlich zu Objektstreams und einem \gls {XRef} Stream (verfügbar ab PDF Version 1.5), auch normale Objekte und eine normale \gls {XRef} Tabelle enthalten (bis PDF Version 1.4 die einzige Form). Siehe hierzu das Kabitel \glqq Compatibility with Applications That Do Not Support PDF 1.5\grqq \ der Adobe Referenz unter \cite [S. 109 ff]{pdf2}},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Update}{}%
-{%
-\gls@defglossaryentry{Update}%
-{%
-name={Update},%
-sort={Update},%
-type={main},%
-first={Update},%
-firstplural={Updates},%
-text={Update},%
-plural={Updates},%
-description={Ein Update ist eine Aktualliserung. Etwas wird auf eine aktuellen Stand oder eine aktuelle Version gebracht. },%
-descriptionplural={Ein Update ist eine Aktualliserung. Etwas wird auf eine aktuellen Stand oder eine aktuelle Version gebracht. },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{inkrementell}{}%
-{%
-\gls@defglossaryentry{inkrementell}%
-{%
-name={inkrementell},%
-sort={inkrementell},%
-type={main},%
-first={inkrementell},%
-firstplural={inkrementelle},%
-text={inkrementell},%
-plural={inkrementelle},%
-description={schrittweise erfolgend, aufeinander aufbauend. \cite [Schlagwort: inkrementell]{duden} },%
-descriptionplural={schrittweise erfolgend, aufeinander aufbauend. \cite [Schlagwort: inkrementell]{duden} },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{EOL}{}%
-{%
-\gls@defglossaryentry{EOL}%
-{%
-name={End of Line},%
-sort={End of Line},%
-type={main},%
-first={End of Line},%
-firstplural={End of Lines},%
-text={End of Line},%
-plural={End of Lines},%
-description={Mit \ac {EOL} wird das Ende einer Zeile beschrieben. Der Marker beschreibt in der Informatik häufig die Kombination der Befehle für eine neue Zeile (meist \bb n) und einen Zeilenrücksprung (meist \bb r)},%
-descriptionplural={Mit \ac {EOL} wird das Ende einer Zeile beschrieben. Der Marker beschreibt in der Informatik häufig die Kombination der Befehle für eine neue Zeile (meist \bb n) und einen Zeilenrücksprung (meist \bb r)},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{EOF}{}%
-{%
-\gls@defglossaryentry{EOF}%
-{%
-name={End of File},%
-sort={End of File},%
-type={main},%
-first={End of File},%
-firstplural={End of Files},%
-text={End of File},%
-plural={End of Files},%
-description={Mit \ac {EOF} wird das Ende einer Datei beschrieben. Wie dieser Marker aussieht ist abhängig vom Programm, welches eine solche Markierung zum Lesen einer Datei benötigt.},%
-descriptionplural={Mit \ac {EOF} wird das Ende einer Datei beschrieben. Wie dieser Marker aussieht ist abhängig vom Programm, welches eine solche Markierung zum Lesen einer Datei benötigt.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{Hash}{}%
-{%
-\gls@defglossaryentry{Hash}%
-{%
-name={Hash},%
-sort={Hash},%
-type={main},%
-first={Hash},%
-firstplural={Hases},%
-text={Hash},%
-plural={Hases},%
-description={Ein Hash ist eine bezeichnet eine Verkürzte Form von etwas. Durch eine Hashfunktion (der Vorgang um einen Hash zu erstellen) wird eine Große Eingabe (z.B. eine Datei oder ein Satz) in eine kleine Ausgabemenge umgewandelt(abgebildet). Es existieren verschiedene Verfahren, um einen Hash (oder Hashwert) zu erzeugen. Die bekanntesten sind \ac {MD5} und \ac {SHA} in Version 2 und 3. Ein Hashwert wird häufig als Prüfsumme verwendet und wird in diesem Fall auch als Fingerprint bezeichnet.},%
-descriptionplural={Ein Hash ist eine bezeichnet eine Verkürzte Form von etwas. Durch eine Hashfunktion (der Vorgang um einen Hash zu erstellen) wird eine Große Eingabe (z.B. eine Datei oder ein Satz) in eine kleine Ausgabemenge umgewandelt(abgebildet). Es existieren verschiedene Verfahren, um einen Hash (oder Hashwert) zu erzeugen. Die bekanntesten sind \ac {MD5} und \ac {SHA} in Version 2 und 3. Ein Hashwert wird häufig als Prüfsumme verwendet und wird in diesem Fall auch als Fingerprint bezeichnet.},%
+first={Metadatendatei},%
+firstplural={Metadatendateis},%
+text={Metadatendatei},%
+plural={Metadatendateis},%
+description={Eine Datei, welche \glspl {Meta} (Informationen zu anderen Daten) über ndere Daten enthält.},%
+descriptionplural={Eine Datei, welche \glspl {Meta} (Informationen zu anderen Daten) über ndere Daten enthält.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

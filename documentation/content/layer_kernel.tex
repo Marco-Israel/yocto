@@ -1,0 +1,70 @@
+
+\chapter{Module entwicklung}%
+\label{cha:module_entwicklung}
+
+
+\section{Kernel Module}%
+\label{sec:kernel_module}
+
+\subsection{Neues Kernelmodul}%
+\label{sub:neues_kernelmodul}
+
+
+\subsection{Kernel anpssen - features aktivieren}%
+\label{sub:kernel_anpssen_features_aktivieren}
+
+
+\section{Software Module}%
+\label{sec:software_module}
+
+
+\section{Flashen  des image}%
+\label{sec:flashen_des_image}
+
+Es existieren verschiedene Wege einen Linux Kernel über das Netzwerk zu booten
+oder in den Speicher zu schreiben.
+
+\begin{itemize}
+    \item Netzwerk
+    \item sdcard
+    \item usb
+    \item spi
+    \item serial
+    \item weitere
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%to add the modules into your kernel image root fs, you need to define one of the
+%following variables in your machine/<yourMachine.conf> configuration file
+%
+%MACHINE_ESSENTIAL_EXTRA_RDEPENDS
+%
+%MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS
+%
+%MACHINE_EXTRA_RDEPENDS
+%
+%ACHINE_EXTRA_RRECOMMENDS
+%
+%
+%If you like to load the module during startup, you also need to define the
+%following variable in your machine/<yourMachine.conf> file.
+%
+%KERNEL_MODULE_AUTOLOAD
+%
+%For further information please grep the yocto mega manual in "Variables Glossary"
+%

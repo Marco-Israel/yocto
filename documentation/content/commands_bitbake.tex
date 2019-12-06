@@ -2,10 +2,19 @@
 \chapter{Commands Bitbake}%
 \label{cha:commands_bitbake}
 
-\textbf{NOTE}: An 'image' wich will be build is also described by recipes.
-So all commands you find next can be used for an image to build as well as for a
-recipes
+\textbf{NOTE}: Ein \textit{Image} ist in der Bitbake welt ebenso
+ein \textit{recipie} und wird entsprechend gleich behandelt. Alle befehle die
+für \glq einfache\grq recipes gelten (z.b. Kernel Modules oder Applikationen),
+gelten ebenso für image-recipes.
 
+
+\section{Bitbake Quellen}%
+\label{sec:bitbake_quellen}
+Eine die offizielle Dokumentation zu \textit{Bitbake} und
+\textit{Bitbake-Layers} mitmitsamt Kommandoist zu finden unter:
+.  Eine Übersicht über die Kommandos von Bitbake-Layers  ist zu finden unter
+\cite[156]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+und im Anschluss in Anwendung gezeigt.
 
 
 \section{Neuer \textit{meta-layer}}%
@@ -99,9 +108,9 @@ Es kan geziehlt nach einzelnen Variablen gefiltert werden:
 \label{sub:haufig_gesucht_umgebungsvariablen}
 
 \begin{itemize}
-    \item bitbake -e virtual/kernel | grep \textbf{\^SRC_URI=}
+    \item bitbake -e virtual/kernel | grep \textbf{\^SRC\_URI=}
     \item bitbake virtual/kernel -e | grep \textbf{
-            "PREFERRED\_PROVIDER\_virtual/kernel"}
+            \glqq PREFERRED\_PROVIDER\_virtual/kernel\grqq}
 \end{itemize}
 
 
@@ -121,4 +130,6 @@ Dabei unterscheidet bitbake zwischen einer normalen Bash-Shell und einer
 Phython-Shell (Die beiden Skriptsprachen welche innerhalb bitbake Anwendung
 finden. Beispielsweise wahlweise Python als auch Bash-Shell commandos
 (kombiniert) innerhalb eines Recipe verwenden.
+
+
 

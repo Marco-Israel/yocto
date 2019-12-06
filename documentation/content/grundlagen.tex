@@ -1,0 +1,81 @@
+
+
+\chapter{Bitbake}%
+\label{cha:bitbake}
+
+\section{Bitbake Buildprozess}%
+\label{sec:bitbake_buildprozess}
+
+
+
+Die Buildumgebung \textit{Bitbake}, im Kern bestehend aus Phython- und
+Shellscripen die mit unterschiedlichen Softwareentwicklungstools wie GIT, Make
+oder Autotools interagieren, führt in einer geregelten Reihenfolge verschiedene
+Aufgaben aus. Die Abbildung auf \cite[S. 20]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+zeigt abstract den Build\-process:
+
+\begin{itemize}
+    \item Rhein\-folge der gepassten config files gepasst werden.
+    \item Parsen der config files.
+    \item Buildschritte (Siehe \ref{sec:bitbake_build_tasks} Seite \pageref{sec:bitbake_build_tasks}
+    \item Packetieren in unterschiedliche Pakettypen
+    \item Generieren und bereitstellen von \acfpl{SDK}
+    \item Aufräum- und Nacharbeiten
+\end{itemize}
+
+\section{Bitbake build tasks}%
+\label{sec:bitbake_build_tasks}
+
+Jedes \textit{recipe} erbt eine Reihe von standard Build-Tasks.  Hierzu
+gehören u.a.
+\begin{itemize}
+    \item Herunterladen (fetchen) und Sammeln von Source Dateien
+        (z.B. Git Repositorien, ftp Servern oder lokalen Dateien.)
+    \item Übersetzten, konfigurieren, patchen, installieren, verifizieren usw.
+        von Paketen auf mehreren Prozessor Kernen
+    \item Bereitstellen von Entwicklung und Verwaltungstools
+\end{itemize}
+
+Eine Auflistung der Standard-Task kann, mitsamt kurzer Beschreibung,
+\cite[S. 171-172]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+entnommen werden.
+
+\subsection{Fatch Task}%
+\label{sub:fatch_task}
+Eine der Hauptaufgaben von Bitbake besteht dadrinne, die jeweiligen
+Softwarepakte in Ihren benötigten Versionen und Revisionsständen zusammen aus
+unterschidlichen Quellen zusammen zu sammeln und dem Buildsystem zur Verfügung
+zu stellen. Solche Quellen können sein:
+
+\begin{itemize}
+    \item Lokaler Bitbake-Download ordner/cache. Er enthält bereits einmal
+        heruntergeladene Softwarepakete in jeweiligen Revisionständen.
+    \item Lokaler Pfad zu Quelldateien; z.b. in einem eclipse oder QT Work\space
+    \item Lokale Repository (z.B. lokales GIT Repository)
+    \item Netz\-werkpfad zu einem Client oder Server im lokalen Netzwerk. Z.B.
+        über Freigaben oder einem lokalen FTP Server
+    \item Online Repository oder TFTP Server.
+    \item Alternatives lokales oder Remote (online) Repository.
+\end{itemize}
+
+Die Reihe\-folge in welcher nach Source-Dateien gesucht werden soll ist zum
+einen definiert durch:
+
+\begin{itemize}
+    \item das Recipe selbst welches das Software\-pakete innerhalb Bitbake bauen
+        soll,
+    \item durch Konfigurationsdateien wie \textit{./conf/local.conf),
+    \tem sowie durch eine allgemein fest vorgegeben Reihe\-folge innerhalb
+    bitbakes. (Siehe \cite[S.53]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+\end{itemize}
+
+
+
+\section{Configurations-Dateien *.conf}%
+\label{sec:configurations_dateien_conf}
+Bitbake, sowie die Buildprozesse der einzelnen Recipes
+werden gesteuert durch unterscheidliche \textbf{recipe-lokale} und
+\textbf{globale} configurationsdateien.
+
+
+

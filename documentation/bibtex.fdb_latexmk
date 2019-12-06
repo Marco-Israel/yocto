@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1575541262 "bibtex.bib" "bibtex.pdf" "bibtex" 1575541262
+  "/etc/texmf/web2c/texmf.cnf" 1574460589 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1551226139 34566 ab5be96bde1a5acfd4f881dbe566b5fb ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1551226139 34566 ab5be96bde1a5acfd4f881dbe566b5fb ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1574460889 2894682 399aea443c9b09f7919655948291f8fb ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1574460918 1685539 6683ccdf6023fe3400d7c6c25f956016 ""
+  "bibtex.aux" 1575540927 8 a94a2480d3289e625eea47cd1b285758 ""
+  "bibtex.bib" 1575541212 17849 37b8096853352762a573f678b2217c9d ""
+  (generated)
+  "bibtex.pdf"
+  "bibtex.log"

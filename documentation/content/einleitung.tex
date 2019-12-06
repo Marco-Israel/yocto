@@ -29,27 +29,39 @@ Rezepte in immer höheren Schichten. So setzt auf Beschreibungen der Hardware
 (BSP, Board Support packed Schichten) Schichten der Software- und
 Anwendungsschicht auf. Ein solches Schichtenmodell ermöglicht es, einzelne
 Schichten auszutauschen oder darunterliegende Einstellungen abzuändern.
+Ein Vereinfachtes Modell ist abgebildet unter
+\cite[S.26]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+\\
+\subsection{Die Yocto Community}%
+\label{sub:die_yocto_community}
+
+
 Die Yocto community stellt Meta-Daten / Recipes bereit, um ein
 minimalistisches Betriebssystem mit grundlegenden  Linux Tools unter der
 Virtualisierungsumgebung QEMU für verschiedene Architekturen starten zu können.
+\\
+
+Das Minimalisten Betriebssystem der Yocto Community wird „poky“ genannt.
+\\
+
+Zudem Pflegt es zusammen mit der OpenEmbedded community das Buildsystem
+\textit{bitbake}.
+
+\subsection{Die OpenEmbedded Community}%
+\label{sub:die_openembedded_community}
+
+
 Die OpenEmbedded Community stellt Meta-Daten Rezepte bereit, die auf dieses
 minimalistische Betriebssystem aufsetzten und genutzt werden können um ein
 Betriebssystem nach eigenen Wünschen gestalten ( zusammen setzten) und für
 Hardware Plattformen konfigurieren zu können. Hierzu gehören sowohl Hardware als
-auch open Source Software Beschreibungen. Beide Communities pflegen und
-erweitern das Build Umgebung „Bitbake“, welches verschiedene Aufgaben in
-geregelter
-Reihenfolge im Multicore Betrieb durchführt:
+auch open Source Software Beschreibungen.Zusammen mit der Yocto Community
+ pflegen und erweitern das Build Umgebung \textit{Bitbake}, welches
+ verschiedene Aufgaben in geregelter Reihenfolge im Multicore Betrieb
+ durchführt. Weiteres in \ref{bitbake_buildprozess}, Seite
+ \pageref{bitbake_buildprozess}.
 
-\begin{itemize}
-    \item Herunterladen (fetchen) und Sammeln von Source Dateien
-        (z.B. Git Repositorien, ftp Servern oder lokalen Dateien.)
-    \item Übersetzten, konfigurieren, patchen, installieren, verifizieren usw.
-        von Paketen auf mehreren Prozessor Kernen
-    \item Bereitstellen von Entwicklung und Verwaltungstools
-\end{itemize}
 
-Das Minimalisten Betriebssystem der Yocto Community wird „poky“ genannt.
 
 
 \section{Docker} \label{sec:docker}
