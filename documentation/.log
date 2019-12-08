@@ -1,9 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.22)  8 DEC 2019 20:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.22)  8 DEC 2019 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
+! Interruption.
+<to be read again> 
+                   \begingroup 
+l.1 
+    \documentclass[
+? 
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2019/02/01 v3.26b KOMA-Script document class (book)
@@ -204,6 +210,33 @@ Class scrbook Info: Using old \@makefntext due to compatibility level
 Class scrbook Info: Redefining `\numberline' on input line 6811.
 \bibindent=\dimen102
 )
+\@input{preamble.aux}
+\openout2 = `preamble.aux'.
+
+(./preamble.tex (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
+phy)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
+aphy)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen103
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count91
+)
+Package babel Info: Making " an active character on input line 121.
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
@@ -224,8 +257,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count90
-\decimalpart=\count91
+\integerpart=\count92
+\decimalpart=\count93
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -236,40 +269,40 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen103
+\col@sep=\dimen104
 \ar@mcellbox=\box29
-\extrarowheight=\dimen104
+\extrarowheight=\dimen105
 \NC@list=\toks18
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box30
 )
-\TX@col@width=\dimen105
-\TX@old@table=\dimen106
-\TX@old@col=\dimen107
-\TX@target=\dimen108
-\TX@delta=\dimen109
-\TX@cols=\count92
+\TX@col@width=\dimen106
+\TX@old@table=\dimen107
+\TX@old@col=\dimen108
+\TX@target=\dimen109
+\TX@delta=\dimen110
+\TX@cols=\count94
 \TX@ftn=\toks19
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count93
+\lst@mode=\count95
 \lst@gtempboxa=\box31
 \lst@token=\toks20
-\lst@length=\count94
-\lst@currlwidth=\dimen110
-\lst@column=\count95
-\lst@pos=\count96
-\lst@lostspace=\dimen111
-\lst@width=\dimen112
-\lst@newlines=\count97
-\lst@lineno=\count98
-\lst@maxwidth=\dimen113
+\lst@length=\count96
+\lst@currlwidth=\dimen111
+\lst@column=\count97
+\lst@pos=\count98
+\lst@lostspace=\dimen112
+\lst@width=\dimen113
+\lst@newlines=\count99
+\lst@lineno=\count100
+\lst@maxwidth=\dimen114
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count99
-\lst@skipnumbers=\count100
+\c@lstnumber=\count101
+\lst@skipnumbers=\count102
 \lst@framebox=\box32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -282,7 +315,7 @@ Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count101
+\etb@tempcnta=\count103
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -305,33 +338,6 @@ Package ifluatex Info: LuaTeX not detected.
 ))))
 \quo@toppartop=\skip60
 )
-\@input{preamble.aux}
-\openout2 = `preamble.aux'.
-
-(./preamble.tex (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
-phy)
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
-aphy)
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
-\babel@savecnt=\count102
-\U@D=\dimen114
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count103
-)
-Package babel Info: Making " an active character on input line 121.
-)))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -432,7 +438,7 @@ LaTeX Warning: Command \markright  has changed.
 \tf@default=\write3
 \openout3 = `main.idx'.
 
-Package index Info: Writing index file main.idx on input line 58.
+Package index Info: Writing index file main.idx on input line 64.
  (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2019-02-15 L3 programming layer (loader) 
@@ -642,7 +648,7 @@ Class scrbook Warning: Usage of package `fancyhdr' together
 (scrbook)              `\addtokomafont' for the page style elements need
 (scrbook)              explicite user intervention to work.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `fancyhdr' on input line 83.
+(scrbook)              package `fancyhdr' on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -679,7 +685,7 @@ Class scrbook Warning: Usage of package `tocloft' together
 (scrbook)              `part', `section', `subsection',
 (scrbook)              `subsubsection', `paragraph' and `subparagraph'.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `tocloft' on input line 126.
+(scrbook)              package `tocloft' on input line 131.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -1131,625 +1137,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip135
 )
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2019/01/06 v4.42 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+! LaTeX Error: File `polygloss.sty' not found.
 
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
-)
-\XKV@depth=\count415
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
-Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks29
-\@glsmrest=\toks30
-)
-(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
-Package: xfor 2009/02/05 v1.05 (NLCT)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
-Package: datatool-base 2018/12/07 v2.31 (NLCT)
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
-\@mathmargin=\skip136
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.322     \usepackage
+                     {inputenc}^^M
+End of file on the terminal!
 
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks31
-\ex@=\dimen183
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen184
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count416
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count417
-\leftroot@=\count418
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count419
-\DOTSCASE@=\count420
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen185
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count421
-\c@MaxMatrixCols=\count422
-\dotsspace@=\muskip17
-\c@parentequation=\count423
-\dspbrk@lvl=\count424
-\tag@help=\toks32
-\row@=\count425
-\column@=\count426
-\maxfields@=\count427
-\andhelp@=\toks33
-\eqnshift@=\dimen186
-\alignsep@=\dimen187
-\tagshift@=\dimen188
-\tagwidth@=\dimen189
-\totwidth@=\dimen190
-\lineht@=\dimen191
-\@envbody=\toks34
-\multlinegap=\skip137
-\multlinetaggap=\skip138
-\mathdisplay@stack=\toks35
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
-Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count428
-)
-(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
-Package: datatool-fp 2018/12/07 v2.31 (NLCT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
-Package: fp 1995/04/02
-
-`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
-Package: defpattern 1994/10/12
-\actioncount=\count429
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
-Package: fp-basic 1996/05/13
-\FP@xs=\count430
-\FP@xia=\count431
-\FP@xib=\count432
-\FP@xfa=\count433
-\FP@xfb=\count434
-\FP@rega=\count435
-\FP@regb=\count436
-\FP@regs=\count437
-\FP@times=\count438
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
-Package: fp-addons 1995/03/15
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
-Package: fp-snap 1995/04/05
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
-Package: fp-exp 1995/04/03
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
-Package: fp-trigo 1995/04/14
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
-Package: fp-pas 1994/08/29
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
-Package: fp-random 1995/02/23
-\FPseed=\count439
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
-Package: fp-eqn 1995/04/03
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
-Package: fp-upn 1996/10/21
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
-Package: fp-eval 1995/04/03
-)))
-\@dtl@toks=\toks36
-\@dtl@tmpcount=\count440
-\dtl@tmplength=\skip139
-\dtl@sortresult=\count441
-\@dtl@numgrpsepcount=\count442
-\@dtl@datatype=\count443
-\dtl@codeA=\count444
-\dtl@codeB=\count445
-\@dtl@foreach@level=\count446
-)
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
-307.sty
-Package: glossaries-compatible-307 2019/01/06 v4.42 (NLCT)
-) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2018/05/13 v1.3.6 (NLCT) Track Languages
-
-(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
-)
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries-german/glossaries-german.ld
-f
-File: glossaries-german.ldf 2014/11/23 v1.0
-)
-\gls@level=\count447
-\@gls@tmpb=\toks37
-\gls@tmplen=\skip140
-\glskeylisttok=\toks38
-\glslabeltok=\toks39
-\glsshorttok=\toks40
-\glslongtok=\toks41
-
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
-y
-Package: glossary-hypernav 2019/01/06 v4.42 (NLCT)
-) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2019/01/06 v4.42 (NLCT)
-\glslistdottedwidth=\skip141
-) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2019/01/06 v4.42 (NLCT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
-\LTleft=\skip142
-\LTright=\skip143
-\LTpre=\skip144
-\LTpost=\skip145
-\LTchunksize=\count448
-\LTcapwidth=\dimen192
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@cols=\count449
-\LT@rows=\count450
-\c@LT@tables=\count451
-\c@LT@chunks=\count452
-\LT@p@ftn=\toks42
-)
-Class scrbook Info: longtable captions redefined on input line 43.
-\glsdescwidth=\skip146
-\glspagelistwidth=\skip147
-)
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2019/01/06 v4.42 (NLCT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
-Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count453
-\ST@wd=\dimen193
-\ST@rightskip=\skip148
-\ST@leftskip=\skip149
-\ST@parfillskip=\skip150
-\ST@pageleft=\dimen194
-\ST@headht=\dimen195
-\ST@tailht=\dimen196
-\ST@pagesofar=\dimen197
-\ST@pboxht=\dimen198
-\ST@lineht=\dimen256
-\ST@stretchht=\dimen257
-\ST@prevht=\dimen258
-\ST@toadd=\dimen259
-\ST@dimen=\dimen260
-\ST@pbox=\box58
-))
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2019/01/06 v4.42 (NLCT)
-\glstreeindent=\skip151
-))
-\glswrite=\write5
-\glo@main@file=\write6
-\openout6 = `main.glo'.
-
-Package glossaries Info: Writing glossary file main.glo on input line 320.
-\glo@acronym@file=\write7
-\openout7 = `main.acn'.
-
-Package glossaries Info: Writing glossary file main.acn on input line 320.
-
-(./content/glossary.tex))
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
-Package biblatex Info: Trying to load language 'ngerman'...
-Package biblatex Info: ... file 'ngerman.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
-File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
-)) (./main.aux
-(./title.aux) (./content/einleitung.aux) (./content/grundlagen.aux)
-(./content/setup_eclipse.aux) (./content/affirmation.aux))
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 25.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-\c@lstlisting=\count454
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count455
-\scratchdimen=\dimen261
-\scratchbox=\box59
-\nofMPsegments=\count456
-\nofMParguments=\count457
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count458
-\MPscratchDim=\dimen262
-\MPnumerator=\count459
-\makeMPintoPDFobject=\count460
-\everyMPtoPDFconversion=\toks44
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* bindingoffset: 42.67912pt
-* modes: includehead includefoot twoside 
-* h-part:(L,W,R)=(71.13188pt, 412.56499pt, 71.13188pt)
-* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=412.56499pt
-* \textheight=612.15808pt
-* \oddsidemargin=41.54102pt
-* \evensidemargin=-1.1381pt
-* \topmargin=13.08827pt
-* \headheight=18.125pt
-* \headsep=21.75pt
-* \topskip=12.0pt
-* \footskip=50.75pt
-* \marginparwidth=74.68849pt
-* \marginparsep=12.8401pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
-)
-Package caption Info: supertabular package is loaded.
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `main.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 25.
-Package biblatex Info: Reference segment=0 on input line 25.
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 25.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count461
-)
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
-
-(./main.out) (./main.out)
-\@outlinefile=\write8
-\openout8 = `main.out'.
-
-Class scrbook Info: loading recommended package `bookmark'.
-(scrbook)           Using `bookmark' together with `hyperref' is recommended,
-(scrbook)           because of handling of possible bookmark level gaps.
-(scrbook)           You can avoid loading `bookmark' with KOMA-Script option
-(scrbook)           `bookmarkpackage=false' before \begin{document} and
-(scrbook)           you can avoid this message with `\usepackage{bookmark}'
-(scrbook)           before \begin{document} on input line 25.
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
-Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
-File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
-Package auxhook Info: \AddLineBeginMainAux comes a little late,
-(auxhook)             because the main .aux file is already opened on input lin
-e 164.
-\BKM@id=\count462
-))
-(./main.glsdefs)
-\openout2 = `title.aux'.
-
-
-No file title.tex.
-(./main.toc)
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-
-\providecommand\@newglossary[4]{}
-\@newglossary{main}{glg}{gls}{glo}
-\@newglossary{acronym}{alg}{acr}{acn}
-\providecommand\@glsorder[1]{}
-\providecommand\@istfilename[1]{}
-\@istfilename{main.ist}
-\@glsorder{word}
-\openout5 = `main.ist'.
-
-
-
-
-
-
-
-
-
-
-] [2
-
-
-] (./main.lof)
-\tf@lof=\write10
-\openout10 = `main.lof'.
-
- [3] [4
-
-
-]
-\openout2 = `content/einleitung.aux'.
-
- (./content/einleitung.tex
-chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
-
- []
-
-[1
-
-
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
-
- []
-
-
-LaTeX Warning: Reference `bitbake_buildprozess' on page 2 undefined on input li
-ne 61.
-
-
-LaTeX Warning: Reference `bitbake_buildprozess' on page 2 undefined on input li
-ne 62.
-
-) [2]
-\openout2 = `content/grundlagen.aux'.
-
- (./content/grundlagen.tex
-chapter 2.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 18.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 18.
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 18.
-
-
-Package acronym Warning: Acronym `SDK' is not defined on input line 23.
-
-[3
-
-
-
-
-]) [4]
-\openout2 = `content/setup_eclipse.aux'.
-
- (./content/setup_eclipse.tex
-chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Overfull \hbox (59.01836pt too wide) in paragraph at lines 21--27
-\T1/cmss/m/n/12 zu den Installations-Quellen in eclip-se \T1/cmss/bx/n/12 http:
-//downloads.yoctoproject.org/releases/eclipse-
- []
-
-) [5
-
-
-
-
-] (./main.gls [6
-
-
-
-] [7
-
-
-])
-No file main.acr.
-[8] (./main.ind)
-chapter without number
-
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <12> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 132.
-
-
-Package biblatex Warning: Type 'article' not found on input line 133.
-
-
-LaTeX Warning: Empty bibliography on input line 133.
-
-
-Package biblatex Warning: Type 'online' not found on input line 134.
-
-
-LaTeX Warning: Empty bibliography on input line 134.
-
-
-Package biblatex Warning: Type 'Webpage' not found on input line 135.
-
-
-LaTeX Warning: Empty bibliography on input line 135.
-
-[9
-
-
-
-
-]
-\openout2 = `content/affirmation.aux'.
-
-
-No file content/affirmation.tex.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
-(./main.aux (./title.aux) (./content/einleitung.aux) (./content/grundlagen.aux)
-(./content/setup_eclipse.aux) (./content/affirmation.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 36584 strings out of 494508
- 656444 string characters out of 6175044
- 1376607 words of memory out of 5000000
- 39728 multiletter control sequences out of 15000+600000
- 544175 words of font info for 47 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
- 62i,11n,73p,9083b,2278s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600
-pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1200.60
-0pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1200.6
-00pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.
-600pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200
-.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
->
-Output written on main.pdf (13 pages, 80797 bytes).
-PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 27739 strings out of 494508
+ 497146 string characters out of 6175044
+ 984240 words of memory out of 5000000
+ 31194 multiletter control sequences out of 15000+600000
+ 534176 words of font info for 27 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 52i,1n,73p,9083b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

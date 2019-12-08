@@ -24,54 +24,71 @@
 
 \begin{document}
 
-%Definitionen neuer Befehle
+% ##################################################
+% Definitionen neuer Befehle
+% ##################################################
 \newcommand{\bb}{$\backslash$} %Backshlash
 
 
 \setcounter{secnumdepth}{3}
 
+% ##################################################
 % Titelblatt
+% ##################################################
 \include{title}
 \cleardoubleemptypage
 
 \frontmatter
 
 
+% ##################################################
 % Abstract
-\include{content/abstract}
+% ##################################################
+%\include{content/abstract}
 \cleardoubleemptypage
 
+
+% ##################################################
 % Inhaltsverzeichnis
+% ##################################################
 \tableofcontents
 \addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 \cleardoubleemptypage
 
+
+% ##################################################
 % Abbildungsverzeichnis einbinden und ins Inhaltsverzeichnis
+% ##################################################
 % WORKAROUND: tocloft und KOMA funktionieren zusammen nicht
 % korrekt\phantomsection
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
 \cleardoubleemptypage
 
+
+% ##################################################
 % Tabellenverzeichnis einbinden und ins Inhaltsverzeichnis
 % WORKAROUND: tocloft und KOMA funktionieren zusammen nicht
 % korrekt\phantomsection
+% ##################################################
 %\phantomsection
 %\addcontentsline{toc}{chapter}{\listtablename}
 %\listoftables
-%\cleardoubleemptypa\usepackage[printonlyused]{acronym}ge
+%\cleardoubleemptypa
+%\usepackage[printonlyused]{acronym}ge
 
+
+% ##################################################
 % Abkürzungsverzeichnis
-\include{content/abbreviations}
+% ##################################################
+%\include{content/abbreviations}
 
-% %Gossary
-% %https://en.wikibooks.org/wiki/LaTeX/Glossary
-%\include{content/glossary}
-%\glossarystyle{altlistgroup}
-%\setglossarystyle{listhypergroup}
-\printglossaries
-\addcontentsline{toc}{chapter}{Glossar}  %after print
-\cleardoubleemptypage
+
+
+
+% ##################################################
+% Content
+% ##################################################
 
 \mainmatter
 \include{content/einleitung}
@@ -82,45 +99,46 @@
 %\include{content/setup_qt5}
 %\include{content/kernel_module}
 %\include{content/software_module}
-\include{content/commands_bitbake}
-%\include{content/commands_devtool}
-%\include{content/pitfalls}
-\include{content/solutions2errors}
-\include{content/cross_development}
-\include{content/ausbilck}
-
-%Bereites in Grundlagen includet.
-%\input{./content/grundlagen/someFile}
+%\include{content/commands_bitbake}
+%%\include{content/commands_devtool}
+%%\include{content/pitfalls}
+%\include{content/solutions2errors}
+%\include{content/cross_development}
+%\include{content/ausbilck}
 
 
+
+% ##################################################
+% %Gossary
+% ##################################################
+\printglossaries
+\addcontentsline{toc}{chapter}{Glossar}
+\cleardoubleemptypage
+
+
+% ##################################################
 % Schalgwortverzeichnis (Index)
+% ##################################################
 \printindex
 
 
 
+% ##################################################
 % Literaturverzeichnis
-%http://be-jo.net/2013/08/latex-welchen-bibliographystyle-wahlen/
+% ##################################################
 \singlespacing
 
-\bibliography{bibtex}
-\bibliographystyle{alphadin}  %Sortierung: Kürzel des Autors, Referenzierung: Kürzel des Autors und Jahreszahl (zweistellig), Deutsch, Darstellung im Literaturverzeichnis:  Autoren Kapitälchen, Titel kursiv
-%
-%addbibresource{bibtex} %% Einbinden der bib-Datei
-%
-
-%\bibliographystyle{abbrvdin*}  %Sortierung: Name des Autors, Referenzierung: Nummer, Deutsch, Darstellung im Literaturverzeichnis: Autor in Kapitälchen, Initialen des Vornamens, Titel in kursiv
-%\bibliographystyle{abbrvdin*}  %Sortierung: Name des Autors, Referenzierung: Nummer, English, Darstellung im Literaturverzeichnis: Vorname als Initialen, Titel kursiv.
-%\printbibliography[type=article,title={Articles}]
-%\printbibliography[type=book,title={Books}]
-%\printbibliography[type=Webpage,title={Online Webpages}]
-%
-%\printbibliography[keyword={physics},title={Physics-related only}]
-%\printbibliography[keyword={latex},title={\LaTeX-related only}]
-%
+\printbibheading
+\printbibliography[heading=subbibliography,type=book,title={Books}]
+\printbibliography[type=article,title={Articles}]
+\printbibliography[type=online,title={Online resorces}]
+\printbibliography[type=Webpage,title={Online Webpages}]
 
 
+% ##################################################
 % Eidesstattliche Erklärung
-% \include{content/affirmation}
+% ##################################################
+ \include{content/affirmation}
 
 \appendix
 % Hier können Anhaenge angefuegt werden

@@ -1,61 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: main.aux
-A level-1 auxiliary file: title.aux
-A level-1 auxiliary file: content/abstract.aux
-A level-1 auxiliary file: content/abbreviations.aux
-A level-1 auxiliary file: content/einleitung.aux
-A level-1 auxiliary file: content/grundlagen.aux
-A level-1 auxiliary file: content/setup_eclipse.aux
-A level-1 auxiliary file: content/commands_bitbake.aux
-A level-1 auxiliary file: content/solutions2errors.aux
-A level-1 auxiliary file: content/cross_development.aux
-A level-1 auxiliary file: content/ausbilck.aux
-The style file: alphadin.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: bibtex.bib
-You've used 1 entry,
-            4793 wiz_defined-function locations,
-            908 strings with 6759 characters,
-and the built_in function-call counts, 623 in all, are:
-= -- 60
-> -- 8
-< -- 8
-+ -- 7
-- -- 2
-* -- 43
-:= -- 104
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 4
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 18
-empty$ -- 57
-format.name$ -- 6
-if$ -- 132
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 17
-num.names$ -- 3
-pop$ -- 6
-preamble$ -- 1
-purify$ -- 6
-quote$ -- 0
-skip$ -- 22
-stack$ -- 0
-substring$ -- 68
-swap$ -- 3
-text.length$ -- 3
-text.prefix$ -- 1
-top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 4
-width$ -- 2
-write$ -- 22
+[2] Config.pm:304> INFO - This is Biber 2.12
+[4] Config.pm:307> INFO - Logfile is 'main.blg'
+[235] biber:315> INFO - === Sun Dec  8, 2019, 20:49:34
+[390] Biber.pm:371> INFO - Reading 'main.bcf'
+[932] Biber.pm:889> INFO - Found 1 citekeys in bib section 0
+[1051] Biber.pm:4093> INFO - Processing section 0
+[1129] Biber.pm:4254> INFO - Looking for bibtex format file 'bibtex' for section 0
+[1401] bibtex.pm:1512> INFO - LaTeX decoding ...
+[1600] bibtex.pm:1329> INFO - Found BibTeX data source './bibtex.tex'
+[1849] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1850] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1852] Biber.pm:3921> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'de-DE'
+[1854] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[1866] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1876] bbl.pm:739> INFO - Output to main.bbl

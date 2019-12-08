@@ -56,6 +56,7 @@
 % Pakte zur Index-Erstellung (Schlagwortverzeichnis)
 \usepackage{index}
 \makeindex
+%\usepackage[xindy]{imakeidx}
 
 % Ipsum Lorem
 % Paket wird nur für das Beispiel gebraucht und kann gelöscht werden
@@ -275,14 +276,17 @@
 % Literaturverzeichnis
 % ##################################################
 
-\usepackage[
-]{bibgerm}
+%\usepackage[
+%]{bibgerm}
 
-%\usepackage[backend=biber, %% Hilfsprogramm "biber" (statt "biblatex" oder "bibtex")
-%style=authoryear, %% Zitierstil (siehe Dokumentation)
-%natbib=true, %% Bereitstellen von natbib-kompatiblen Zitierkommandos
-%hyperref=true, %% hyperref-Paket verwenden, um Links zu erstellen
-%]{biblatex}
+\usepackage[backend=biber, %% Hilfsprogramm "biber" (statt "biblatex" oder "bibtex")
+style=authoryear, %% Zitierstil (siehe Dokumentation)
+natbib=true, %% Bereitstellen von natbib-kompatiblen Zitierkommandos
+hyperref=true, %% hyperref-Paket verwenden, um Links zu erstellen
+sorting=ynt
+]{biblatex}
+
+\addbibresource{bibtex} %% Einbinden der bib-Datei
 
 % ##################################################
 % PDF / Dokumenteninternelinks
@@ -309,14 +313,10 @@
 
 % ##################################################
 % Glossrry
-% Muss nach "hyperref"
 % ##################################################
-    \usepackage{hyperref}
-    \usepackage{glossaries}
+    %\usepackage[nomain,acronym,xindy,toc]{glossaries}
+    \usepackage[acronym]{glossaries}
     \setglossarystyle{listhypergroup}
-%    \makeglossaries
-%    \loadglsentries{content/glossary} %Glossary in externer Datei...
-    \input{content/glossary} % ...oder alternativ input statt loadglsentries
-
-%    \usepackage[acronym]{glossaries}
+    \makeglossaries
+    \loadglsentries{content/glossary} %Glossary in externer Datei...
 
