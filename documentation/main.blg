@@ -1,15 +1,15 @@
 [2] Config.pm:304> INFO - This is Biber 2.12
 [4] Config.pm:307> INFO - Logfile is 'main.blg'
-[235] biber:315> INFO - === Sun Dec  8, 2019, 20:49:34
-[390] Biber.pm:371> INFO - Reading 'main.bcf'
-[932] Biber.pm:889> INFO - Found 1 citekeys in bib section 0
-[1051] Biber.pm:4093> INFO - Processing section 0
-[1129] Biber.pm:4254> INFO - Looking for bibtex format file 'bibtex' for section 0
-[1401] bibtex.pm:1512> INFO - LaTeX decoding ...
-[1600] bibtex.pm:1329> INFO - Found BibTeX data source './bibtex.tex'
-[1849] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1850] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1852] Biber.pm:3921> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'de-DE'
-[1854] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
-[1866] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1876] bbl.pm:739> INFO - Output to main.bbl
+[214] biber:315> INFO - === Mon Dec  9, 2019, 00:24:53
+[366] Biber.pm:371> INFO - Reading 'main.bcf'
+[875] Biber.pm:889> INFO - Found 4 citekeys in bib section 0
+[987] Biber.pm:4093> INFO - Processing section 0
+[1063] Biber.pm:4254> INFO - Looking for bibtex format file 'bibtex' for section 0
+[1338] bibtex.pm:1512> INFO - LaTeX decoding ...
+[1513] bibtex.pm:1329> INFO - Found BibTeX data source './bibtex.tex'
+[1883] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1885] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1886] Biber.pm:3921> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[1886] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[1946] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1957] bbl.pm:739> INFO - Output to main.bbl

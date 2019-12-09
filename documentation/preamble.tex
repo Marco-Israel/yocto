@@ -50,9 +50,6 @@
 % Deutsche Anfuehrungszeichen
 \usepackage[babel, german=quotes]{csquotes}
 
-% Zitate
-%\usepackage[round]{natbib}
-
 % Pakte zur Index-Erstellung (Schlagwortverzeichnis)
 \usepackage{index}
 \makeindex
@@ -61,6 +58,13 @@
 % Ipsum Lorem
 % Paket wird nur für das Beispiel gebraucht und kann gelöscht werden
 \usepackage{lipsum}
+
+
+% ##################################################
+% New commands
+% ##################################################
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}}
+
 
 % ##################################################
 % Seitenformatierung
@@ -280,10 +284,12 @@
 %]{bibgerm}
 
 \usepackage[backend=biber, %% Hilfsprogramm "biber" (statt "biblatex" oder "bibtex")
-style=authoryear, %% Zitierstil (siehe Dokumentation)
+%style=authoryear, %% Zitierstil (siehe Dokumentation)
+style=alphabetic,
+%style=numeric,
+%style=ieee,
 natbib=true, %% Bereitstellen von natbib-kompatiblen Zitierkommandos
 hyperref=true, %% hyperref-Paket verwenden, um Links zu erstellen
-sorting=ynt
 ]{biblatex}
 
 \addbibresource{bibtex} %% Einbinden der bib-Datei

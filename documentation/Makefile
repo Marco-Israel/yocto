@@ -6,7 +6,7 @@
 
 # The first rule in a Makefile is the one executed by default ("make"). It
 # should always be the "all" rule, so that "make" and "make all" are identical.
-all: clean main.pdf
+all: main.pdf
 
 # MAIN LATEXMK RULE
 
@@ -17,7 +17,7 @@ all: clean main.pdf
 # -interactive=nonstopmode keeps the pdflatex backend from stopping at a
 # missing file reference and interactively asking you for an alternative.
 
-main.pdf: main.tex bibtex.bib latexmkrc
+main.pdf: main.tex  latexmkrc
 	latexmk  -bibtex -f -pdf -pdflatex="pdflatex -interactive=nonstopmode" -use-make main.tex
 
 clean:

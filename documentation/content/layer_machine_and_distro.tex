@@ -5,7 +5,7 @@
 
 Jeder Metadaten-layer aber auch jedes einzelne Recipe lässt sich gezielt
 Hardware Beschreibungen bzw Hardware Gruppen oder einer (eigenen)
-\textit{Linux-\gls{Distributionen}} zuordnen, womit jener Meta-Layer oder jenes
+\textit{Linux-\glspl{Distribution}} zuordnen, womit jener Meta-Layer oder jenes
 Revipe nur für solche Hardware oder Distribution Anwendung findet.
 
 Die \textit{./conf/local.conf} definiert für einen Buildprozess die zu
@@ -19,20 +19,16 @@ lauffähig sind, muss diese Hardware sowohl für das Linux Betriebssystem, als
 auch für Bitbake beschrieben werden. Dieses geschieht mittels
 einer <hw-metalayer>/conf/machine/<machine>.conf Konfigurationsdatei.
 
-\\
-
-So muss beispielsweise einem Linux Kernel mittels eines \glsl{DTB} die Hardware
+So muss beispielsweise einem Linux Kernel mittels eines \acl{DTB} die Hardware
 beschrieben bzw. bekannt gemacht werden. Bitbake muss unter anderem wissen
-über welche s.g. \textit{\glspl{Feature} eine Hardware verfügt.
+über welche s.g. \textit{\glspl{Feature}} eine Hardware verfügt.
 Ein Feature ist beispielsweise die Existenz eines Displays oder  einer nicht-
-standard Pheripheral wie eine PCI-Port oder wifi.
-
-\\
+standard Pheripheral wie eine PCI-Port oder wifi.  \\
 
 Eine lister möglicher \textit{Machine Features} ist zu finden unter:
 \begin{itemize}
-    \item \cite[Abschn. Machine_Features]{Yocto:Reference_Manual}
-    \item \cite[Abschn. Machine_Features]{Yocto:Mega_Manual}
+    \item \cite[Abschn. Machine\_Features][]{Yocto:Reference_Manual}
+    \item \cite[Abschn. Machine\_Features][]{Yocto:Mega_Manual}
 \end{itemize}
 
 Zudem definiert die Maschinenkonfiguration
@@ -50,9 +46,7 @@ Zudem definiert die Maschinenkonfiguration
 
 Die Maschinenkonfiguration ist somit eine zusammenfassung aller nötigen und
 optionalen Komponenten, damit eine Software mitsamt Betriebssystem auf einer
-Zielhardware lauffähig und verwendbar wird.
-
-\\
+Zielhardware lauffähig und verwendbar wird.  \\
 
 Sollte es Änderungen oder Erweiterungen an einer bestehenden Hardware-Platform
 geben, so müssen unter Umständen auch diese bekannt gemacht werden. Hierzu kann
@@ -61,8 +55,7 @@ Maschinenbeschreibung erstellt werden. \cite[S.
 91-95]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 
 
-\section{Linux Distribution definieren}%
-\label{sec:linux_distribution_definieren}
+\section{Linux Distribution definieren}% \label{sec:linux_distribution_definieren}
 Eines der \textbf{grundlegenden Ziele} von Bitbake, bzw. Ziel der Yocto und
 OpenEmbedded Community ist die Möglichkeit eigene Linux Distributionen gezielt
 für einen Anwendungsfall zu definieren. Dank seines  Schichtenmodells ist eine

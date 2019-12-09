@@ -1,9 +1,9 @@
 
 
-\chapter{Bitbake}%
-\label{cha:bitbake}
+\chapter{Grundlage}%
+\label{cha:grundlagen}
 
-\section{Bitbake Buildprozess}%
+\section{Bitbake }%
 \label{sec:bitbake_buildprozess}
 
 
@@ -24,7 +24,7 @@ zeigt abstract den Build\-process:
     \item Aufräum- und Nacharbeiten
 \end{itemize}
 
-\section{Bitbake build tasks}%
+\section{Bitbake Buildprozess}%
 \label{sec:bitbake_build_tasks}
 
 Jedes \textit{recipe} erbt eine Reihe von standard Build-Tasks.  Hierzu
@@ -48,36 +48,36 @@ Softwarepakte in Ihren benötigten Versionen und Revisionsständen zusammen aus
 unterschidlichen Quellen zusammen zu sammeln und dem Buildsystem zur Verfügung
 zu stellen. Solche Quellen können sein:
 
-%\begin{itemize}
-%    \item Lokaler Bitbake-Download ordner/cache. Er enthält bereits einmal
-%        heruntergeladene Softwarepakete in jeweiligen Revisionständen.
-%    \item Lokaler Pfad zu Quelldateien; z.b. in einem eclipse oder QT Workspace
-%    \item Lokale Repository (z.B. lokales GIT Repository)
-%    \item Netzwerkpfad zu einem Client oder Server im lokalen Netzwerk. Z.B.
-%        über Freigaben oder einem lokalen FTP Server
-%    \item Online Repository oder TFTP Server.
-%    \item Alternatives lokales oder Remote (online) Repository.
-%\end{itemize}
-%
-%Die Reihe\-folge in welcher nach Source-Dateien gesucht werden soll ist zum
-%einen definiert durch:
-%
-%\begin{itemize}
-%    \item Das Recipe selbst welches das Software\-pakete innerhalb Bitbake bauen
-%        soll
-%    \item durch Konfigurationsdateien wie \textit{./conf/local.conf}
-%    \tem sowie durch eine allgemein fest vorgegeben Reihefolge innerhalb
-%    bitbakes. Siehe
-%    \cite[S.53]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-%\end{itemize}
-%
-%
-%
-%\section{Configurations-Dateien *.conf}%
-%\label{sec:configurations_dateien_conf}
-%Bitbake, sowie die Buildprozesse der einzelnen Recipes
-%werden gesteuert durch unterscheidliche \textbf{recipe-lokale} und
-%\textbf{globale} configurationsdateien.
-%
-%
-%
+\begin{itemize}
+    \item Lokaler Bitbake-Download ordner/cache. Er enthält bereits einmal
+        heruntergeladene Softwarepakete in jeweiligen Revisionständen.
+    \item Lokaler Pfad zu Quelldateien; z.b. in einem eclipse oder QT Workspace
+    \item Lokale Repository (z.B. lokales GIT Repository)
+    \item Netzwerkpfad zu einem Client oder Server im lokalen Netzwerk. Z.B.
+        über Freigaben oder einem lokalen FTP Server
+    \item Online Repository oder TFTP Server.
+    \item Alternatives lokales oder Remote (online) Repository.
+\end{itemize}
+
+Die Reihe\-folge in welcher nach Source-Dateien gesucht werden soll ist zum
+einen definiert durch:
+
+\begin{itemize}
+    \item Das Recipe selbst welches das Software\-pakete innerhalb Bitbake bauen
+        soll
+    \item durch Konfigurationsdateien wie \textit{./conf/local.conf}
+    \item sowie durch eine allgemein fest vorgegeben Reihefolge innerhalb
+    bitbakes. Siehe
+    \cite[S.53]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+\end{itemize}
+
+
+
+\section{Configurations-Dateien *.conf}%
+\label{sec:configurations_dateien_conf}
+Bitbake, sowie die Buildprozesse der einzelnen Recipes
+werden gesteuert durch unterscheidliche \textbf{recipe-lokale} und
+\textbf{globale} configurationsdateien.
+
+
+

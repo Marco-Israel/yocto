@@ -18,15 +18,14 @@
 
 
 \refsection{0}
-  \datalist[entry]{ynt/global//global/global}
+  \datalist[entry]{anyt/global//global/global}
     \entry{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}{book}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=10f768fb12ab4edb768bbd334a78f957}{%
+        {{hash=10f768fb12ab4edb768bbd334a78f957}{%
            family={Gonzalez},
            familyi={G\bibinitperiod},
            given={Alex},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
+           giveni={A\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Birmingham}%
@@ -40,16 +39,108 @@
       \strng{authorbibnamehash}{10f768fb12ab4edb768bbd334a78f957}
       \strng{authornamehash}{10f768fb12ab4edb768bbd334a78f957}
       \strng{authorfullhash}{10f768fb12ab4edb768bbd334a78f957}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labelalpha}{Gon18}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2nd Revised edition}
       \field{isbn}{978-1-788-39921-0}
       \field{title}{Embedded Linux Development Using Yocto Project Cookbook -}
       \field{year}{2018}
+    \endentry
+    \entry{Pytec:BSP_Manual}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8f8a45793ea38469edecf9b6a1cc5756}{%
+           family={PhyTec},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{fullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{bibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorbibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authornamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorfullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \field{labelalpha}{Phy19}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Device Booting \& Flashing, Pheripherals Mira6}
+      \field{title}{{PhyTec Mira} BSP Manual}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.phytec.de/documents/?title=l-814e-4-imx6-bsp-manual
+      \endverb
+      \verb{url}
+      \verb https://www.phytec.de/documents/?title=l-814e-4-imx6-bsp-manual
+      \endverb
+    \endentry
+    \entry{Yocto:Mega_Manual}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9342ea96071d9e24b684ba5d8c1d19a6}{%
+           family={Rifenbark},
+           familyi={R\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9342ea96071d9e24b684ba5d8c1d19a6}
+      \strng{fullhash}{9342ea96071d9e24b684ba5d8c1d19a6}
+      \strng{bibnamehash}{9342ea96071d9e24b684ba5d8c1d19a6}
+      \strng{authorbibnamehash}{9342ea96071d9e24b684ba5d8c1d19a6}
+      \strng{authornamehash}{9342ea96071d9e24b684ba5d8c1d19a6}
+      \strng{authorfullhash}{9342ea96071d9e24b684ba5d8c1d19a6}
+      \field{labelalpha}{Rif19}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Yocto Mega Manual}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.yoctoproject.org/docs/current/mega-manual/mega-manual.html
+      \endverb
+      \verb{url}
+      \verb https://www.yoctoproject.org/docs/current/mega-manual/mega-manual.html
+      \endverb
+    \endentry
+    \entry{Yocto:Reference_Manual}{online}{}
+      \name{author}{1}{}{%
+        {{hash=abd211ed28fcac3d3b8ccccc3bd15437}{%
+           family={Yocto},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{fullhash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{bibnamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{authorbibnamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{authornamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{authorfullhash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \field{labelalpha}{Yoc19}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Yocto Project Reference Manual}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.yoctoproject.org/docs/3.0/ref-manual/ref-manual.html
+      \endverb
+      \verb{url}
+      \verb https://www.yoctoproject.org/docs/3.0/ref-manual/ref-manual.html
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

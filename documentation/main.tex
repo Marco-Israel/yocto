@@ -81,7 +81,7 @@
 % ##################################################
 % Abkürzungsverzeichnis
 % ##################################################
-%\include{content/abbreviations}
+\include{content/abbreviations}
 
 
 
@@ -93,18 +93,20 @@
 \mainmatter
 \include{content/einleitung}
 \include{content/grundlagen}
-%\include{content/setup_host}
+\include{content/setup_host}
 %\include{content/setup_bitbake}
 \include{content/setup_eclipse}
-%\include{content/setup_qt5}
-%\include{content/kernel_module}
-%\include{content/software_module}
+\include{content/setup_qt5}
+\include{content/layer_kernel}
+\include{content/layer_app}
+\include{content/layer_machine_and_distro}
+
 %\include{content/commands_bitbake}
 %%\include{content/commands_devtool}
-%%\include{content/pitfalls}
-%\include{content/solutions2errors}
-%\include{content/cross_development}
-%\include{content/ausbilck}
+%\include{content/pitfalls}
+\include{content/solutions2errors}
+\include{content/cross_development}
+\include{content/ausbilck}
 
 
 
@@ -126,19 +128,19 @@
 % ##################################################
 % Literaturverzeichnis
 % ##################################################
-\singlespacing
+\doublespacing
 
 \printbibheading
 \printbibliography[heading=subbibliography,type=book,title={Books}]
-\printbibliography[type=article,title={Articles}]
-\printbibliography[type=online,title={Online resorces}]
-\printbibliography[type=Webpage,title={Online Webpages}]
-
+\printbibliography[heading=subbibliography,type=article,title={Articles}]
+\printbibliography[heading=subbibliography,type=online,title={Online resorces}]
+\printbibliography[heading=subbibliography,type=Webpage,title={Online Webpages}]
+\printglossary[type=\acronymtype,title=Abbreviations]
 
 % ##################################################
 % Eidesstattliche Erklärung
 % ##################################################
- \include{content/affirmation}
+% \include{content/affirmation}
 
 \appendix
 % Hier können Anhaenge angefuegt werden

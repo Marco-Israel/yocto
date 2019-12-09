@@ -1,140 +1,140 @@
-
-********************************************************************************
-*** HOW to add existing software to the build -  Aka how to add a layer
-********************************************************************************
-
-
---------------------------------------------------------------------------------
-Websites and Locations:
-
-
-(1) Official yokto git repo:
-    https://git.yoctoproject.org/
-
-
-(2) Description of the yokto meta data layer and its content
-        http://layers.openembedded.org/layerindex/branch/master/layers/
-
-(3)
-
-
---------------------------------------------------------------------------------
-How to get your distro version (branch)
-
-    bitbake -e <recipes/image> | grep ^LAYERSERIES_COMPAT
-
-
-
---------------------------------------------------------------------------------
-Find the meta layer which descries (is holding) your packet.
-
-
-- Go to link (1),
-
-- select your distribution branch,
-
-- configure a search filter if possible (like "software" layer only). So only
-    meta-data layer wich descries software packages will be displayed.
-
-- select the "respire" search option
-
-- After preforming / configure the search options, search for the software
-    packet you like to include into your build.
-
-- You will get the name of the meta-data layer you need to download and add to
-    your build (see below)
-
-
---------------------------------------------------------------------------------
-How to add the metadata-layer to your build system which integrate (burns)
-the software packed into your distribution.
-
-- search for the metadata-layer folder in your project folder to know if you
-    need to download (git clone) it before. Otherwise skip the next step
-
-- If the meta-data layer is not in the build already, download (git clone)
-    the metadata-layer into your meta-data folder which already holds the
-    minimal standard meta-data layer.
-
-        git clone <url>
-
-    Afterwards check out the branch wich is compatible to your distribution
-    branch version. "git branch -r" will show you the available branches of the
-    online repo.
-
-        git branch -r
-        git checkout <your-branch>
-
-
-- add the meta-data layer to your build/bblayer.conf configuration file.
-
-        BBLAYER += "<path/to/your/meta-data-layer>"
-
-    You can also use a bitbake command to automatically add the layer to
-    build/bblayer.conf:
-
-        bitbake-layers add-layer <path/to/your/meta-data-layer>
-
-    You can check if the metadata layer is in the build now/already or if
-    there are errors inside the .conf file or inside the layer. Therefor call:
-
-        bitbake-layers show-layers
-
-    NOTE: It is also an error if the layer has dependencies to other layers wich
-    are not in the build already. So a call to "bitbake-layers show-layers" can
-    also show you such dependence errors.
-
-- add the software packed name you like to build to your build/local.conf file.
-    Attention: It is important to have leading white space " " inside the quotes
-    before the packed name.
-
-        IMAGE_INSTALL_append = "< ><your-sw-packed>"
-        IMAGE_INSTALL_append = "< ><your-sw-packed1> <your-sw-packed2> <...>"
-
-    NOTE: _append is an "operator" like += wich preforms on the variable in
-    front of it. You can also use:
-
-        IMAGE_INSTALL += "<your-sw-packed>"
-        IMAGE_INSTALL .= "< ><your-sw-packed>"
-
-    Different to the classic operators _append or _pretend are executed after
-    all recipes are parsed by bitbake. The classic operators will be preformed
-    during the parsing. As a result _append will be preformed after classic
-    += or .= operators.
-
-    ATTENTION: Using the operators +=, =+, .= or =. can result in errors because
-    it is not save in which order (moment) the variable get expend. It is
-    recommended by yokto to use the operator _append to make sure the Variable
-    will be appended at least after parsing the precipice.
-
-    You also can install a software only for a specific image. Doing so:
-
-        IMAGE_INSTALL_append_<your-image-recipes> = "< ><your software packed>
-        IMAGE_INSTALL_<your-image-recipes> += "<your software packed>
-
-    Alternatively you can modify or patch the IMAGE_INSTALL variable
-    in <your-image-recipes> by adding the software-packed the same way like
-    above.
-
-    It is also possible to create and/or add a packedgroup to your image which
-    predefined a group of software packed wich should be installed together.
-    More information about packed groups you find in the yokto-mega-manual.
-    Simple grep for "packedgroup" through the document.
-
-
---------------------------------------------------------------------------------
-Finally
-    (Re-)build the image.
-
-        bitbake <your-image-recipe>
-
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
+%
+%********************************************************************************
+%*** HOW to add existing software to the build -  Aka how to add a layer
+%********************************************************************************
+%
+%
+%--------------------------------------------------------------------------------
+%Websites and Locations:
+%
+%
+%(1) Official yokto git repo:
+%    https://git.yoctoproject.org/
+%
+%
+%(2) Description of the yokto meta data layer and its content
+%        http://layers.openembedded.org/layerindex/branch/master/layers/
+%
+%(3)
+%
+%
+%--------------------------------------------------------------------------------
+%How to get your distro version (branch)
+%
+%    bitbake -e <recipes/image> | grep ^LAYERSERIES_COMPAT
+%
+%
+%
+%--------------------------------------------------------------------------------
+%Find the meta layer which descries (is holding) your packet.
+%
+%
+%- Go to link (1),
+%
+%- select your distribution branch,
+%
+%- configure a search filter if possible (like "software" layer only). So only
+%    meta-data layer wich descries software packages will be displayed.
+%
+%- select the "respire" search option
+%
+%- After preforming / configure the search options, search for the software
+%    packet you like to include into your build.
+%
+%- You will get the name of the meta-data layer you need to download and add to
+%    your build (see below)
+%
+%
+%--------------------------------------------------------------------------------
+%How to add the metadata-layer to your build system which integrate (burns)
+%the software packed into your distribution.
+%
+%- search for the metadata-layer folder in your project folder to know if you
+%    need to download (git clone) it before. Otherwise skip the next step
+%
+%- If the meta-data layer is not in the build already, download (git clone)
+%    the metadata-layer into your meta-data folder which already holds the
+%    minimal standard meta-data layer.
+%
+%        git clone <url>
+%
+%    Afterwards check out the branch wich is compatible to your distribution
+%    branch version. "git branch -r" will show you the available branches of the
+%    online repo.
+%
+%        git branch -r
+%        git checkout <your-branch>
+%
+%
+%- add the meta-data layer to your build/bblayer.conf configuration file.
+%
+%        BBLAYER += "<path/to/your/meta-data-layer>"
+%
+%    You can also use a bitbake command to automatically add the layer to
+%    build/bblayer.conf:
+%
+%        bitbake-layers add-layer <path/to/your/meta-data-layer>
+%
+%    You can check if the metadata layer is in the build now/already or if
+%    there are errors inside the .conf file or inside the layer. Therefor call:
+%
+%        bitbake-layers show-layers
+%
+%    NOTE: It is also an error if the layer has dependencies to other layers wich
+%    are not in the build already. So a call to "bitbake-layers show-layers" can
+%    also show you such dependence errors.
+%
+%- add the software packed name you like to build to your build/local.conf file.
+%    Attention: It is important to have leading white space " " inside the quotes
+%    before the packed name.
+%
+%        IMAGE_INSTALL_append = "< ><your-sw-packed>"
+%        IMAGE_INSTALL_append = "< ><your-sw-packed1> <your-sw-packed2> <...>"
+%
+%    NOTE: _append is an "operator" like += wich preforms on the variable in
+%    front of it. You can also use:
+%
+%        IMAGE_INSTALL += "<your-sw-packed>"
+%        IMAGE_INSTALL .= "< ><your-sw-packed>"
+%
+%    Different to the classic operators _append or _pretend are executed after
+%    all recipes are parsed by bitbake. The classic operators will be preformed
+%    during the parsing. As a result _append will be preformed after classic
+%    += or .= operators.
+%
+%    ATTENTION: Using the operators +=, =+, .= or =. can result in errors because
+%    it is not save in which order (moment) the variable get expend. It is
+%    recommended by yokto to use the operator _append to make sure the Variable
+%    will be appended at least after parsing the precipice.
+%
+%    You also can install a software only for a specific image. Doing so:
+%
+%        IMAGE_INSTALL_append_<your-image-recipes> = "< ><your software packed>
+%        IMAGE_INSTALL_<your-image-recipes> += "<your software packed>
+%
+%    Alternatively you can modify or patch the IMAGE_INSTALL variable
+%    in <your-image-recipes> by adding the software-packed the same way like
+%    above.
+%
+%    It is also possible to create and/or add a packedgroup to your image which
+%    predefined a group of software packed wich should be installed together.
+%    More information about packed groups you find in the yokto-mega-manual.
+%    Simple grep for "packedgroup" through the document.
+%
+%
+%--------------------------------------------------------------------------------
+%Finally
+%    (Re-)build the image.
+%
+%        bitbake <your-image-recipe>
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%--------------------------------------------------------------------------------
+%
