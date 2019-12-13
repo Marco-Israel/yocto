@@ -1,4 +1,127 @@
-%
+\chapter{Applikationsentwicklung}
+\label{chap:applikationsentwicklung}
+
+\section{Einbinden von Applikationen in vorhandene Images}%
+\label{sec:einbinden_von_applikationen_in_vorhandene_images}h
+
+Die nachfolgende Schritte sind nötig um ein existierendes Softwarepaket zu einem
+Image hinzu zu fügen.
+
+\section{Existierende Pakete und Metadaten nutzen}%
+\label{sec:existirende_pakete_und_metadaten}
+
+\begin{enumerate}
+    \item Image Branches herausfinden:
+        \textit{bitbake -e <recipes/image> | grep \^LAYERSERIES\_COMPAT}
+
+    \item Seite \ref{OpenEmbedded:Indexer_Recipes} aufrufen
+
+    \item \textbf{Branch} auswählen und ggf. Reiter \textbf{recipies} neu
+        auswählen.
+
+    \item Suchen nach dem gewünschten Software\-paket in der Suchleiste. Dies
+        liefert als Ergebnis den jeweiligen Metadaten Layer, welcher das Recipes
+        enthält.
+
+    \item Verifizieren ob metadaten-layer bereits existiert: Z.b. durch z.B.
+        \begin{itemize}
+            \item Manuelles suchen
+            \item \textit{find --name <new-meta-layer>}
+            \item \textit{bitbake-layers show-layer | grep <<new-meta-layer>}
+        \end{itemize}
+
+    \item Layer packet herunter laden in das lokale Yocto Arbeitsverzeichnis, in
+        welchem sich bereits \textit{poky} und andere OpenEmbedded
+        metadaten-Layer befinden.:
+        \begin{itemize}
+            \item \textit{Manuelles} Herunterladen und
+                \textit{einfügen in ./conf/bblayersi.conf}
+                BBLAYER += "<pfad/zum/meta-data-layer>"
+            \item \textit{git clone <url-to-meta-layer>} und manuelles einfügen
+                                        in \textit{bblayersi.conf}
+            \item \textit{bitbake-layers layerindex-fetch <layer-name>}
+        \end{itemize}
+
+    \item Beim Manuellen Herrunterladen, den neuen Layer zu
+        \textit{./conf/bblayers.conf} hinzufügen. Dieser
+        Schritt wird durch \textit{bitbake-layers layerindex-fetch
+            <metadatalayer-name>} bereits vollzogen.
+    \item Abhängigkeiten Metadatenlayer herunterladen und ebenfalls dem Projekt
+        hinzufügen.
+        \begin{itemize}
+            \item Abhängigkeiten lassen sich durch \textit{anklicken des Recipie
+                    names} unter \ref{OpenEmbedded:Indexer_Recipes} einsehen.
+            \item oder direkt ausgeben durch:
+                \textit{bitbake-layers layerindex-show-depends <layer-name>}
+                und anschließend herunterladen und hinzufügen durch
+                \textit{bitbake-layers layerindex-fetch <layer-name>}
+        bitbake-layers add-layer <path/to/your/meta-data-layer>
+        \end{itemize}
+    \item Falls nicht im Vorfeld ausgewählt, den nötigen
+        \textit{branch auschecken} mit \textit{git checkout <branch>} in jedem
+        neuen metadaten-layer.
+    \item Auf Fehler überprüfen (z.B. fehlende Abhängigkeiten):
+        \textit{bitbake-layers show-layers}
+\end{enumerate}
+
+\subsection{Sotware dem Image hinzufügen}%
+\label{sub:sotware_dem_image_hinzufugen_}
+Um ein Softwarepaket einem Image hinzu zu fügen muss die Variable
+\textit{IMAGE\_INSTALL} gesetzt oder erweitert werden. Hier gilt zu entschieden
+ob dieses \textit{global} oder \textit{image-lokal} geschehen soll:
+\begin{itemize}
+    \item Setzten oder erweitern in \textit{./conf/loccal.conf}
+    \item Abändern des <image-recipes>.bb files durch setzten / erweitern der
+        Variablen
+    \item Image erweitern durch erstellen eines <image-recipes>.bbappend files
+    \item Image Variable gezielt für ein Image/Target erweitern (s.u.)
+\end{itemize}
+
+Um eine Variable zu erweitern bieten sich folgende mögliche opratoren an :
+
+\begin{description}
+    \item[spätes Anhängen] IMAGE\_INSTALL\_append = "< ><your-sw-packed>"
+    \item[spätes Anhängen] IMAGE\_INSTALL\_prepend += "<your-sw-packed>"
+    \item[direktes Anhängen] IMAGE\_INSTALL += "<your-sw-packed>"
+    \item[direktes Anhängen] IMAGE\_INSTALL .= "< ><your-sw-packed>"
+    \item[mehrere Pakete direkt anhängen]
+        IMAGE\_INSTALL\_append = "< ><your-sw-packed1> <your-sw-packed2> <...>"
+    \item IMAGE\_INSTALL\_prepend += "<your-sw-packed1> <your-sw-packed2> <...>"
+
+    \item IMAGE\_INSTALL\_append\_<your-image-recipes> = "< ><your software packed>
+    \item IMAGE\_INSTALL\_<your-image-recipes> += "<your software packed>
+\end{description}
+
+\textbf{ACHTUNG:} \\
+Es sind die Varianten mit operator \textbf{ \textit{append} und
+\textit{prepend} vorzuziehen}!\\
+
+\textbf{append} und \textbf{prepend} werden verarbeitet \textbf{nachdem} alle
+Recipes von Bitbake geparsed und erstmalig verarbeitet wurden. Die Operatoren
+\textit{+=} und \textit{-=} werden direkt beim Parsen eines Recipes verarbeitet.
+Aufgrund des unterschiedlichen (früheren) Bearbeitungszeitpunktes kann bei den
+Operaturen \textit{+=} und \textit{.=} nicht garantiert werden, zu welchem
+Zeitpunkt und in welcher Reihenfolge eine Variable erweitert wird.
+\textbf{Dieses kann in einigen Fällen zu Fehlern führen.} Siehe hierzu auch
+\cite{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}. \\
+
+Generelle Unterscheidung:
+\begin{description}
+    \item[\_append \_prepend] für .conf Dateien. Diese Dateien werden vor
+        recipes verarbeitet. Durch diese operatoren wird dennoch erreicht, das
+        die Konfiguration abschließend Anwendung findet
+    \item[ operatoren += .= ..] Sind für recipes
+\end{description}
+
+\textbf{ACHTUNG ACHTUNG: beachte das < >}, welches ein führendes Leerzeichen
+symbolisiert und zwingend erforderlich ist.
+
+
+
+
+
+
+
 %********************************************************************************
 %*** HOW to add existing software to the build -  Aka how to add a layer
 %********************************************************************************
@@ -84,6 +207,9 @@
 %    are not in the build already. So a call to "bitbake-layers show-layers" can
 %    also show you such dependence errors.
 %
+
+
+
 %- add the software packed name you like to build to your build/local.conf file.
 %    Attention: It is important to have leading white space " " inside the quotes
 %    before the packed name.

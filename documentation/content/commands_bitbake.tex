@@ -1,4 +1,3 @@
-
 \chapter{Commands Bitbake}%
 \label{cha:commands_bitbake}
 
@@ -8,18 +7,20 @@ für \glq einfache\grq recipes gelten (z.b. Kernel Modules oder Applikationen),
 gelten ebenso für image-recipes.
 
 
-\section{Bitbake Quellen}%
+\section{Bitbake Dokumentations Quellen}%
 \label{sec:bitbake_quellen}
 Eine die offizielle Dokumentation zu \textit{Bitbake} und
-\textit{Bitbake-Layers} mitmitsamt Kommandoist zu finden unter:
-.  Eine Übersicht über die Kommandos von Bitbake-Layers  ist zu finden unter
+\textit{Bitbake-Layers} mitmitsamt Kommandos ist zu finden unter
+\cite{Yocto:Bitbake_Manual}.\\
+
+Eine Übersicht über die Kommandos von Bitbake-Layers  ist zu finden unter
 \cite[156]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 und im Anschluss in Anwendung gezeigt.
 
 
 \section{Neuer \textit{meta-layer}}%
 \label{sec:_a_new_recipes}
-Nachfolgende möglichkeiten stehen bereit, um einen neuen Meta-daten layer zu
+Nachfolgende Möglichkeiten stehen bereit, um einen neuen Meta-daten layer zu
 erstellen:
 \begin{itemize}
     \item yokto-layer create <myLayer> (\textbf{Empfohlen})
@@ -107,11 +108,17 @@ Es kan geziehlt nach einzelnen Variablen gefiltert werden:
 \subsection{Häufig benötigte Umgebungsvariablen}%
 \label{sub:haufig_gesucht_umgebungsvariablen}
 
-\begin{itemize}
-    \item bitbake -e virtual/kernel | grep \textbf{\^SRC\_URI=}
-    \item bitbake virtual/kernel -e | grep \textbf{
+\begin{description}
+    \item[Originale Source-Quelle] bitbake -e virtual/kernel | grep \textbf{\^SRC\_URI=}
+    \item[Linux Kernel Anbieter]bitbake -e virtual/kernel | grep \textbf{
             \glqq PREFERRED\_PROVIDER\_virtual/kernel\grqq}
-\end{itemize}
+    \item[Image Distributionsversion (Branch)] bitbake -e <recipes/image> | grep
+        \textbf{\^LAYERSERIES\_COMPAT}
+\end{description}
+
+\section{section name}%
+\label{sec:section_name}
+
 
 
 

@@ -6,8 +6,8 @@
 \label{sec:fehler_beim_bauen_eines_images}
 
 
-\subsection{Lösung}%
-\label{sub:losung_fehler_beim_bauen_eines_images}
+\subsection{Lösungschritte}%
+\label{sub:loesungsschritte}
 
 
 \begin{enumerate}
@@ -34,8 +34,8 @@ vordefinierte \textit{Logging Classes} (*.bbclass) bereit gestellt die
 unterschiedliche Informationen loggen können, angefangen von:
 \begin{itemize}
     \item \textit{plain} und \textit{notes}
-    \item über \textit{warnings} und \textit{(fatal-) errors}
-    \item bis bin zu \textit{debug} informationen
+    \item \textit{warnings} und \textit{(fatal-) errors}
+    \item \textit{debug} informationen
 \end{itemize}
  Eine Übersicht ist gelistet unter
  \cite[S.79-80]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}.
@@ -52,10 +52,10 @@ lassen sich anschließend in eine Grafik oder PDF umwandeln. Beispielhaft:
 
 
 \begin{lstlisting}[frame=single,language=bash,caption={Dependency Graph}]
-[user@host]/yoctopath $: source ./[<path>]enviroment-setup-*.sh
-[user@host]/yoctopath $: bitbake -g <recipes> [-I <dependencie to ignore> ]
-[user@host]/yoctopath $: dot -Tpng *.dot -o dependancy.png
-[user@host]/yoctopath $: dot -Tpdf *.dot -o dependancy.pdf.
+[user@host]/yocto$: source ./[<path>]enviroment-setup-*.sh
+[user@host]/yocto$: bitbake -g <recipes> [-I <dependencie ignore>]
+[user@host]/yocto$: dot -Tpng *.dot -o dependancy.png
+[user@host]/yocto$: dot -Tpdf *.dot -o dependancy.pdf
 \end{lstlisting}
 
 Alternativ stellt Yocto/Openembedded einen \textit{dependency explorer} bereit.

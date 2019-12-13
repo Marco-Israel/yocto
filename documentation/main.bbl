@@ -19,6 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{Corbet2005}{book}{}
+      \name{author}{3}{}{%
+        {{hash=729670cd9d39b9b575390147a29d51d7}{%
+           family={Corbet},
+           familyi={C\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=548a2260c8f6dbadc0d85dfad02ba349}{%
+           family={Rubini},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8edf24ea3e75c726f2c163493ab3e3c3}{%
+           family={Kroah-Hartman},
+           familyi={K\bibinithyphendelim H\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol}%
+      }
+      \list{publisher}{1}{%
+        {"O'Reilly Media, Inc."}%
+      }
+      \strng{namehash}{9fbbcf4a72b42b4d94a411ddd67e1136}
+      \strng{fullhash}{9fbbcf4a72b42b4d94a411ddd67e1136}
+      \strng{bibnamehash}{9fbbcf4a72b42b4d94a411ddd67e1136}
+      \strng{authorbibnamehash}{9fbbcf4a72b42b4d94a411ddd67e1136}
+      \strng{authornamehash}{9fbbcf4a72b42b4d94a411ddd67e1136}
+      \strng{authorfullhash}{9fbbcf4a72b42b4d94a411ddd67e1136}
+      \field{labelalpha}{CRK05}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3. Aufl.}
+      \field{isbn}{978-0-596-00590-0}
+      \field{title}{Linux Device Drivers -}
+      \field{year}{2005}
+    \endentry
     \entry{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}{book}{}
       \name{author}{1}{}{%
         {{hash=10f768fb12ab4edb768bbd334a78f957}{%
@@ -49,6 +89,36 @@
       \field{title}{Embedded Linux Development Using Yocto Project Cookbook -}
       \field{year}{2018}
     \endentry
+    \entry{Kerrisk2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7f32f61adec784489cc0fa2cefa610a3}{%
+           family={Kerrisk},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {München}%
+      }
+      \list{publisher}{1}{%
+        {No Starch Press}%
+      }
+      \strng{namehash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{fullhash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{bibnamehash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{authorbibnamehash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{authornamehash}{7f32f61adec784489cc0fa2cefa610a3}
+      \strng{authorfullhash}{7f32f61adec784489cc0fa2cefa610a3}
+      \field{labelalpha}{Ker10}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1. Aufl.}
+      \field{isbn}{978-1-593-27220-3}
+      \field{title}{The Linux Programming Interface -}
+      \field{year}{2010}
+    \endentry
     \entry{Pytec:BSP_Manual}{online}{}
       \name{author}{1}{}{%
         {{hash=8f8a45793ea38469edecf9b6a1cc5756}{%
@@ -61,9 +131,11 @@
       \strng{authorbibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
       \strng{authornamehash}{8f8a45793ea38469edecf9b6a1cc5756}
       \strng{authorfullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \field{extraname}{1}
       \field{labelalpha}{Phy19}
       \field{sortinit}{P}
       \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Device Booting \& Flashing, Pheripherals Mira6}
@@ -78,6 +150,144 @@
       \endverb
       \verb{url}
       \verb https://www.phytec.de/documents/?title=l-814e-4-imx6-bsp-manual
+      \endverb
+    \endentry
+    \entry{PhyTec:Development_Guid}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8f8a45793ea38469edecf9b6a1cc5756}{%
+           family={PhyTec},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{fullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{bibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorbibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authornamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorfullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \field{extraname}{2}
+      \field{labelalpha}{Phy19}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Host \& Tool Setup}
+      \field{title}{{PhyTec Mira} Development Guide}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.phytec.de/documents/?title=l-833e-8-development-environment-guide
+      \endverb
+      \verb{url}
+      \verb https://www.phytec.de/documents/?title=l-833e-8-development-environment-guide
+      \endverb
+    \endentry
+    \entry{PhyTec:Mira_Downloads}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8f8a45793ea38469edecf9b6a1cc5756}{%
+           family={PhyTec},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{fullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{bibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorbibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authornamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorfullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \field{extraname}{3}
+      \field{labelalpha}{Phy19}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Downloads Mira6 Board}
+      \field{title}{{PhyTec Mira} Downloads}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.phytec.de/produkt/system-on-modules/phycore-imx-6-phyboard-mira-download/
+      \endverb
+      \verb{url}
+      \verb https://www.phytec.de/produkt/system-on-modules/phycore-imx-6-phyboard-mira-download/
+      \endverb
+    \endentry
+    \entry{Quade2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=687fb21a1704dd014812c5384a753bac}{%
+           family={Quade},
+           familyi={Q\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1ebb64d1fb0ec1072deb572301d370f4}{%
+           family={Kunst},
+           familyi={K\bibinitperiod},
+           given={Eva-Katharina},
+           giveni={E\bibinithyphendelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Dpunkt.Verlag GmbH}%
+      }
+      \strng{namehash}{eb8ead865b7526ea8120c61798f630fc}
+      \strng{fullhash}{eb8ead865b7526ea8120c61798f630fc}
+      \strng{bibnamehash}{eb8ead865b7526ea8120c61798f630fc}
+      \strng{authorbibnamehash}{eb8ead865b7526ea8120c61798f630fc}
+      \strng{authornamehash}{eb8ead865b7526ea8120c61798f630fc}
+      \strng{authorfullhash}{eb8ead865b7526ea8120c61798f630fc}
+      \field{labelalpha}{QK15}
+      \field{sortinit}{Q}
+      \field{sortinithash}{d257e420984a3a5c57a3330114cd646a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4. akt. und erw. Aufl.}
+      \field{isbn}{978-3-864-90288-8}
+      \field{title}{Linux-Treiber entwickeln - Eine systematische Einführung in die Gerätetreiber- und Kernelprogrammierung - jetzt auch für Raspberry Pi}
+      \field{year}{2015}
+    \endentry
+    \entry{Yocto:Bitbake_Manual}{online}{}
+      \name{author}{2}{}{%
+        {{hash=9ad618552a2b543fdf2e1d3c84353130}{%
+           family={Richard\bibnamedelima Purdie},
+           familyi={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Chris\bibnamedelima Larson},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=31491cc8e0c11705de796d9a8905b80f}{%
+           family={Blundell},
+           familyi={B\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b339e5284aa7e7209eaad87ecf8ec19b}
+      \strng{fullhash}{b339e5284aa7e7209eaad87ecf8ec19b}
+      \strng{bibnamehash}{b339e5284aa7e7209eaad87ecf8ec19b}
+      \strng{authorbibnamehash}{b339e5284aa7e7209eaad87ecf8ec19b}
+      \strng{authornamehash}{b339e5284aa7e7209eaad87ecf8ec19b}
+      \strng{authorfullhash}{b339e5284aa7e7209eaad87ecf8ec19b}
+      \field{labelalpha}{RB19}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{BitBake User Manual}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.yoctoproject.org/docs/3.0/bitbake-user-manual/bitbake-user-manual.html
+      \endverb
+      \verb{url}
+      \verb https://www.yoctoproject.org/docs/3.0/bitbake-user-manual/bitbake-user-manual.html
       \endverb
     \endentry
     \entry{Yocto:Mega_Manual}{online}{}
@@ -112,6 +322,73 @@
       \verb https://www.yoctoproject.org/docs/current/mega-manual/mega-manual.html
       \endverb
     \endentry
+    \entry{Rago2013}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d45d8f97a669ec6c26ed49cf5ff2897a}{%
+           family={Rago},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=882cf5ccc1ce0f8a7bfc9d838094d291}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi Richard},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{78f247cca1dfe9147dcc4aabdc7e5b7a}
+      \strng{fullhash}{78f247cca1dfe9147dcc4aabdc7e5b7a}
+      \strng{bibnamehash}{78f247cca1dfe9147dcc4aabdc7e5b7a}
+      \strng{authorbibnamehash}{78f247cca1dfe9147dcc4aabdc7e5b7a}
+      \strng{authornamehash}{78f247cca1dfe9147dcc4aabdc7e5b7a}
+      \strng{authorfullhash}{78f247cca1dfe9147dcc4aabdc7e5b7a}
+      \field{labelalpha}{RS13}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd edition}
+      \field{isbn}{978-0-321-63773-4}
+      \field{title}{Advanced Programming in the UNIX Environment -}
+      \field{year}{2013}
+    \endentry
+    \entry{Yocto:YouTube}{online}{}
+      \name{author}{1}{}{%
+        {{hash=abd211ed28fcac3d3b8ccccc3bd15437}{%
+           family={Yocto},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{fullhash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{bibnamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{authorbibnamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{authornamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \strng{authorfullhash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \field{extraname}{1}
+      \field{labelalpha}{Yoc19}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Live Coding with the Yocto Project}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://youtube.com/channel/UC2_mG3h-AxxK2oz08j2bz2g
+      \endverb
+      \verb{url}
+      \verb https://youtube.com/channel/UC2_mG3h-AxxK2oz08j2bz2g
+      \endverb
+    \endentry
     \entry{Yocto:Reference_Manual}{online}{}
       \name{author}{1}{}{%
         {{hash=abd211ed28fcac3d3b8ccccc3bd15437}{%
@@ -124,9 +401,11 @@
       \strng{authorbibnamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
       \strng{authornamehash}{abd211ed28fcac3d3b8ccccc3bd15437}
       \strng{authorfullhash}{abd211ed28fcac3d3b8ccccc3bd15437}
+      \field{extraname}{2}
       \field{labelalpha}{Yoc19}
       \field{sortinit}{Y}
       \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Yocto Project Reference Manual}
@@ -143,6 +422,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Yocto_Eclipse_Plugin}
 \endrefsection
 \endinput
 

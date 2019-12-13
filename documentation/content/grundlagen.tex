@@ -71,13 +71,108 @@ einen definiert durch:
     \cite[S.53]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 \end{itemize}
 
-
-
 \section{Configurations-Dateien *.conf}%
 \label{sec:configurations_dateien_conf}
 Bitbake, sowie die Buildprozesse der einzelnen Recipes
 werden gesteuert durch unterscheidliche \textbf{recipe-lokale} und
 \textbf{globale} configurationsdateien.
 
+
+
+\section{\textit{Operatoren} zum Verändern von Variablen}
+\label{sec:grundlagen_operatoren}
+
+Nachfolgende operatoren stehen in unterschiedlichen Dateien zur Verfügung. Dabei
+sind sie (teils ausschließlich) in *.conf dateien oder in recipes anwendbar.
+
+\begin{description}
+    \item[Standard operatoren wie +=, ?=, \ldots] Eine Auflistung der standard Operatoren ist zu finden unter:
+    \cite[Seite 160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+    \item[\_append, \_prepena, \_removed] Wird übergehend in *.conf Dateien
+        verwendet. Genau wie die Standardoperatoren erweitern Sie eine Variable.
+        Sie werden jedoch zu einem späeren Zeitpunkt als die standard Operatoren
+        verarbeitet. Weiteres ist zu finden unter:
+    \cite[Seite 160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+    \item[INHERRIT] Genutzt ausschließlich in *.conf Dateien zun erben
+        (includieren) von configurations Klassen.
+    \item[inherrit] Genutzt ausschließlich in recipes *.bb und *.bbappend zum
+        erben (inkludieren) von Bitbake-Classen.
+    \item[include] Wenn Datei vorhanden, dann include ihren Inhalt.
+        Ansonsten ignoriere den Befehl. \textit{include} lasst sich sowohl in
+        configurations-Dateien als auch recepes verwenden um alle andren Arten
+        von Dateien zu inkludieren (andere Recipes, Configs, \ldots )
+    \item[require] Wie include nur das die Datei vorhanden sein muss, ansonsten
+        beendet bitbake mit einem error.
+\end{description}
+
+
+
+
+
+
+\section{Yocto Tools}%
+\label{sec:yocto_tools}
+
+    Zum Arbeiten an Bitbake recipes, meta-layern, bitbake classes,
+        bitbake Paketgruppen oder an Konfigurationsdateien stehen verschiedene
+Werkzeuge beteit.
+        \begin{itemize}
+            \item \textit{bitbake-layers} help
+            \item \textit{yocto-layers } help
+            \item \textit{recipe-tool} help
+            \item \textit{devtool } --help
+            \item \textit{bitbake -c devshell <recipe>}
+            \item \textit{bitbake -c devpyshell <recipe>}
+            \item GNU Tools wie \textit{grep, awk, set, diff, cp, vim, usw}
+        \end{itemize}
+         Dabei können gleiche Aufgaben mit verschiedenen Werkzeugen oder auch
+         manuel bearbeitet werden können und zum selben ergebnis führen.\\
+
+         Nicht jedes Tool ist dabei für jeden \textit{Workflow} geeignet. Zum
+         Teil ist es einfacher und weniger Fehleranfälliger einzelne Schritte manuell
+durchzuführen. Etwa das Integrieren neuer Software\-komponenten in ein Image.
+
+
+
+
+
+\section{Entwicklungsrollen und Workflows}%
+\label{sec:workflows}
+Generell ist das Arbeiten an einer Linux Distribution und das Arbeiten mit
+Bitbake in verschiedene Aufgabenpakete zu unterteilen:
+\begin{itemize}
+    \item Anpassen eines Linux Kernels und Entwicklung neuer Kernel Module
+    \item Anpassen von Hardware-Beschreibungen wie Device Trees und Bootloader
+    \item Anpassen von meta-layern auf u.a. auf BSP und Applikationsschicht.
+        Sowie erstellen von neuen meta-layern, recipes, bitbake-paketen, \ldots
+    \item Entwickeln von Softwarekomponenten; Hardwarenah; nutzen von
+        Systemcalls
+    \item Entwickeln von Softwarekomponenten; Abstract; nutzen von höheren
+        Funktionsbibliotheken
+    \item Einbinden und patchen / erweitern von Softwarepakete in den Buildprozess,
+\end{itemize}
+
+Je nach Aufgabengebiet unterscheidet sich auch die Arbeitsweise:
+\begin{itemize}
+    \item Externe Software- oder Modulentwicklung, etwa in \textit{eclipse} oder
+        \textit{qt-creator} sowie externes Testen der Komponenten. Bitbake kann
+        für diese Aufgabe ein \acl{SDK} bereitstellen, welches die Cross-
+        Entwicklung für die Ziel\-plattform ermöglicht. Siehe hierzu
+        \fullref{cha:sdk}.
+    \item Patchen oder erweitern von Software\-komponenten die Bereits in den
+        Linux Kernel und Bitbake integriert sind, lassen sie am einfachsten durch
+        Tool bewerkstelligen, die von der Yocto / OpenEmbedded Community bereit
+        gestellt werden. Hierzu zählt z.B. das s.g. \textit{devtool}. Siehe
+        hierzu \fullref{cha:yocto_devtool}. Aber auch eine temporäre
+        Bitbake-bash oder bitbake-python \textit{development-shell} steht bei
+        einfachen Anpassungen zu verfügung.
+    \item Beim Arbeiten an recepis und meta-layern und somit dem erweitern und
+        pflegen des Buildssystems, können helfen:
+            \item \textit{bitbake-layers} help
+            \item \textit{yocto-layers } help
+            \item \textit{recipe-tool} help
+            \item \textit{devtool } --help
+
+\end{itemize}
 
 

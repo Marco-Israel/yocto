@@ -1,27 +1,92 @@
-================================================================================
 
-                    Yokto / Bitbake / Openembedded
-                        PITFALLS, do and do not
-
-                            Marco Israel, 2019
+\chapter{Bekannte Fehler - Pittfalls}%
+\label{cha:bekannte_fehler}
 
 
+\section{Never do}%
+\label{sec:Never_do}
 
-================================================================================
-1 Never do
+Nachfolgende actionen füren in jedem Fall zu einem Fehler
 
-- never give a recipes the name wit "_" (underscore). Only the "-" is allowed.
-- never give a name to a recipes in camelCase. Only use small letters.
-- never rename a (project) folder after you build the image, sdk or whatever.
-  Because absolute pathes are past into the enviroment scripts, your toolbox
-  will not work anymore correct.
+\begin{description}
+    \item[Unterstrich \glqq \_ \grqq im Namen]  Vergebe niemals einen Namen mit
+        einem Unterstrich ( \_ ); z.B. für ein Recipe oder einen Ordner
+    \item[kein CamelCase] Namen für Recipies oder beispielsweise Ordner müssen
+        klein geschreiben werden. CamelCase oder Großschreibung ist nicht
+        zulässig.
+    \item[Umbenennung von Dateien oder Pfaden] Benenne niemals einen Ordner,
+        einen Pfad oder ähnliches um. Anderfalls ist ein komletter Neuanfang mit
+        leerer \textit{Shell} und leerem \textit{temp}
+        und \textit{sstate\_cache} Ordner nötig.
+    \item Updaten, austauschen, \ldots von meta-layern, paketen, Konfigurationen
+        \ldots. Neue Abhängigkeiten und veränderungen führen oft zu Fehlern.
+\end{description}
 
-================================================================================
 
+\section{Must do}%
+\label{sec:must_do}
 
-Nach änderungen des Kernels \textit{menuconfig} oder \textit{bitbake -c
-    configure virtual/kernel} oder durch einbindinden mit
-\textit{autoload} Funktion von neuen Modulen in den Kernel,  \textbf{muss} der \textit{sstatechache} manuell
-gelöscht werden bevor das Image neu gebaut wird!
+\begin{itemize}
+    \item Es \textbf{muss} der \textit{sstate chache} manuell gelöscht werden
+        wenn:
+        \begin{itemize}
+            \item Kernel Konfigurationen verändert wurden. Z.B. durch
+                \textit{menuconfig} oder \textit{bitbake -c configure virtual/kernel}
+            \item Module zum Kernel-Autoload hinzu gefügt wurden. Siehe hierzu
+                \fullref{sec:software_module}
+            \item Eine \textbf{Maschinenkonfiguration}
+                \textit{machine/mymachine.conf} verändert wurde.
+            \item Eine \textbf{Distributionsconfiguration}
+                \textit{distro/mydistro.conf} verändert wurde.
+        \end{itemize}
+    \item Sollte alles nichts helfen, muss auch der \textit{tmp} Ordner gelöscht
+        werden oder ein \textit{bitbake --force <command\_and\_recipe}
+        aufgerufen werden. Siehe herzu auch \fullref{sub:loesungsschritte}
+\end{itemize}
+
+\section{Generelle Empfehlungen}%
+\label{sec:generelle_empfehlungen}
+
+Beim Arbeiten mit Bitbake ist zu empfehlen:
+
+\begin{itemize}
+    \item Kleine Änderungen durchführen und testen.
+    \item Eigene Meta-dateien und Änderungen in bestehenden Konfigurationen und
+        Metadateien in einem Reposetorie Versionieren. In einem Fehlerfall ist
+        so ein Rollback möglich.
+    \item Sichere regelmässig local die Ordner
+       \begin{itemize}
+           \item \textit{sstate-cache}
+           \item \textit{tmp}
+           \item \textit{deploy} bzw. \textit{tmp/deploy}
+       \end{itemize}
+    \item Halte immer ein Lauffähiges \textit{Image}, \textit{rootfs},
+    und einen funktionierenden
+    \textit{device tree blob} und ggf. ein funktionierendes \textit{SDK}
+    bereit; u.a. um  Fehler der Hardware ausschließen zu können.
+    \item Vorgehensweise beim erstellen einer neuen Konfiguration:
+        \begin{itemize}
+            \item Eine Bestehende Image / Distro / Machine Configuration
+                nutzen und nach eigenen Anforderungen abändern. Änderungen
+                jeweils in kleinen schritten durchführen.
+            \item Auf einer minimalen poky Konfiguration neu aufbauen. Ggf. an
+                anderen Beispielen orientieren.
+            \item Eine Bestehende größere Konfigurationsstruktur zu erweitern
+                ist \textit{nicht empfehlenswert} da Fehleranfällig und schwer
+                zu verstehen.
+            \item Must-dos \fullref{sec:must_do} beachten.
+            \item Never-do \fullref{sec:never_do} beachten.
+        \end{itemize}
+    \item Variablen sollten wie folgt erweitert werden:
+        \begin{description}
+            \item[In Konfigurationsdateien] durch die Operatoren \textit{\_append}
+                oder \textit{\_prepend}.
+            \item[In Recipes] durch Operatoren \textit{+=}
+                oder \textit{.=}.
+            \item[Weitere Informationen und Hintergründe unter] \cite[Seite
+                160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+        \end{description}
+\end{itemize}
+
 
 
