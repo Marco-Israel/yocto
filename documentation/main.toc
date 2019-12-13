@@ -1,0 +1,148 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Inhaltsverzeichnis}{iv}{figure.caption.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{v}{figure.caption.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{vii}{chapter*.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}\IeC {\"U}ber Yocto, OpenEmbedded, poky, meta-daten und Bitbake}{1}{section.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Die Yocto Community}{2}{subsection.1.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Die OpenEmbedded Community}{2}{subsection.1.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Docker}{2}{section.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Literatur}{2}{section.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Grundlage}{5}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Bitbake}{5}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Bitbake Buildprozess}{5}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Fatch Task}{6}{subsection.2.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Configurations-Dateien *.conf}{6}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}\textit {Operatoren} zum Ver\IeC {\"a}ndern von Variablen}{7}{section.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Yocto Tools}{7}{section.2.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Entwicklungsrollen und Workflows}{8}{section.2.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Setup your host}{11}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Erforderliche Pakete}{11}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Host Konfiguration}{11}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Setup Eclipse}{15}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Installation, Einrichtung und Plugins}{15}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Cross Compile und Remote Debugging Einstellungen}{15}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}QT5 einrichten}{17}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Qt Creator einrichten}{17}{section.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Arbeiten mit Qt Creator}{17}{section.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Hardware und Linux distribution}{19}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Hardware (\textit {machine}) Beschreibung}{19}{section.6.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Linux Distribution definieren}{20}{section.6.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Bootloader definieren}{20}{section.6.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Module entwicklung}{23}{chapter.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Kernel Module}{23}{section.7.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}Neues Kernelmodul}{23}{subsection.7.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Kernel anpssen - features aktivieren}{23}{subsection.7.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Software Module}{23}{section.7.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Eigene Kernel modul erstellen und einbinden}{24}{subsection.7.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Flashen des image}{24}{section.7.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Applikationsentwicklung}{27}{chapter.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Einbinden von Applikationen in vorhandene Images}{27}{section.8.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Existierende Pakete und Metadaten nutzen}{27}{section.8.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.1}Sotware dem Image hinzuf\IeC {\"u}gen}{28}{subsection.8.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Commands Bitbake}{31}{chapter.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Bitbake Dokumentations Quellen}{31}{section.9.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Neuer \textit {meta-layer}}{31}{section.9.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}meta-layer zum build hinzuf\IeC {\"u}gen}{31}{section.9.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.4}Active meta-layer auflisten}{32}{section.9.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.5}Anzeigen aller recipes - beispielsweise aller images}{32}{section.9.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.6}Anzeigen der Tasks eines recipes}{32}{section.9.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.7}Ausf\IeC {\"u}hren bestimmter Tasks eines Recipes}{32}{section.9.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.8}Umgebungsvariablen eines Recipes}{33}{section.9.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.8.1}H\IeC {\"a}ufig ben\IeC {\"o}tigte Umgebungsvariablen}{33}{subsection.9.8.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.9}section name}{33}{section.9.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.10}Erzeugen von tempor\IeC {\"a}ren entwicklungs-Shells}{33}{section.9.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Yocto devtool}{35}{chapter.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}devtool Kommandos}{35}{section.10.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Arbeiten mit \textit {devtool}}{35}{section.10.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Bekannte Fehler - Pittfalls}{37}{chapter.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Never do}{37}{section.11.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Must do}{37}{section.11.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Generelle Empfehlungen}{38}{section.11.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}L\IeC {\"o}sung f\IeC {\"u}r bekannte Fehler}{41}{chapter.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}\textbf {ERROR:} Fehler beim Bauen eines recipes>}{41}{section.12.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.1.1}L\IeC {\"o}sungschritte}{41}{subsection.12.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.2}Logging in Recipes}{41}{section.12.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}Abh\IeC {\"a}ngigkeiten (Dependencies) visualisieren}{42}{section.12.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}Ausblick}{43}{chapter.13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.1}N\IeC {\"a}chste Schritte}{43}{section.13.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1.1}Entwicklungswerkzeuge als Docker Container}{43}{subsection.13.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1.2}Erweiterung der Scripte}{43}{subsection.13.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.2}Security}{44}{section.13.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.3}Lizenzen}{44}{section.13.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossar}{46}{chapter*.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{47}{chapter*.6}% 
