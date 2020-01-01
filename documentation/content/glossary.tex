@@ -1,30 +1,72 @@
 % % % % % % % % % % % % % % % % %Glossar
 %\usepackage{ngerman}
 %\usepackage[ngerman]{babel}
-%
 
-
-\newglossaryentry{Poky}{
-name=Poky,
-description={XXX}
-}
-
-\newglossaryentry{Yocto Project}{
-name=Yocto Project,
-description={Eine Community Gruppe welche eine Software Buildumgebung pflegt
-und weiterentwickelt, sowie Metadaten für diese Buildumgebung zur verfügung
-stellt um ein minimalistisches Linux system mit grundlegenden Tools unter der
-virtuallisierungsumgebung QEMU zu starten.}
+\newglossaryentry{NFS}{
+name=NFS,
+description={ Das \acf{NFS}, (auch Network File Service) ist ein
+    Netzwerkprotokoll, das den Zugriff auf Dateien über ein Netzwerk ermöglicht.
+    Dabei werden die Dateien nicht wie z. B. bei \ac{FTP} oder \ac{TFTP}
+    übertragen, sondern die Benutzer können auf Dateien, die sich auf einem
+    entfernten Rechner befinden, so zugreifen, als ob sie auf ihrer lokalen
+    Festplatte abgespeichert wären. Unter Unix Betriebssystemen lassen sich
+    diese Netzwerkfreigaben direkt in das Dateisystem einhängen entsprechend wie
+z.B. Festplatten. }
 }
 
 
-\newglossaryentry{Bitbake}{
-name=Bitbake,
-description={Bitbake ist ein Framework ähnlich wie GNU Make, bestehend aus
-Phython Srcipten welche das Erstellen von Linux \glspl{Distribution}
-mittels Metadaten koordiniert.
+\newglossaryentry{TFTP}{
+name=TFTP,
+description={Das \acf{TFTP} ist ein im
+    Fumktionsumfang stark vereinfachtes \acl{FTP} und reduziertes Protokoll, das
+lediglich das senden und das empfangen von Dateien ermöglicht.}
+}
+
+\newglossaryentry{GIT}{
+name=GIT,
+description={ Git ist eine freie Software zur verteilten Versionsverwaltung von
+    Dateien, die durch Linus Torvalds initiiert wurde. Es arbeiten im gegensatz
+    zu anderen Versionsverwaltungen mit lokalen als auch externen Reposetories.
 }
 }
+
+\newglossaryentry{Dockerfile}{
+name=Dockerfile,
+description={Ein Dockerfile beschreibt wie ein \gls{Docker} Container (Image)
+    gebaut werden soll, genauer welche Tools und Konfigurationen der
+    Container enthalten soll.}
+}
+
+
+\newglossaryentry{Yocto}{
+name=Yocto,
+description={
+Das Yocto Project bezeichnet eine Community Gruppe, welche
+sich zur Aufgabe gemacht hat, dass erstellen von Linux Distributionen für
+eingebettet System zu vereinfachen. Die Yocto community stellt Meta-Daten (Recipes) bereit, um ein minimalistisches
+Betriebssystem mit grundlegenden  Linux \glspl{Tool} unter der Virtualisierungsumgebung
+\textit{\gls{QEMU}} für verschiedene Architekturen starten zu können.
+Das Minimalisten Betriebssystem der Yocto Community wird \textit{\gls{Poky}}
+genannt. Zudem Pflegt es zusammen mit der \gls{OpenEmbedded} community das Buildsystem
+\textit{bitbake}.  }
+}
+
+
+\newglossaryentry{QEMU}{
+name=QEMU,
+description={QEMU ist (von englisch „Quick Emulator“) ist eine freie
+    Virtualisierungssoftware, die die gesamte Hardware mitsamt
+    Prozessorinstruktionen einer einer Zielhardware emuliert. Dabei ist es sehr
+Recourcenschonend und performant.}
+}
+
+\newglossaryentry{Wrapper}{
+name=Wrapper,
+description={ Ein Wrapper ist ein Sofwareinterface das Interaktion mit einem
+    anderen Softwarepaket kapselt und i.d.R. nach außen hin vereinfacht.
+}
+}
+
 
 
 \newglossaryentry{OpenEmbedded}{
@@ -94,7 +136,8 @@ werden.}
         } }
 
 
-\newacronym{DTB}{DTB}{Device Tree Blob}
+\newacronym{DTB}{DTB}{Device Tree Blob} \newacronym{BSP}{BSP}{Board Support
+    Packed}
 
 
 %
@@ -263,10 +306,25 @@ description={Merkmal oder Eigenschaft, wie eine besondere Funktionalität}
 %name=Trailer,
 %description={Schlussteil oder Anhang einer Datei. Beschreibt zusätzlichen Informationen zu einer Datei.}
 %}
-%\newglossaryentry{Root}{
-%name=Root,
-%description={Wurzel, Ursprung von dem alles ausgeht. Im Unix Betriebssystem der erste Benutzer, von welchem alles ausgeht. Er besitzt i.d.R die meisten Rechte.}
-%}
+\newglossaryentry{Root}{
+name=Root,
+description={Wurzel, Ursprung von dem etwas ausgeht. Im Unix Betriebssystem
+    sowohl ein (der) adminstrative Benutzer sowie der Ursprung des
+    gesamten Linux Verzeichnisbaums
+    (Dateisystem) unter welchem weitere Verzeichnisbäume eingehängt werden.
+    Diese können sich auf der selben Festplatte als auch auf einem externen
+    Speichermedium befinden.}
+}
+
+
+
+\newglossaryentry{RootFS}{
+name=Root File System,
+description={Wurzel (\gls{Root}) des Linux Datei Systems unter welchem weitere
+    Verzeichnisbäume (lokal oder extern auf einem anderen Datenträger)
+    eingehängt werden. Z.b. \textit{home, bin, tmp, boot, usr, \ldots} }
+}
+
 %\newglossaryentry{Integritaet}{
 %name=Datenintegrität,
 %description={Verhinderung vor unautorisierter Modifikation von Information}
@@ -500,3 +558,10 @@ description={Eine Datei, welche \glspl{Meta} (Informationen zu anderen Daten) ü
 %plural=Hases,
 %description={Ein Hash ist eine bezeichnet eine Verkürzte Form von etwas. Durch eine Hashfunktion (der Vorgang um einen Hash zu erstellen) wird eine Große Eingabe (z.B. eine Datei oder ein Satz) in eine kleine Ausgabemenge umgewandelt(abgebildet). Es existieren verschiedene Verfahren, um einen Hash (oder Hashwert) zu erzeugen. Die bekanntesten sind \ac{MD5} und \ac{SHA} in Version 2 und 3. Ein Hashwert wird häufig als Prüfsumme verwendet und wird in diesem Fall auch als Fingerprint bezeichnet.}
 %}
+
+\newglossaryentry{Tool}{
+name=Tool, description={Ein Tool (Informationstechnik, zu Deutsch
+    \textit{Werkzeug})  beschreib beschreibt ein Stück Software das
+    Hilfsaufgaben ausführt um eingesetzt bei anderen Aufgaben zu unterstützen }}
+
+

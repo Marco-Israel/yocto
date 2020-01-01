@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.22)  13 DEC 2019 10:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.22)  1 JAN 2020 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1637,27 +1637,24 @@ chapter without number
  (./content/einleitung.tex
 chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
+Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--17
+Underfull \hbox (badness 10000) in paragraph at lines 13--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
 
  []
 
+Package acronym Info: Label `acro:BSP' newly defined as it shall be overridden
+although it is yet undefined on input line 30.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+Underfull \hbox (badness 10000) in paragraph at lines 26--36
 
  []
 
@@ -1665,36 +1662,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 
+l.36 
       [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
 
 LaTeX Warning: Reference `bitbake_buildprozess' on page 2 undefined on input li
-ne 61.
+ne 65.
 
 
 LaTeX Warning: Reference `bitbake_buildprozess' on page 2 undefined on input li
-ne 62.
+ne 66.
 
 
-Overfull \hbox (12.33234pt too wide) in paragraph at lines 85--88
-[]\T1/cmss/m/n/12 [[]Phy19b[]], [[]] und [[]Gon18[]] 
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--86
+
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88         \gls{DTB}:]
-                         \cite[Kapitel [2]
-Overfull \hbox (139.76244pt too wide) in paragraph at lines 88--92
+l.86 
+      [2]
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+
+Overfull \hbox (23.65054pt too wide) in paragraph at lines 92--93
+[]\T1/cmss/bx/n/12 Von dem Ge-brauch klas-si-scher Vir-tua-li-sie-rungs-tech-ni
+-ken ist aus Performance-
+ []
+
+
+Overfull \hbox (12.33234pt too wide) in paragraph at lines 102--105
+[]\T1/cmss/m/n/12 [[]Phy19b[]], [[]] und [[]Gon18[]] 
+ []
+
+
+Overfull \hbox (139.76244pt too wide) in paragraph at lines 105--109
 []
  []
 
@@ -1716,23 +1739,24 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 18.
 
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
+[7]
 
-LaTeX Warning: Hyper reference `cha:sdk' on page 8 undefined on input line 161.
-
-
-
-LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 161.
+LaTeX Warning: Hyper reference `cha:sdk' on page 8 undefined on input line 164.
 
 
-LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 161.
+
+LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 164.
 
 
-LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 161.
+LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 164.
+
+
+LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 164.
 
 [8]) [9]
 \openout2 = `content/setup_host.aux'.
@@ -1744,26 +1768,21 @@ LaTeX Warning: Reference `cha:sdk' on page 8 undefined on input line 161.
 
 ]
 chapter 3.
+Package acronym Info: Label `acro:WYSIWYG' newly defined as it shall be overrid
+den
+although it is yet undefined on input line 33.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--11
+Package acronym Warning: Acronym `WYSIWYG' is not defined on input line 33.
 
+
+Package acronym Warning: Acronym `WYSIWYG' is not defined on input line 33.
+
+[11] [12]
+Overfull \hbox (0.55898pt too wide) in paragraph at lines 102--106
+[]\T1/cmss/m/n/12 Yocto/Openembedded Tools bau-en auf
  []
 
-[11]
-
-LaTeX Warning: Reference `cha:setup_qtcreator' on page 12 undefined on input li
-ne 83.
-
-
-LaTeX Warning: Reference `cha:setup_qtcreator' on page 12 undefined on input li
-ne 84.
-
-
-Overfull \hbox (4.98012pt too wide) in paragraph at lines 93--96
-[]\T1/cmss/m/n/12 Yocto/Openembedded Tools bau-en auf Py-thon2
- []
-
-[12]) [13]
+) [13]
 \openout2 = `content/setup_eclipse.aux'.
 
  (./content/setup_eclipse.tex [14
@@ -1784,17 +1803,17 @@ Overfull \hbox (59.01836pt too wide) in paragraph at lines 21--27
 //downloads.yoctoproject.org/releases/eclipse-
  []
 
-) [15]
+[15]) [16]
 \openout2 = `content/setup_qt5.aux'.
 
- (./content/setup_qt5.tex [16
+ (./content/setup_qt5.tex
+chapter 5.
+) [17
 
 
 
 
 ]
-chapter 5.
-) [17]
 \openout2 = `content/layer_machine_and_distro.aux'.
 
  (./content/layer_machine_and_distro.tex [18
@@ -1805,40 +1824,21 @@ chapter 5.
 ]
 chapter 6.
 
-Overfull \hbox (98.0888pt too wide) in paragraph at lines 17--21
-\T1/cmss/m/n/12 ba-ke be-schrie-ben wer-den. Die-ses ge-schieht mit-tels ei-ner
- <hw-metalayer>/conf/machine/<machine>.conf
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--27
+Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
 
-LaTeX Warning: Reference `sec:linux_distribution_definieren' on page 19 undefin
-ed on input line 37.
+Underfull \hbox (badness 10000) in paragraph at lines 17--28
 
-
-LaTeX Warning: Reference `sec:linux_distribution_definieren' on page 19 undefin
-ed on input line 38.
-
-
-LaTeX Warning: Reference `sec:bootloader_definierenr' on page 19 undefined on i
-nput line 40.
+ []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
-)
-Overfull \hbox (25.7752pt too wide) in paragraph at lines 88--99
-[]\T1/cmss/m/n/12 Änlich wie die Hard-wa-re und Ziel-platt-form (Sie-he []6.1[]
- Sei-te []19[]) so-wie ei-ne Betriebssystem-
- []
-
-[20] [21]
+[20]) [21]
 \openout2 = `content/layer_kernel.aux'.
 
  (./content/layer_kernel.tex [22
@@ -1859,15 +1859,10 @@ Overfull \hbox (9.7829pt too wide) in paragraph at lines 47--48
 []\T1/cmss/m/n/12 MACHINE_ESSENTIAL_EXTRA_RDEPENDS_append += <module-recipe> 
  []
 
-[23] [24]) [25]
+[23]) [24]
 \openout2 = `content/layer_app.aux'.
 
- (./content/layer_app.tex [26
-
-
-
-
-]
+ (./content/layer_app.tex
 chapter 8.
 
 Overfull \hbox (62.16565pt too wide) in paragraph at lines 14--16
@@ -1876,56 +1871,52 @@ e <re-ci-pes/i-ma-ge> | grep []LAYERSERIES_COMPAT
  []
 
 
-LaTeX Warning: Reference `OpenEmbedded:Indexer_Recipes' on page 27 undefined on
- input line 17.
-
-
 Overfull \hbox (10.66003pt too wide) in paragraph at lines 45--49
 \T1/cmss/m/n/12 zu-fü-gen. Die-ser Schritt wird durch \T1/cmss/m/it/12 bitbake-
 layers layerindex-fetch <metadatalayer-
  []
 
-[27]
-
-LaTeX Warning: Reference `OpenEmbedded:Indexer_Recipes' on page 28 undefined on
- input line 53.
+[25
 
 
-Overfull \hbox (3.5015pt too wide) in paragraph at lines 54--59
-[]\T1/cmss/m/n/12 oder di-rekt aus-ge-ben durch: \T1/cmss/m/it/12 bitbake-layer
-s layerindex-show-depends <layer-
+
+
+]
+Overfull \hbox (14.74875pt too wide) in paragraph at lines 56--60
+[]\T1/cmss/m/n/12 direkt aus-ge-ben durch: \T1/cmss/m/it/12 bitbake-layers laye
+rindex-show-depends <layer-name>
  []
 
 
-Overfull \hbox (47.10356pt too wide) in paragraph at lines 54--59
-\T1/cmss/m/it/12 layers layerindex-fetch <layer-name> \T1/cmss/m/n/12 bitbake-l
-ayers add-layer <path/to/your/meta-
+Overfull \hbox (22.17224pt too wide) in paragraph at lines 56--60
+\T1/cmss/m/n/12 und an-schlie-ÿend her-un-ter-la-den und hin-zu-fü-gen durch \T
+1/cmss/m/it/12 bitbake-layers layerindex-
  []
 
 
-Overfull \hbox (5.20938pt too wide) in paragraph at lines 69--72
+Overfull \hbox (5.20938pt too wide) in paragraph at lines 70--74
 \T1/cmss/m/n/12 Um ein Soft-wa-re-pa-ket ei-nem Image hin-zu zu fü-gen muss die
  Va-ria-ble \T1/cmss/m/it/12 IMAGE_INSTALL
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--107
+Underfull \hbox (badness 10000) in paragraph at lines 101--109
 
  []
 
-) [29]
+) [27]
 \openout2 = `sdk_erzeugenx.aux'.
 
 
 No file sdk_erzeugenx.tex.
 \openout2 = `content/commands_bitbake.aux'.
 
-(./content/commands_bitbake.tex [30
+(./content/commands_bitbake.tex [28
 
 
 
@@ -1939,32 +1930,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--15
 
  []
 
-[31] [32]
-Overfull \hbox (115.6058pt too wide) in paragraph at lines 113--115
-[]\T1/cmss/m/n/12 bitbake -e vir-tual/ker-nel | grep  \T1/cmss/bx/n/12 ^^RPRE-F
-ER-RED_PROVIDER_virtual/kernel^^P 
- []
-
-
-Overfull \hbox (114.44778pt too wide) in paragraph at lines 115--117
-[]\T1/cmss/m/n/12 bitbake -e <re-ci-pes/i-ma-ge> | grep []\T1/cmss/bx/n/12 LAYE
-RSERIES_COMPAT 
- []
-
-) [33]
+[29] [30]) [31] [32]
 \openout2 = `content/commands_devtool.aux'.
 
- (./content/commands_devtool.tex [34
+ (./content/commands_devtool.tex
+chapter 10.
+) [33
 
 
 
 
 ]
-chapter 10.
-) [35]
 \openout2 = `content/pitfalls.aux'.
 
- (./content/pitfalls.tex [36
+ (./content/pitfalls.tex [34
 
 
 
@@ -1983,35 +1962,35 @@ Overfull \hbox (2.38062pt too wide) in paragraph at lines 37--39
 /m/it/12 ma-chi-ne/-my-ma-chi-ne.conf \T1/cmss/m/n/12 ver-än-dert wur-
  []
 
-[37]
+[35]
 
-LaTeX Warning: Hyper reference `sec:never_do' on page 38 undefined on input lin
+LaTeX Warning: Hyper reference `sec:never_do' on page 36 undefined on input lin
 e 78.
 
 
-LaTeX Warning: Reference `sec:never_do' on page 38 undefined on input line 78.
+LaTeX Warning: Reference `sec:never_do' on page 36 undefined on input line 78.
 
 
-LaTeX Warning: Reference `sec:never_do' on page 38 undefined on input line 78.
+LaTeX Warning: Reference `sec:never_do' on page 36 undefined on input line 78.
 
 
-LaTeX Warning: Reference `sec:never_do' on page 38 undefined on input line 78.
+LaTeX Warning: Reference `sec:never_do' on page 36 undefined on input line 78.
 
-[38]) [39]
+[36]) [37]
 \openout2 = `content/solutions2errors.aux'.
 
- (./content/solutions2errors.tex [40
+ (./content/solutions2errors.tex [38
 
 
 
 
 ]
 chapter 12.
-[41]
+[39]
 LaTeX Font Info:    Try loading font information for U+ark on input line 55.
  (/usr/share/texlive/texmf-dist/tex/latex/dingbat/uark.fd
 File: uark.fd 2001/04/27 v1.00 Font definitions for the ark10 font
-)) [42]
+)) [40]
 \openout2 = `content/cross_development.aux'.
 
 
@@ -2027,7 +2006,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--54
 
  []
 
-[43
+[41
 
 
 
@@ -2040,21 +2019,29 @@ Overfull \hbox (21.09694pt too wide) in paragraph at lines 55--59
 r-öf-fent-li-chung, das Sicherheits-
  []
 
-) [44] (./main.gls
-Overfull \hbox (0.63121pt too wide) in paragraph at lines 9--11
+) [42] (./main.gls
+Overfull \hbox (0.63121pt too wide) in paragraph at lines 8--11
 []\T1/cmss/m/n/12 Als Dis-tri-bu-ti-on be-zeich-net man ei-ne Zu-sam-men-stel-l
 ung von (Software-
  []
 
-[45
+[43
 
 
 
 
 
-])
+]
+Package acronym Info: Label `acro:NFS' newly defined as it shall be overridden
+although it is yet undefined on input line 30.
+Package acronym Info: Label `acro:FTP' newly defined as it shall be overridden
+although it is yet undefined on input line 30.
+Package acronym Info: Label `acro:TFTP' newly defined as it shall be overridden
+
+although it is yet undefined on input line 30.
+ [44])
 No file main.acr.
-[46] (./main.ind)
+[45] [46] (./main.ind)
 chapter without number
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <12> not available
@@ -2083,6 +2070,13 @@ ps : / / www . yoctoproject .
  []
 
 
+Overfull \hbox (2.74934pt too wide) in paragraph at lines 136--136
+[]\T1/cmss/m/n/12 variwiki. \T1/cmss/m/it/12 Yoc-to Pro-gram-ming with Eclip-se
+\T1/cmss/m/n/12 . 2019. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12
+ http : / / variwiki .
+ []
+
+[48]
 Overfull \hbox (4.78639pt too wide) in paragraph at lines 136--136
 []\T1/cmss/m/n/12 Yocto. \T1/cmss/m/it/12 Li-ve Co-ding with the Yoc-to Pro-jec
 t\T1/cmss/m/n/12 . 2019. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/1
@@ -2097,7 +2091,7 @@ LaTeX Warning: Empty bibliography on input line 137.
 
 No file main.acr.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-[48]
+[49]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (./main.aux (./title.aux) (./content/abbreviations.aux)
 (./content/einleitung.aux) (./content/grundlagen.aux) (./content/setup_host.aux
@@ -2127,10 +2121,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37562 strings out of 494508
- 670049 string characters out of 6175044
- 1439550 words of memory out of 5000000
- 40469 multiletter control sequences out of 15000+600000
+ 37944 strings out of 494508
+ 676118 string characters out of 6175044
+ 1446383 words of memory out of 5000000
+ 40824 multiletter control sequences out of 15000+600000
  548478 words of font info for 54 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  62i,12n,95p,9083b,2278s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2150,10 +2144,10 @@ pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.60
 728.600pk> </home/latex/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx
 2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb>
-Output written on main.pdf (58 pages, 222333 bytes).
+Output written on main.pdf (59 pages, 244967 bytes).
 PDF statistics:
- 1281 PDF objects out of 1440 (max. 8388607)
- 802 compressed objects within 9 object streams
- 183 named destinations out of 1000 (max. 500000)
- 590 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1406 PDF objects out of 1440 (max. 8388607)
+ 887 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 582 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -119,6 +119,36 @@
       \field{title}{The Linux Programming Interface -}
       \field{year}{2010}
     \endentry
+    \entry{OpenEmbedded:Indexer_Recipes}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b4d9f5e0b67347f683da4f5aa15e7cfb}{%
+           family={openEmbedded},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4d9f5e0b67347f683da4f5aa15e7cfb}
+      \strng{fullhash}{b4d9f5e0b67347f683da4f5aa15e7cfb}
+      \strng{bibnamehash}{b4d9f5e0b67347f683da4f5aa15e7cfb}
+      \strng{authorbibnamehash}{b4d9f5e0b67347f683da4f5aa15e7cfb}
+      \strng{authornamehash}{b4d9f5e0b67347f683da4f5aa15e7cfb}
+      \strng{authorfullhash}{b4d9f5e0b67347f683da4f5aa15e7cfb}
+      \field{labelalpha}{ope19}
+      \field{sortinit}{o}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Open Embedded Recipe Indexer}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://layers.openembedded.org/layerindex/branch/master/recipes/
+      \endverb
+      \verb{url}
+      \verb https://layers.openembedded.org/layerindex/branch/master/recipes/
+      \endverb
+    \endentry
     \entry{Pytec:BSP_Manual}{online}{}
       \name{author}{1}{}{%
         {{hash=8f8a45793ea38469edecf9b6a1cc5756}{%
@@ -216,6 +246,39 @@
       \endverb
       \verb{url}
       \verb https://www.phytec.de/produkt/system-on-modules/phycore-imx-6-phyboard-mira-download/
+      \endverb
+    \endentry
+    \entry{PhyTec:Yocto_Manual}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8f8a45793ea38469edecf9b6a1cc5756}{%
+           family={PhyTec},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{fullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{bibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorbibnamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authornamehash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \strng{authorfullhash}{8f8a45793ea38469edecf9b6a1cc5756}
+      \field{extraname}{4}
+      \field{labelalpha}{Phy19}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Conclusion Yocto Mega Manual}
+      \field{title}{{PhyTec Mira} Yocto Manual}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.phytec.de/documents/?title=l-813e-7-yocto-reference-manual
+      \endverb
+      \verb{url}
+      \verb https://www.phytec.de/documents/?title=l-813e-7-yocto-reference-manual
       \endverb
     \endentry
     \entry{Quade2015}{book}{}
@@ -356,6 +419,36 @@
       \field{isbn}{978-0-321-63773-4}
       \field{title}{Advanced Programming in the UNIX Environment -}
       \field{year}{2013}
+    \endentry
+    \entry{Variwiki:Yocto_Eclipse_Plugin}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cad72224047097ecfbffa2e2875ef46f}{%
+           family={variwiki},
+           familyi={v\bibinitperiod}}}%
+      }
+      \strng{namehash}{cad72224047097ecfbffa2e2875ef46f}
+      \strng{fullhash}{cad72224047097ecfbffa2e2875ef46f}
+      \strng{bibnamehash}{cad72224047097ecfbffa2e2875ef46f}
+      \strng{authorbibnamehash}{cad72224047097ecfbffa2e2875ef46f}
+      \strng{authornamehash}{cad72224047097ecfbffa2e2875ef46f}
+      \strng{authorfullhash}{cad72224047097ecfbffa2e2875ef46f}
+      \field{labelalpha}{var19}
+      \field{sortinit}{v}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Yocto Programming with Eclipse}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://variwiki.com/index.php?title=Yocto_Programming_with_Eclipse
+      \endverb
+      \verb{url}
+      \verb http://variwiki.com/index.php?title=Yocto_Programming_with_Eclipse
+      \endverb
     \endentry
     \entry{Yocto:YouTube}{online}{}
       \name{author}{1}{}{%

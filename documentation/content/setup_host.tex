@@ -5,26 +5,35 @@
 \section{Erforderliche Pakete}%
 \label{sec:erforderliche_pakete}
 
-Das yocto Docker file zeigt eine Liste aller nötigen Ubuntu Pakte die zum
-Arbeiten mit der Yocto / OpenEmbedded Build Umgebung auf einem  Host benötigt
-werden, sollte nicht mit dem Docker Image gearbeitet werden wollen. \\
+Das \textit{\gls{Dockerfile}} \glqq Yocto\grqq zeigt eine Liste aller nötigen
+Ubuntu Pakte die zum Arbeiten mit der Yocto / OpenEmbedded Build Umgebung auf
+einem Host benötigt werden. Beim Arbeiten mit dem Docker Image sind alle nötigen
+Tools bereits nach dem erstellen des Docker Container in dem Container in
+kompatiblen Versionen  enthalten.  \textit{Bitbake} und andere Tools können
+direkt genutzt werden.\\ Der Container lässt sich bauen mit \textit{docker build
+-t Dockerfile}.
 
+\textbf{Zusätzlich} sind die nachfolgenden Pakete zum Arbeiten auf dem lokalen
+Host nötig oder empfehlenswert. Nähere Informationen zu den Paketen, Quellen,
+Konfigurationen usw. sind auf verschiedenen Internetseiten zu finden.
 
-\textbf{Zusätzlich} sind die nachfolgenden Pakete werden zum Arbeiten auf dem lokalen
-Host benötigt. Nähere Informationen zu den Paketen, Quellen, Konfigurationen
-usw. sind auf verschiedenen Internetseiten zu finden.
-
-\begin{itemize}
-    \item git
-    \item docker
-    \item TFTP Server
-    \item NFS Server
-    \item microcom
-    \item eclipse
-    \item qt5
-    \item qt5Creator
-    \item openssh-server
-\end{itemize}
+\begin{description}
+    \item [\gls{GIT}:] Manuels Herunterladen von Metadaten oder anderen GIT
+        Repositories
+    \item [Docker:] Zwingend erforderlich um einen Docker Container bauen und
+        ausführen zu können.
+    \item [\gls{TFTP} Server] Bereitstellen des fertigen Liunx Images, Root File
+        Systems sowie des \acl{DTB}
+    \item [\gls{NFS} Server] Bereitstellen eines globalen Dateisystems über das
+        Netzwerk
+    \item [microcom] Werkzeug zum verbinden mit einer serielle Schnittstelle
+    \item [eclipse] Entwicklungs IDE mit Unterstützung zum Cross-Kompilieren als
+        auch zum Remote debuggen
+    \item [QT5 und QT5 Creator] (Cross-)Entwicklung und Remote debugging IDE für
+        grafische Oberflächen in C++ als \ac{WYSIWYG} Editor.
+    \item [Openssh-Server] Verbinden und Übertragen von Dateien mit/zu dem
+        eingebetteten Linux auf der Zielhardware.
+\end{description}
 
 \section{Host Konfiguration}%
 \label{sec:host_konfiguration}
@@ -36,8 +45,8 @@ Nachfolgende Pakete benötigen weitere Konfigurationen
             \item[ ]
             \item Docker Service starten
             \item Docker-yocto Image bauen:
-                \glqq docker build -t yocto . \grqq
-            \item Hilfe liefert docker --help oder die Internetseite
+                \textbf{ \textit{docker build -t Dockerfile} }.
+            \item Hilfe liefert docker --help oder die \textbf{Internetseite}
             \item Image starten durch ausführen von \glqq ./run.sh bash \grqq
         \end{itemize}
 
@@ -51,7 +60,7 @@ Nachfolgende Pakete benötigen weitere Konfigurationen
             \item \textbf{BEISPIEL} im \glqq BSP Manual\grqq unter  phytec.de;
                     Stichwort \glqq Booting the Kernel from Network\grqq
                 (Booting\_the\_Kernel\_from\_Network) \cite{Pytec:BSP_Manual}
-                oder unter \cite[S.
+                oder unter \cite[Seite
                 44]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
         \end{itemize}
 
@@ -63,7 +72,7 @@ Nachfolgende Pakete benötigen weitere Konfigurationen
             \item \textbf{BEISPIEL} im \glqq BSP Manual\grqq unter  phytec.de;
                     Stichwort \glqq Booting the Kernel from Network\grqq
                 (Booting\_the\_Kernel\_from\_Network) \cite{Pytec:BSP_Manual}
-                oder unter \cite[S.
+                oder unter \cite[Seite
                 45]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
         \end{itemize}
     \item[Microcom]
@@ -80,24 +89,25 @@ Nachfolgende Pakete benötigen weitere Konfigurationen
     \item[QT5Creator]
         \begin{itemize}
             \item[ ]
-            \item Weiters im Kapitel \ref{cha:setup_qtcreator}; Seite
-                \pageref{cha:setup_qtcreator}
+            \item Weiters im Kapitel \ref{cha:qt5_einrichten}; Seite
+                \pageref{cha:qt5_einrichten}
         \end{itemize}
     \item[Yocto Areitsverzeichnis]
         \begin{itemize}
             \item[ ]
             \item Erstellen eines globalen Arbeitsverzeichnisses.  Z.B.
-                /opt/yocto \item Setzten der Rechte rwx Rechte für alle user
-                (\glqq others\grqq).
+                /opt/yocto \item Setzten der Rechte \textbf{ \textit{rwx}}
+                Rechte für alle user (\glqq others\grqq).
         \end{itemize}
-    \item[Python2 als standart interpreter] Yocto/Openembedded Tools bauen auf
-        Python2 auf. Daher ist es nötig einen  symlink  oder alias
-        auf Python2 zu setzten. Z.b. \textit{alias python=python2}
+    \item[Python Version als standart interpreter] Yocto/Openembedded Tools bauen auf
+        je nach Version auf Python Version 2 oder 3 auf. Daher ist es nötig einen
+        Symlink  oder Alias auf die jeweilige Python Version zu setzten.
+        Z.b. \textit{alias python=python2}
     \item[Proxy und Routen]
     Je nach Netzwerkinfrastruktur müssen Proxy und Netzwerkrouten auf
     dem lokalen Host gesetzt werden. Beispielsweise für die Tools:
         \begin{itemize}
-            \item Git
+            \item GIT
             \item wget
             \item apt-get
             \item https\_proxy und http\_proxy

@@ -1,35 +1,35 @@
 
-\chapter{Module entwicklung}%
+\chapter{Kernel Module entwicklung}%
 \label{cha:module_entwicklung}
 
 
 \section{Kernel Module}%
 \label{sec:kernel_module}
 
-\subsection{Neues Kernelmodul}%
+\subsection{Neues Kernel Modul}%
 \label{sub:neues_kernelmodul}
 
 
-\subsection{Kernel anpssen - features aktivieren}%
+\subsection{Kernel anpassen - features aktivieren}%
 \label{sub:kernel_anpssen_features_aktivieren}
 
-Wie unter \cite[109]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-beshrieben, existieren verschiedene Möglichkeiten ein bereits im Linux Kernel
+Wie unter \cite[Seite 109]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+beschrieben, existieren verschiedene Möglichkeiten ein bereits im Linux Kernel
 vorhandenes Modul oder \gls{Feature} zu aktivieren. Z.B.
 
 \begin{itemize}
-    \item manuelles Anpassen der .config datei
-    \item GUI/Menü basiert mittels Befehl
+    \item manuelles Anpassen der Kernel \textit{.config} Datei
+    \item GUI oder Menü basiert mittels
         \begin{itemize}
             \item menuconfig
             \item xconfig
             \item gconfig
         \end{itemize}
-    \item bitbake -c menuconfig virtual/kernel
+    \item \textit{bitbake -c menuconfig virtual/kernel}
 \end{itemize}
 
-Seite \cite[S. 114 und S. 118]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-zeigt letzters beispielhaft und beschreibt wie \textbf{Änderungen dauerhaft
+Seite \cite[Seite 114 und Seite 118]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+zeigt letztes beispielhaft und beschreibt wie \textbf{Änderungen dauerhaft
     gespeichert werden können}
 
 
@@ -54,7 +54,9 @@ Um das Modul \textit{automatisch, beim booten des Kernels} zu laden, muss
 zusätzlich definiert werden:
 
 \begin{itemize}
-    \item KERNEL\_MODULE\_AUTOLOAD
+    \item KERNEL\_MODULE\_AUTOLOAD\_append = \glqq< ><kernel-Modul> \grqq
+    \item KERNEL\_MODULE\_AUTOLOAD\_append += <kernel-Modul>
+    \item KERNEL\_MODULE\_AUTOLOAD += <kernel-Modul>
 \end{itemize}
 
 
@@ -63,8 +65,8 @@ zusätzlich definiert werden:
 
 
 Seite \cite[121-125]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-zeigt beipielhaft, wie sich ein eigenes Kernelmodul erstellen und in die
-Buildumgebung Bitbake einminden lässt. Der \textit{poky} meta-layer beinhaltet
+zeigt beipielhaft, wie sich ein eigene Kernelmodule erstellen und in die
+Buildumgebung Bitbake einminden lraässt. Der \textit{poky} meta-layer beinhaltet
 zudem ein beispielhaftes \textit{hello-world} Kernel Modul, mitsamt
 beispielhafter \textit{Makefile} und \textit{recipe.bb} Datei.
 \\
@@ -75,49 +77,9 @@ beiden Bücher dar:
     \item \cite{Corbet2005}
 \end{itemize}
 
-Nachschlagewerke zum Thema Linux/Unix Kernel Schnitstellen (System-Calls) sind
-die Bücker:
+Nachschlagewerke zum Thema Linux/Unix Kernel Schnittstellen (System-Calls) sind
+die Bücher:
 \begin{itemize}
     \item \cite{Kerrisk2010}
     \item \cite{Rago2013}
 \end{itemize}
-
-
-
-
-
-
-
-
-
-
-\section{Flashen des image}%
-\label{sec:flashen_des_image}
-
-Es existieren verschiedene Wege einen Linux Kernel über das Netzwerk zu booten
-oder in den Speicher zu schreiben.
-
-\begin{itemize}
-    \item Netzwerk
-    \item sdcard
-    \item usb
-    \item spi
-    \item serial
-    \item weitere
-\end{itemize}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

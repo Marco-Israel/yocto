@@ -1,48 +1,52 @@
 \chapter{Einleitung} \label{chp:einleitung}
 
 
-\section{Über Yocto, OpenEmbedded, poky, meta-daten und Bitbake}
+\section{Über Yocto, OpenEmbedded, Poky, Meta-daten und Bitbake}
 
-Das Yocto Project bezeichnet eine Community Gruppe welche sich zur Aufgabe
-gemacht hat, dass erstellen von Linux Distributionen für eingebettet System
-zu vereinfachen.  \\
+\textit{Das \gls{Yocto} Project} bezeichnet eine Community Gruppe welche
+sich zur Aufgabe gemacht hat, dass erstellen von Linux Distributionen für
+eingebettet System zu vereinfachen. Dabei werden Distributionen gezielt für
+einen Anwendungsfall zusammengestellt und für die jeweilige Zielhardware von
+Grund auf direkt aus den Quelldateien übersetzt. Letzteres ergibt sich aus der
+Vielfalt der unterschiedlichen Hardware und CPU bzw. Controller Architekturen.\\
 
-Zusammen mit der OpenEmbedded Community pflegt das \gls{Yocto Project} eine
-Software Build Umgebung mit dem Namen \gls{Bitbake}, bestehend aus Python- und
-Shell-Scripten, welches das Erstellen von Linux Distributionen koordiniert.
-Parallel zu Bitbake  entstehen und wachsen innerhalb der Yocto Community
-verschiedene tools wie z.B. Wrapper, welchen das Arbeiten mit Bitbake
-vereinfachen sollen, indem diese Tools beispielsweise einzelne \glspl{Workflow}
-abbilden.\\
+Zusammen mit der \textit{\gls{OpenEmbedded} Community} pflegt das Yocto Project
+eine Software Build Umgebung mit dem Namen \textit{\gls{Bitbake}}, bestehend aus
+Python- und Shell-Scripten, welches das Erstellen von Linux Distributionen
+koordiniert. Parallel zu Bitbake entstehen und wachsen innerhalb der Yocto
+Community verschiedene \glspl{Tool} wie z.B. \gls{Wrapper}, welchen das Arbeiten
+mit Bitbake vereinfachen sollen. \\
 
-Des Weiteren pflegen beiden Communities Dateien mit \gls{Metadaten}
-(\gls{Metadatendatei} die in Form von Regeln  beschreiben wie Software Pakte
-innerhalb für unterschiedliche Distribution und Hardware durch Bitbake gebaut
-werden müssen.  erforderlich sind.  \\
+Des Weiteren pflegen beiden Communities \gls{Metadaten} (\gls{Metadatendatei}
+die in Form von Regeln beschreiben, wie Software Pakte für unterschiedliche
+Distribution und Hardware durch Bitbake gebaut werden müssen. Diese Regeln
+werden in einer Python und GNU Make ähnlichen, eigenen, Bitbake Scriptsprache
+geschrieben. Sie werden \gls{Recipes} (Rezepte) genannt.  \\
 
-Diese Regeln  werden \gls{Recipes} genannt. Regeln bzw. diese Metadaten und
-somit auch das Build-System Bitbake arbeiten nach einen Schichten Modell.
-Dabei beschreiben Meta-Daten auf unterster Schicht allgemeine grundlegende
-Anleitungen zum Übersetzten der wichtigsten Funktionen eines Betriebssystems.
-Höhere Schichten erweitern (detaillieren) oder überschreiben diese grundlegenden
-Rezepte in immer höheren Schichten. So setzt auf Beschreibungen der Hardware
-(BSP, Board Support packed Schichten) Schichten der Software- und
-Anwendungsschicht auf. Ein solches Schichtenmodell ermöglicht es, einzelne
-Schichten auszutauschen oder darunterliegende Einstellungen abzuändern.
+Regeln bzw. diese Metadaten und somit auch das Build-System Bitbake arbeiten
+nach einen \textit{Schichten Modell}. Dabei beschreiben Meta-Daten auf unterster
+Schicht allgemeine grundlegende Anleitungen zum Übersetzten der wichtigsten
+Funktionen eines Betriebssystems, aufbauend auf Schichten welche zunächst die
+Hardware oder den Bootloader beschreiben (\acf{BSP} Schichten). Höhere Schichten
+erweitern (detaillieren) oder überschreiben grundlegende, tiefere Rezepte.  So
+setzt auf Beschreibungen der Hardware Software- und Anwendungsschicht auf. Ein
+solches Schichtenmodell ermöglicht es, einzelne Schichten auszutauschen oder
+darunterliegende Einstellungen abzuändern. Ziel ist es, durch dieses
+Schichtenmodell eine eigene Linux Distribution zu erschaffen.  \\
+
 Ein Vereinfachtes Modell ist abgebildet unter
 \cite[S.26]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-\\
-\subsection{Die Yocto Community}%
-\label{sub:die_yocto_community}
 
 
-Die Yocto community stellt Meta-Daten / Recipes bereit, um ein
-minimalistisches Betriebssystem mit grundlegenden  Linux Tools unter der
-Virtualisierungsumgebung QEMU für verschiedene Architekturen starten zu können.
-\\
 
-Das Minimalisten Betriebssystem der Yocto Community wird „poky“ genannt.
-\\
+\subsection{Die Yocto Community}% \label{sub:die_yocto_community}
+
+Die Yocto community stellt Meta-Daten (Recipes) bereit, um ein minimalistisches
+Betriebssystem mit grundlegenden  Linux Tools unter der Virtualisierungsumgebung
+\textit{\gls{QEMU}} für verschiedene Architekturen starten zu können.  \\
+
+Das Minimalisten Betriebssystem der Yocto Community wird \textit{\gls{Poky}}
+genannt.  \\
 
 Zudem Pflegt es zusammen mit der OpenEmbedded community das Buildsystem
 \textit{bitbake}.
@@ -64,22 +68,35 @@ auch open Source Software Beschreibungen.Zusammen mit der Yocto Community
 
 
 
-\section{Docker} \label{sec:docker}
-Bitbake benötigt, neben einem aktuellen Python (2) Interpreter, verschiedene
-Tools. So u.a. Git zum Herunterladen von Source Detain. Alle diese
-Abhängigkeiten wurden in einem \gls{Docker} Container zusammengefasst. Bitbake
-kann unter unschädlichen Betriebssystemen und Plattformen auf gleiche Weise
-genutzt werden, ohne dass es und seine Abhängigkeiten neu konfiguriert werden
-müssen.  Im Gegensatz zu anderen Virtualisierungstechniken hat Docker trotz
-Virtualisierungstechniken keinen großartigen Performance Verlust.  Von einem
-Gebrauch von klassischen Virtualisierungstechniken ist aus Performance Gründen
-dringend abzuraten.
+\section{Docker} \label{sec:docker} Bitbake benötigt, neben einem Python
+Interpreter, verschiedene Tools beispielsweise \textit{GIT} oder \textit{wget}.
+Diese Tools, wie auch Python, sind in ihrer Version abhängig von der Bitbake
+Version sowie den Metadaten. Es ist \textbf{dringend} erforderlich den
+Versionsstand dieser Tools \glqq Einzufrieren \grqq. \\
+
+
+
+An dieser Stelle kommt \textit{\gls{Docker}} ins Spiel. Alle Abhängigkeiten und
+Versions\-stände in einem \gls{Docker} Container zusammengefasst ermöglicht das
+Einfrieren bestimmter Versionen bei gleichzeitigem Parallel\-betrieb von mehren
+Versionen durch unterschiedlicher Container. Ein Container kann unter
+unschädlichen Betriebssystemen und Plattformen auf gleiche Weise genutzt
+(ausgeführt) werden, ohne das Neu\-konfigurationen oder Installationen nötig
+sind (abgesehen von Docker selbst).  \\
+
+Im Gegensatz zu anderen Virtualisierungstechniken hat Docker trotz
+Virtualisierungstechniken keinen großartigen Performance Verlust weshalb es vor
+anderen Visualisierungen wie VirtualBox vorzuziehen ist.  \\
+
+\textbf{Von dem Gebrauch klassischer Virtualisierungstechniken ist aus
+    Performance\-gründen dringend abzuraten}. Ein Beispiel ist VirtualBox.
 
 
 \section{Literatur}%
 \label{sec:literatur}
 
-Nachfolgende Quellen sind zu empfehlen
+Nachfolgende Quellen sind zum Wissensaufbau oder als Nachschlagewerk zu
+empfehlen.
 
 \begin{description}
     \item[Host, IDS und Tool einrichten:] \cite{PhyTec:Development_Guid},

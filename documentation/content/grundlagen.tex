@@ -8,18 +8,19 @@
 
 
 
-Die Buildumgebung \textit{Bitbake}, im Kern bestehend aus Phython- und
-Shellscripen die mit unterschiedlichen Softwareentwicklungstools wie GIT, Make
-oder Autotools interagieren, führt in einer geregelten Reihenfolge verschiedene
+Die Buildumgebung \textit{Bitbake}, im Kern bestehend aus Python- und
+Shellscripen die mit unterschiedlichen Softwareentwicklungs\-werkzeuge wie GIT,
+Make oder Autotools interagieren, führt in einer geregelten Reihenfolge verschiedene
 Aufgaben aus. Die Abbildung auf \cite[S. 20]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 zeigt abstract den Build\-process:
 
 \begin{itemize}
-    \item Reihenfolge der angepassten config files gepasst werden.
-    \item Parsen der config files.
-    \item Buildschritte (Siehe \ref{sec:bitbake_build_tasks} Seite
+    \item Übersicht über die zu Verarbeitenden Konfigurationsdateien
+    \item Reihenfolge in der angepasste Konfigurationsdateien (.conf)
+        verarbeitet werden.
+    \item Build ~schritte (Siehe \ref{sec:bitbake_build_tasks} Seite
         \pageref{sec:bitbake_build_tasks})
-    \item Packetieren in unterschiedliche Pakettypen
+    \item Packetieren in unterschiedliche Formaten
     \item Generieren und bereitstellen von \aclp{SDK}
     \item Aufräum- und Nacharbeiten
 \end{itemize}
@@ -27,14 +28,14 @@ zeigt abstract den Build\-process:
 \section{Bitbake Buildprozess}%
 \label{sec:bitbake_build_tasks}
 
-Jedes \textit{recipe} erbt eine Reihe von standard Build-Tasks.  Hierzu
+Jedes \textit{recipe} erbt eine Reihe von standard Build-Tasks. Hierzu
 gehören u.a.
 \begin{itemize}
-    \item Herunterladen (fetchen) und Sammeln von Source Dateien
-        (z.B. Git Repositorien, ftp Servern oder lokalen Dateien.)
-    \item Übersetzten, konfigurieren, patchen, installieren, verifizieren usw.
-        von Paketen auf mehreren Prozessor Kernen
-    \item Bereitstellen von Entwicklung und Verwaltungstools
+    \item Herunterladen (anfordern, \textit{fetchen}) und Sammeln von Quell
+        (Sourcei) Dateien (z.B. Git Repositorien, ftp Servern oder lokalen
+        Dateien.) \item Übersetzten, konfigurieren, patchen, installieren,
+        verifizieren usw.  von Paketen bei Verwendung von mehreren Prozessor
+        Kernen \item Bereitstellen von Entwicklungs- und Verwaltungswerkzeugen
 \end{itemize}
 
 Eine Auflistung der Standard-Task kann, mitsamt kurzer Beschreibung,
@@ -43,9 +44,9 @@ entnommen werden
 
 \subsection{Fatch Task}%
 \label{sub:fatch_task}
-Eine der Hauptaufgaben von Bitbake besteht dadrinne, die jeweiligen
-Softwarepakte in Ihren benötigten Versionen und Revisionsständen zusammen aus
-unterschidlichen Quellen zusammen zu sammeln und dem Buildsystem zur Verfügung
+Eine der Hauptaufgaben von Bitbake besteht darin, die jeweiligen
+Softwarepakete in Ihren benötigten Versionen und Revisionsständen aus
+unterschiedlichen Quellen zu sammeln und dem Buildsystem zur Verfügung
 zu stellen. Solche Quellen können sein:
 
 \begin{itemize}
@@ -74,37 +75,39 @@ einen definiert durch:
 \section{Configurations-Dateien *.conf}%
 \label{sec:configurations_dateien_conf}
 Bitbake, sowie die Buildprozesse der einzelnen Recipes
-werden gesteuert durch unterscheidliche \textbf{recipe-lokale} und
-\textbf{globale} configurationsdateien.
+werden gesteuert durch unterschiedliche \textbf{recipe-lokale} und
+\textbf{globale} Konfigurationsdateien.
 
 
 
 \section{\textit{Operatoren} zum Verändern von Variablen}
 \label{sec:grundlagen_operatoren}
 
-Nachfolgende operatoren stehen in unterschiedlichen Dateien zur Verfügung. Dabei
+Nachfolgende Operatoren stehen in unterschiedlichen Dateien zur Verfügung. Dabei
 sind sie (teils ausschließlich) in *.conf dateien oder in recipes anwendbar.
 
-\begin{description}
-    \item[Standard operatoren wie +=, ?=, \ldots] Eine Auflistung der standard Operatoren ist zu finden unter:
-    \cite[Seite 160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-    \item[\_append, \_prepena, \_removed] Wird übergehend in *.conf Dateien
-        verwendet. Genau wie die Standardoperatoren erweitern Sie eine Variable.
-        Sie werden jedoch zu einem späeren Zeitpunkt als die standard Operatoren
-        verarbeitet. Weiteres ist zu finden unter:
-    \cite[Seite 160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+\begin{description} \item[Standard operatoren wie +=, ?=, \ldots] Eine
+        Auflistung der standard Operatoren ist zu finden unter: \cite[Seite
+        160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+    \item[\_append, \_prepena, \_removed] Werden überwiegend in *.conf Dateien
+        verwendet. Genau wie die Standard Operatoren erweitern Sie eine
+        Variable. Sie werden jedoch zu einem späteren Zeitpunkt als die standard
+        Operatoren verarbeitet, was einen erheblichen Einfluss auf den
+        Buildprozess und das Ergebnis haben kann. Weiteres ist zu finden unter:
+        \cite[Seite
+        160]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
     \item[INHERRIT] Genutzt ausschließlich in *.conf Dateien zun erben
-        (includieren) von configurations Klassen.
-    \item[inherrit] Genutzt ausschließlich in recipes *.bb und *.bbappend zum
-        erben (inkludieren) von Bitbake-Classen.
-    \item[include] Wenn Datei vorhanden, dann include ihren Inhalt.
-        Ansonsten ignoriere den Befehl. \textit{include} lasst sich sowohl in
-        configurations-Dateien als auch recepes verwenden um alle andren Arten
-        von Dateien zu inkludieren (andere Recipes, Configs, \ldots )
+        (inkludieren) von Konfigurationsklassen. \item[inherrit] Genutzt
+        ausschließlich in recipes *.bb und *.bbappend zum erben (inkludieren)
+        von Bitbake-Classen.  Weiteres unter \cite {Yocto:Mega_Manual}
+    \item[include] Wenn Datei vorhanden, dann include ihren Inhalt.  Andernfalls
+        ignoriere den Befehl.  \textit{include} lasst sich sowohl in
+        rKconfigurationsxxid-Dateien als auch recepes verwenden um alle andren
+        Arten von Dateien zu inkludieren (andere Recipes, Configs, \ldots)
+        Weiteres unter \cite {Yocto:Mega_Manual} 
     \item[require] Wie include nur das die Datei vorhanden sein muss, ansonsten
-        beendet bitbake mit einem error.
-\end{description}
-
+        beendet bitbake mit einem Fehler.  Weiteres unter \cite
+        {Yocto:Mega_Manual} \end{description}
 
 
 
@@ -126,7 +129,7 @@ Werkzeuge beteit.
             \item GNU Tools wie \textit{grep, awk, set, diff, cp, vim, usw}
         \end{itemize}
          Dabei können gleiche Aufgaben mit verschiedenen Werkzeugen oder auch
-         manuel bearbeitet werden können und zum selben ergebnis führen.\\
+         manuel bearbeitet werden können und zum selben Ergebnis führen.\\
 
          Nicht jedes Tool ist dabei für jeden \textit{Workflow} geeignet. Zum
          Teil ist es einfacher und weniger Fehleranfälliger einzelne Schritte manuell
@@ -175,4 +178,22 @@ Je nach Aufgabengebiet unterscheidet sich auch die Arbeitsweise:
 
 \end{itemize}
 
+\section{Recipes, Calsses, Packedgroups, Konfigurationsdateien, meta daten, \ldots}%
+\label{sec:recipes_classes_packedgroups}
+Im laufe des Arbeitens mit Bitbake tauchen verschiedene Begrifflichkeiten auf.
+Das wichtigste  Vokabular beschreibt einleitend kurz und knapp \cite{PhyTec:Yocto_Manual} 
 
+\begin{description}
+    \item[Recipes] Die Regeln in einer eigenen Skriptsprache, beschreiben wie
+        ein Softwarepaket zu bauen und in das Gesamtsystem zu Integrieren ist.
+    \item[Classes] Verallgemeinerte, übergeordnete Rezepte die durch Rezepte
+        inkludiert werden können.
+    \item[Packedgroups] Zusammenfassung von Softwarepakete die z.B. in
+        Abhängigkeit zueinander stehen.
+    \item[Konfigurationsdateien] Eine Übersicht über die relevanten
+        Konfigurationsdateien liefert
+        \cite[Seite 19, 20]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
+    \item[Meta daten] Zusammenfassung von Recipes und Konfigurationsdateien als
+        Softwarepaket, Softwareschicht, Hardware- oder
+        Distributions\-beschreibung.
+\end{description}

@@ -6,7 +6,7 @@
 Jeder Metadaten-layer aber auch jedes einzelne Recipe lässt sich gezielt
 Hardware Beschreibungen bzw Hardware Gruppen oder einer (eigenen)
 \textit{Linux-\glspl{Distribution}} zuordnen, womit jener Meta-Layer oder jenes
-Revipe nur für solche Hardware oder Distribution Anwendung findet.
+Recipe nur für solche Hardware oder Distribution Anwendung findet. \\
 
 Die \textit{./conf/local.conf} definiert für einen Buildprozess die zu
 verwendende Hardware Gruppe und Linux Distribution.
@@ -17,15 +17,16 @@ verwendende Hardware Gruppe und Linux Distribution.
 Damit ein Linux System und sine Software Komponenten auf einer Ziel Hardware
 lauffähig sind, muss diese Hardware sowohl für das Linux Betriebssystem, als
 auch für Bitbake beschrieben werden. Dieses geschieht mittels
-einer <hw-metalayer>/conf/machine/<machine>.conf Konfigurationsdatei.
-
+einer Konfiguration: \\
+<hw-metalayer>/conf/machine/<machine>.conf
+\\
 So muss beispielsweise einem Linux Kernel mittels eines \acl{DTB} die Hardware
 beschrieben bzw. bekannt gemacht werden. Bitbake muss unter anderem wissen
 über welche s.g. \textit{\glspl{Feature}} eine Hardware verfügt.
 Ein Feature ist beispielsweise die Existenz eines Displays oder  einer nicht-
 standard Pheripheral wie eine PCI-Port oder wifi.  \\
 
-Eine lister möglicher \textit{Machine Features} ist zu finden unter:
+Eine Lister möglicher \textit{Machine Features} ist zu finden unter:
 \begin{itemize}
     \item \cite[Abschn. Machine\_Features][]{Yocto:Reference_Manual}
     \item \cite[Abschn. Machine\_Features][]{Yocto:Mega_Manual}
@@ -34,19 +35,17 @@ Eine lister möglicher \textit{Machine Features} ist zu finden unter:
 Zudem definiert die Maschinenkonfiguration
 \begin{itemize}
     \item welche Linux distribution verwendet werden soll bzw. kann. Siehe
-        hierzu \ref{sec:linux_distribution_definieren}, Seite
-        \pageref{sec:linux_distribution_definieren}.
+        hierzu \fullref{sec:linux_distribution_definieren}
     \item Welcher Bootloader Anwendung finden soll. Siehe hierzu
-        \ref{sec:bootloader_definierenr} Seite
-        \pageref{sec:bootloader_definieren}.
+        \fullref{sec:bootloader_definieren}
     \item Welche Softwarepakete, Treiber, Kernelmodule, Konfigurationen, usw.
-        für eine Zielplattform zwingend zum starten erfoderlich oder etwa
+        für eine Zielplattform zwingend zum starten erforderlich oder etwa
         wünschenswert sind.
 \end{itemize}
 
-Die Maschinenkonfiguration ist somit eine zusammenfassung aller nötigen und
+Die Maschinen\-konfiguration ist somit eine Zusammenfassung aller nötigen und
 optionalen Komponenten, damit eine Software mitsamt Betriebssystem auf einer
-Zielhardware lauffähig und verwendbar wird.  \\
+Ziel\-hardware lauffähig und verwendbar wird.  \\
 
 Sollte es Änderungen oder Erweiterungen an einer bestehenden Hardware-Platform
 geben, so müssen unter Umständen auch diese bekannt gemacht werden. Hierzu kann
@@ -55,14 +54,17 @@ Maschinenbeschreibung erstellt werden. \cite[S.
 91-95]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 
 
-\section{Linux Distribution definieren}% \label{sec:linux_distribution_definieren}
+\section{Linux Distribution definieren}%
+\label{sec:linux_distribution_definieren}
 Eines der \textbf{grundlegenden Ziele} von Bitbake, bzw. Ziel der Yocto und
 OpenEmbedded Community ist die Möglichkeit eigene Linux Distributionen gezielt
-für einen Anwendungsfall zu definieren. Dank seines  Schichtenmodells ist eine
+für einen Anwendungsfall zu definieren. Dank seines Schichtenmodells ist eine
 Yocto-Distribution unabhängig von einer Hardware. Eine Distribution wird für
-einzelne Hardwareplatformen immer neu übersetzt, beinhaltet jedoch die selben
-Tools, Anwendungen, Konfigurationen oder sonstigen Features, insofern die
-jeweilige Ziel-Hardware diese Features in Hardware unterstützt).
+einzelne Hardwareplattformen immer neu übersetzt. Hierzu wir auch die Toolchain
+im Vorfeld aus Quellen vollständig erstellt, sollte diese nicht vorhanden sein.
+Eine definierte Distribution beinhaltet für jede Zielplattform die selben
+Tools, Anwendungen, Konfigurationen oder andere konfigurierte Features,
+insofern die jeweilige Ziel-Hardware diese Features (in Hardware) unterstützt.
 
 
 
@@ -70,10 +72,8 @@ jeweilige Ziel-Hardware diese Features in Hardware unterstützt).
 \label{sec:bootloader_definieren}
 Ein bootloader ist ein Stück Software das die Schnittstelle zwischen Software
 und Hardware darstellt. Er hat die Aufgabe ein Betriebssystem oder baremetal
-Software zu starten oder zu aktualisieren. Er bestimmt, etwa wo der Stiegspunkt
-einer Software oder eines Betriebssystems zu finden ist (Speicherkomponente,
-Sektor, \ldots) und übernimmt die Aufgabe solche Software über eine definierte
-Schhnittstelle zu aktualisieren.
+Software zu starten oder zu aktualisieren. Er bestimmt etwa, wo der
+Einstiegspunkt einer Software oder eines Betriebssystems zu finden ist (Speicherkomponente, Sektor, \ldots) und übernimmt die Aufgabe solche Software über eine definierte Schnittstelle zu aktualisieren.
 \\
 Einem Betriebssystem liefert es u.a. eine Beschreibung der Hardware in Form
 eines \gls{DTB}.
@@ -85,12 +85,11 @@ Yocto / OpenEmbedded setzt i.d.R. auf einen der nachfolgenden verfügbaren
     \item Barebox (eine Neuauflage des U-Boot Bootloaders)
 \end{itemize}
 
-Änlich wie die Hardware und Zielplattform (Siehe \ref{sec:hardware_machine_beschreibung}
-Seite \pageref{sec:hardware_machine_beschreibung}) sowie eine
+Ähnlich wie die Hardware und Zielplattform (Siehe \fullref{sec:hardware_machine_beschreibung} sowie eine
 Betriebssystem\-distribution muss auch der Bootlooder mittels
 Configurationsdateien und Recipes in der Bitbake Buildumgebung für eine
 Zielplattform definiert werden.
 \\
-Nötige konfigurationen sind beispielhaft beschrieben unter \cite[93-95, 98-99,
+Nötige Konfigurationen sind beispielhaft beschrieben unter \cite[93-95, 98-99,
 100-108]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
-und gehen i.d.R. mit der Maschinen definition einher.
+und gehen i.d.R. mit der Maschinendefinition einher.

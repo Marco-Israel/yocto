@@ -1,16 +1,16 @@
 \chapter{Commands Bitbake}%
 \label{cha:commands_bitbake}
 
-\textbf{NOTE}: Ein \textit{Image} ist in der Bitbake welt ebenso
-ein \textit{recipie} und wird entsprechend gleich behandelt. Alle befehle die
+\textbf{ACHTUNG}: Ein \textit{Image ist in  Bitbake ebenso
+ein \textit{recipe}} und wird entsprechend gleich behandelt. Alle Befehle die
 für \glq einfache\grq recipes gelten (z.b. Kernel Modules oder Applikationen),
-gelten ebenso für image-recipes.
+gelten ebenso für Image-Recipes und werden als solche in Dokumentationen benannt.
 
 
-\section{Bitbake Dokumentations Quellen}%
+\section{Bitbake Dokumentationsquellen}%
 \label{sec:bitbake_quellen}
 Eine die offizielle Dokumentation zu \textit{Bitbake} und
-\textit{Bitbake-Layers} mitmitsamt Kommandos ist zu finden unter
+\textit{Bitbake-Layers} sowie derer Kommandos ist zu finden unter
 \cite{Yocto:Bitbake_Manual}.\\
 
 Eine Übersicht über die Kommandos von Bitbake-Layers  ist zu finden unter
@@ -20,65 +20,67 @@ und im Anschluss in Anwendung gezeigt.
 
 \section{Neuer \textit{meta-layer}}%
 \label{sec:_a_new_recipes}
-Nachfolgende Möglichkeiten stehen bereit, um einen neuen Meta-daten layer zu
-erstellen:
+Nachfolgende Möglichkeiten stehen bereit, um einen \textbf{neuen Meta-daten
+layer} zu erstellen:
 \begin{itemize}
     \item yokto-layer create <myLayer> (\textbf{Empfohlen})
     \item bitbake-layers create-layer <mylayer>
 \end{itemize}
 
-Wie sich einer neuer meta-layer zum Build hinzufügen lässt, ist nachzulesen
-unter \ref{sec:meta_layer_zum_build_hinzufugen}, Seite
-\pageref{sec:meta_layer_zum_build_hinzufugen}.
+Wie sich einer neuer meta-layer \textbf{zum Build hinzufügen lässt}, ist
+nachzulesen unter \fullref{sec:meta_layer_zum_build_hinzufugen}
 
 \section{meta-layer zum build hinzufügen}%
 \label{sec:meta_layer_zum_build_hinzufugen}
-Um einen neuen Metadaten-layer zum Buildsystem hinzu zu fügen, muss dieser in
-die datei \textit{/conf/bblaysers.conf} Bitbake bekant gegeben werden. Hierzu
-stehen nachfolgende Möglichkeiten bereit:
+Um einen neuen Metadaten-layer zum Buildsystem hinzu zu fügen, muss dieser
+\textbf{ in die Datei \textit{/conf/bblaysers.conf} eingetragen und so Bitbake
+bekannt gegeben werden.} Hierzu stehen nachfolgende Möglichkeiten bereit:
 \begin{itemize}
-    \item Manueles Eintragen der des Pfades zum meta-layer (\textbf{Empfohlen})
-    \item bitbake-layers add-layer <layername>.
+    \item Manueles Eintragen des Pfades zum Meta-layer (\textbf{Empfohlen})
+    \item \textit{bitbake-layers add-layer <layername>}
 \end{itemize}
 
 
 
 \section{Active meta-layer auflisten}%
 \label{sec:active_meta_layer_auflisten}
-Um alle aktiven meta-layer aufzulisten die im build einbezogen werden, stehen
+Um alle aktiven meta-layer aufzulisten, die im build einbezogen werden, stehen
 nachfolgenden Möglichkeiten bereit:
 
 \begin{itemize}
-    \item Manuelles Einsehen der Datei con/bblayers.con
-    \item bitbake-layers show-layers (\textbf{Empfohlen})
+    \item Manuelles Einsehen der Datei \textit{conf/bblayers.conf}
+    \item \textit{bitbake-layers show-layers} (\textbf{Empfohlen})
 \end{itemize}
 
 
 \section{Anzeigen aller recipes - beispielsweise aller images}%
 \label{sec:anzeigen_aller_recipes}
-Recipies die während eines Builds aktive sind und ausgeführt werden lassen sich
+Recipes die während eines Builds aktive sind und ausgeführt werden lassen sich
 wie folgt anzeigen:
 
 \begin{itemize}
-    \item bitbake-layer show-recipes [<recipes>]
-    \item bitbake-layer show-recipes [<recipes>] | grep image
+    \item \textit{bitbake-layer show-recipes [<recipes>]}
+    \item \textit{bitbake-layer show-recipes [<recipes>] | grep image}
 \end{itemize}
 
 
 \section{Anzeigen der Tasks eines recipes}%
 \label{sec:anzeigen_der_tasks_eines_recipes}
 Jedes Recipes besitzt eine eine Anzahl von standard Tasks die es direkt oder
-indirekt implementiert hat oder erbt.
+indirekt implementiert hat (überschreibt) oder erbt.
+\\
 Alle Task die eine recipe besitzt und somit während eines builds
 durchlaufen werden lassen sich anzeigen durch:
 
 \begin{itemize}
-    \item bitbake -c listtasks <recipes>
+    \item \textit{bitbake -c listtasks <recipes>}
 \end{itemize}
 
 Wie gezielt einzelne bzw. bestimmte Task eines Recipes ausgeführt werden ist
-unter \ref{sec:ausfuhren_bestimmter_tasks_eines_recipies}, Seite
-\pageref{sec:ausfuhren_bestimmter_tasks_eines_recipies} beschrieben.
+beschrieben unter \fullref{sec:ausfuhren_bestimmter_tasks_eines_recipies}.
+\\
+Alle standard Tasks sind aufgeführt unter\cite[Seite 171-172]
+{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 
 \section{Ausführen bestimmter Tasks eines Recipes}%
 \label{sec:ausfuhren_bestimmter_tasks_eines_recipies}
@@ -87,7 +89,7 @@ Der Parameter \textit{bitbake -c} (bitbake -command) ermöglicht das Ausführen
 bestimmter Tasks eines Recipes:
 
 \begin{itemize}
-    \item bitbake -c <cmd> <recipes>
+    \item \textit{bitbake -c <cmd> <recipes>}
 \end{itemize}
 
 
@@ -96,41 +98,40 @@ bestimmter Tasks eines Recipes:
 Die Umgebungsvariablen welche eine Recipe dauerhaft oder temporär setzt,
 erweitert oder löscht, lassen sich wie folgt anzeigen.
 \begin{itemize}
-    \item bitbake -e <recipes>
+    \item \textit{bitbake -e <recipes>}
 \end{itemize}
 
-Es kan geziehlt nach einzelnen Variablen gefiltert werden:
+Es kann gezielt nach einzelnen Variablen gefiltert werden:
 
 \begin{itemize}
-    \item bitbake -e <recipes> | grep \^<ENVVARIABLE>
+    \item \textit{bitbake -e <recipes> | grep \^<ENVVARIABLE>}
 \end{itemize}
 
 \subsection{Häufig benötigte Umgebungsvariablen}%
 \label{sub:haufig_gesucht_umgebungsvariablen}
 
 \begin{description}
-    \item[Originale Source-Quelle] bitbake -e virtual/kernel | grep \textbf{\^SRC\_URI=}
-    \item[Linux Kernel Anbieter]bitbake -e virtual/kernel | grep \textbf{
-            \glqq PREFERRED\_PROVIDER\_virtual/kernel\grqq}
-    \item[Image Distributionsversion (Branch)] bitbake -e <recipes/image> | grep
-        \textbf{\^LAYERSERIES\_COMPAT}
+   \item[Originale Source-Quelle] \textit{bitbake -e virtual/kernel | grep
+       \textbf{\^SRC\_URI=}}
+    \item[Linux Kernel Anbieter] \textit{bitbake -e virtual/kernel | \newline
+            grep \textbf{ \glqq PREFERRED\_PROVIDER\_virtual/kernel\grqq}}
+    \item[Image Distributionsversion (Branch)] \textit{bitbake -e
+            <recipes/image> | \newline  grep \textbf{\^LAYERSERIES\_COMPAT}}
 \end{description}
 
 \section{section name}%
 \label{sec:section_name}
 
 
-
-
-\section{Erzeugen von temporären entwicklungs-Shells}%
+\section{Erzeugen von temporären Entwicklungs-Shells}%
 \label{sec:temporaten_entwicklungs_shells}
 
 Bitbake ist in der Lage temporäre, gekapselte und vorkonfigurierte
 Entwicklungs-Shells zu erzeugen und zu öffnen:
 
 \begin{itemize}
-    \item bitbake -c devshell <recipes>
-    \item bitbake -c devpyshell <recipes>
+    \item \textit{bitbake -c devshell <recipes>}
+    \item \textit{bitbake -c devpyshell <recipes>}
 \end{itemize}
 
 Dabei unterscheidet bitbake zwischen einer normalen Bash-Shell und einer

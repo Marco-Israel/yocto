@@ -2,7 +2,7 @@
 \label{chap:applikationsentwicklung}
 
 \section{Einbinden von Applikationen in vorhandene Images}%
-\label{sec:einbinden_von_applikationen_in_vorhandene_images}h
+\label{sec:einbinden_von_applikationen_in_vorhandene_images}
 
 Die nachfolgende Schritte sind nötig um ein existierendes Softwarepaket zu einem
 Image hinzu zu fügen.
@@ -14,25 +14,25 @@ Image hinzu zu fügen.
     \item Image Branches herausfinden:
         \textit{bitbake -e <recipes/image> | grep \^LAYERSERIES\_COMPAT}
 
-    \item Seite \ref{OpenEmbedded:Indexer_Recipes} aufrufen
+    \item Seite \cite{OpenEmbedded:Indexer_Recipes} aufrufen
 
     \item \textbf{Branch} auswählen und ggf. Reiter \textbf{recipies} neu
         auswählen.
 
-    \item Suchen nach dem gewünschten Software\-paket in der Suchleiste. Dies
-        liefert als Ergebnis den jeweiligen Metadaten Layer, welcher das Recipes
-        enthält.
+    \item \textbf{Suchen} nach dem gewünschten Software\-paket in der Suchleiste.
+        Dies liefert als Ergebnis den jeweiligen Metadaten Layer, welcher das
+        Recipes enthält.
 
-    \item Verifizieren ob metadaten-layer bereits existiert: Z.b. durch z.B.
+    \item Verifizieren, ob der Metadaten-layer bereits existiert: Z.b. durch
         \begin{itemize}
-            \item Manuelles suchen
+            \item Manuelles Suchen in der lokalen (meta-layer) Verzeichnisstruktur
             \item \textit{find --name <new-meta-layer>}
             \item \textit{bitbake-layers show-layer | grep <<new-meta-layer>}
         \end{itemize}
 
-    \item Layer packet herunter laden in das lokale Yocto Arbeitsverzeichnis, in
-        welchem sich bereits \textit{poky} und andere OpenEmbedded
-        metadaten-Layer befinden.:
+    \item Layer Packet herunterladen in das lokale Yocto Arbeitsverzeichnis, in
+        welchem sich bereits \textit{Poky} und andere OpenEmbedded
+        Metadaten-Layer befinden.:
         \begin{itemize}
             \item \textit{Manuelles} Herunterladen und
                 \textit{einfügen in ./conf/bblayersi.conf}
@@ -42,25 +42,26 @@ Image hinzu zu fügen.
             \item \textit{bitbake-layers layerindex-fetch <layer-name>}
         \end{itemize}
 
-    \item Beim Manuellen Herrunterladen, den neuen Layer zu
+    \item Beim manuellen Herrunterladen, den neuen Layer zu
         \textit{./conf/bblayers.conf} hinzufügen. Dieser
         Schritt wird durch \textit{bitbake-layers layerindex-fetch
             <metadatalayer-name>} bereits vollzogen.
-    \item Abhängigkeiten Metadatenlayer herunterladen und ebenfalls dem Projekt
-        hinzufügen.
+    \item Abhängigkeiten Metadaten-layer herunterladen und ebenfalls dem Projekt
+        hinzufügen. Abhängigkeiten lassen sich ermitteln oder ausgeben durch:
         \begin{itemize}
-            \item Abhängigkeiten lassen sich durch \textit{anklicken des Recipie
-                    names} unter \ref{OpenEmbedded:Indexer_Recipes} einsehen.
-            \item oder direkt ausgeben durch:
+            \item \textit{anklicken des Recipie
+                    names} unter \cite{OpenEmbedded:Indexer_Recipes} einsehen
+                    und von dort, wie oben beschriebe manuell oder tool gestützt
+                    herunterladen
+            \item direkt ausgeben durch:
                 \textit{bitbake-layers layerindex-show-depends <layer-name>}
                 und anschließend herunterladen und hinzufügen durch
                 \textit{bitbake-layers layerindex-fetch <layer-name>}
-        bitbake-layers add-layer <path/to/your/meta-data-layer>
         \end{itemize}
     \item Falls nicht im Vorfeld ausgewählt, den nötigen
-        \textit{branch auschecken} mit \textit{git checkout <branch>} in jedem
-        neuen metadaten-layer.
-    \item Auf Fehler überprüfen (z.B. fehlende Abhängigkeiten):
+        \textit{Branch auschecken} mit \textit{git checkout <branch>} in jedem
+        neuen Metadaten-layer.
+    \item Auf Fehler überprüfen (z.B. auf fehlende Abhängigkeiten):
         \textit{bitbake-layers show-layers}
 \end{enumerate}
 
@@ -68,7 +69,8 @@ Image hinzu zu fügen.
 \label{sub:sotware_dem_image_hinzufugen_}
 Um ein Softwarepaket einem Image hinzu zu fügen muss die Variable
 \textit{IMAGE\_INSTALL} gesetzt oder erweitert werden. Hier gilt zu entschieden
-ob dieses \textit{global} oder \textit{image-lokal} geschehen soll:
+ob das Hinzufügen \textit{global} für alle Image Recipes oder \textit{image-lokal}
+für gezielt einzelne Images (sprich Distributionen) geschehen soll:
 \begin{itemize}
     \item Setzten oder erweitern in \textit{./conf/loccal.conf}
     \item Abändern des <image-recipes>.bb files durch setzten / erweitern der
@@ -77,7 +79,7 @@ ob dieses \textit{global} oder \textit{image-lokal} geschehen soll:
     \item Image Variable gezielt für ein Image/Target erweitern (s.u.)
 \end{itemize}
 
-Um eine Variable zu erweitern bieten sich folgende mögliche opratoren an :
+Um \textbf{eine Variable zu erweitern} bieten sich folgende mögliche Operatoren an :
 
 \begin{description}
     \item[spätes Anhängen] IMAGE\_INSTALL\_append = "< ><your-sw-packed>"
@@ -93,7 +95,7 @@ Um eine Variable zu erweitern bieten sich folgende mögliche opratoren an :
 \end{description}
 
 \textbf{ACHTUNG:} \\
-Es sind die Varianten mit operator \textbf{ \textit{append} und
+Es sind die Varianten mit Operator \textbf{ \textit{append} und
 \textit{prepend} vorzuziehen}!\\
 
 \textbf{append} und \textbf{prepend} werden verarbeitet \textbf{nachdem} alle
@@ -108,13 +110,14 @@ Zeitpunkt und in welcher Reihenfolge eine Variable erweitert wird.
 Generelle Unterscheidung:
 \begin{description}
     \item[\_append \_prepend] für .conf Dateien. Diese Dateien werden vor
-        recipes verarbeitet. Durch diese operatoren wird dennoch erreicht, das
+        recipes verarbeitet. Durch diese Operatoren wird dennoch erreicht, das
         die Konfiguration abschließend Anwendung findet
     \item[ operatoren += .= ..] Sind für recipes
 \end{description}
 
-\textbf{ACHTUNG ACHTUNG: beachte das < >}, welches ein führendes Leerzeichen
-symbolisiert und zwingend erforderlich ist.
+\textbf{ACHTUNG ACHTUNG: beachte das < >}, welches ein i\textbf{führendes
+Leerzeichen} symbolisiert und bei dieser Art der Variablenerweiterung
+\textbf{zwingend} erforderlich ist.
 
 
 

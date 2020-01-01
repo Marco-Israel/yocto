@@ -1,19 +1,19 @@
-[0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is 'main.blg'
-[48] biber:315> INFO - === Fri Dec 13, 2019, 10:00:38
-[83] Biber.pm:371> INFO - Reading 'main.bcf'
-[199] Biber.pm:889> INFO - Found 13 citekeys in bib section 0
-[224] Biber.pm:4093> INFO - Processing section 0
-[242] Biber.pm:4254> INFO - Looking for bibtex format file 'bibtex' for section 0
-[307] bibtex.pm:1512> INFO - LaTeX decoding ...
-[351] bibtex.pm:1329> INFO - Found BibTeX data source './bibtex.tex'
-[468] Utils.pm:193> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[468] Utils.pm:193> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[469] Utils.pm:193> WARN - I didn't find a database entry for 'Yocto_Eclipse_Plugin' (section 0)
-[510] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[510] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[510] Biber.pm:3921> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[510] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
-[535] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[541] bbl.pm:739> INFO - Output to main.bbl
-[541] Biber.pm:110> INFO - WARNINGS: 3
+[2] Config.pm:304> INFO - This is Biber 2.12
+[4] Config.pm:307> INFO - Logfile is 'main.blg'
+[217] biber:315> INFO - === Wed Jan  1, 2020, 18:59:38
+[374] Biber.pm:371> INFO - Reading 'main.bcf'
+[910] Biber.pm:889> INFO - Found 16 citekeys in bib section 0
+[1025] Biber.pm:4093> INFO - Processing section 0
+[1102] Biber.pm:4254> INFO - Looking for bibtex format file 'bibtex' for section 0
+[1381] bibtex.pm:1512> INFO - LaTeX decoding ...
+[1562] bibtex.pm:1329> INFO - Found BibTeX data source './bibtex.tex'
+[2148] Utils.pm:193> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[2149] Utils.pm:193> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[2151] Utils.pm:193> WARN - I didn't find a database entry for 'Yocto_Eclipse_Plugin' (section 0)
+[2361] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2362] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2362] Biber.pm:3921> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[2363] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[2489] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[2523] bbl.pm:739> INFO - Output to main.bbl
+[2524] Biber.pm:110> INFO - WARNINGS: 3
