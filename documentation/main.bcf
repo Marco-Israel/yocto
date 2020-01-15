@@ -2042,13 +2042,14 @@
     <bcf:citekey order="45">OpenEmbedded:Indexer_Recipes</bcf:citekey>
     <bcf:citekey order="46">OpenEmbedded:Indexer_Recipes</bcf:citekey>
     <bcf:citekey order="47">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
-    <bcf:citekey order="48">Yocto:Bitbake_Manual</bcf:citekey>
-    <bcf:citekey order="49">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
+    <bcf:citekey order="48">Pytec:BSP_Manual</bcf:citekey>
+    <bcf:citekey order="49">Yocto:Bitbake_Manual</bcf:citekey>
     <bcf:citekey order="50">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
     <bcf:citekey order="51">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
     <bcf:citekey order="52">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
     <bcf:citekey order="53">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
     <bcf:citekey order="54">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
+    <bcf:citekey order="55">Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

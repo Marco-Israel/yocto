@@ -12,7 +12,7 @@ Image hinzu zu fügen.
 
 \begin{enumerate}
     \item Image Branches herausfinden:
-        \textit{bitbake -e <recipes/image> | grep \^LAYERSERIES\_COMPAT}
+        \textit{bitbake -e <recipes/image> | grep \newline \^LAYERSERIES\_COMPAT}
 
     \item Seite \cite{OpenEmbedded:Indexer_Recipes} aufrufen
 
@@ -55,13 +55,13 @@ Image hinzu zu fügen.
                     herunterladen
             \item direkt ausgeben durch:
                 \textit{bitbake-layers layerindex-show-depends <layer-name>}
-                und anschließend herunterladen und hinzufügen durch
+                und anschließend herunterladen und hinzufügen durch \newline
                 \textit{bitbake-layers layerindex-fetch <layer-name>}
         \end{itemize}
     \item Falls nicht im Vorfeld ausgewählt, den nötigen
         \textit{Branch auschecken} mit \textit{git checkout <branch>} in jedem
         neuen Metadaten-layer.
-    \item Auf Fehler überprüfen (z.B. auf fehlende Abhängigkeiten):
+    \item Auf Fehler überprüfen (z.B. auf fehlende Abhängigkeiten): \newline
         \textit{bitbake-layers show-layers}
 \end{enumerate}
 

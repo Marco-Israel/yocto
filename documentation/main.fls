@@ -315,8 +315,10 @@ INPUT content/layer_kernel.aux
 INPUT content/layer_kernel.aux
 INPUT content/layer_app.aux
 INPUT content/layer_app.aux
-INPUT sdk_erzeugenx.aux
-INPUT sdk_erzeugenx.aux
+INPUT content/flashen.aux
+INPUT content/flashen.aux
+INPUT sdk_erzeugen.aux
+INPUT sdk_erzeugen.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_devtool.aux
@@ -428,7 +430,10 @@ INPUT content/layer_kernel.tex
 OUTPUT content/layer_app.aux
 INPUT content/layer_app.tex
 INPUT content/layer_app.tex
-OUTPUT sdk_erzeugenx.aux
+OUTPUT content/flashen.aux
+INPUT content/flashen.tex
+INPUT content/flashen.tex
+OUTPUT sdk_erzeugen.aux
 OUTPUT content/commands_bitbake.aux
 INPUT content/commands_bitbake.tex
 INPUT content/commands_bitbake.tex
@@ -479,8 +484,10 @@ INPUT content/layer_kernel.aux
 INPUT content/layer_kernel.aux
 INPUT content/layer_app.aux
 INPUT content/layer_app.aux
-INPUT sdk_erzeugenx.aux
-INPUT sdk_erzeugenx.aux
+INPUT content/flashen.aux
+INPUT content/flashen.aux
+INPUT sdk_erzeugen.aux
+INPUT sdk_erzeugen.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_devtool.aux

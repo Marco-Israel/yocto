@@ -18,8 +18,7 @@ zeigt abstract den Build\-process:
     \item Übersicht über die zu Verarbeitenden Konfigurationsdateien
     \item Reihenfolge in der angepasste Konfigurationsdateien (.conf)
         verarbeitet werden.
-    \item Build ~schritte (Siehe \ref{sec:bitbake_build_tasks} Seite
-        \pageref{sec:bitbake_build_tasks})
+    \item Buildschritte (Siehe \fullref{sec:bitbake_build_tasks})
     \item Packetieren in unterschiedliche Formaten
     \item Generieren und bereitstellen von \aclp{SDK}
     \item Aufräum- und Nacharbeiten
@@ -72,7 +71,7 @@ einen definiert durch:
     \cite[S.53]{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 \end{itemize}
 
-\section{Configurations-Dateien *.conf}%
+\section{Konfigurationsdateien \textit{*.confa}}%
 \label{sec:configurations_dateien_conf}
 Bitbake, sowie die Buildprozesse der einzelnen Recipes
 werden gesteuert durch unterschiedliche \textbf{recipe-lokale} und
@@ -104,7 +103,7 @@ sind sie (teils ausschließlich) in *.conf dateien oder in recipes anwendbar.
         ignoriere den Befehl.  \textit{include} lasst sich sowohl in
         rKconfigurationsxxid-Dateien als auch recepes verwenden um alle andren
         Arten von Dateien zu inkludieren (andere Recipes, Configs, \ldots)
-        Weiteres unter \cite {Yocto:Mega_Manual} 
+        Weiteres unter \cite {Yocto:Mega_Manual}
     \item[require] Wie include nur das die Datei vorhanden sein muss, ansonsten
         beendet bitbake mit einem Fehler.  Weiteres unter \cite
         {Yocto:Mega_Manual} \end{description}
@@ -129,7 +128,7 @@ Werkzeuge beteit.
             \item GNU Tools wie \textit{grep, awk, set, diff, cp, vim, usw}
         \end{itemize}
          Dabei können gleiche Aufgaben mit verschiedenen Werkzeugen oder auch
-         manuel bearbeitet werden können und zum selben Ergebnis führen.\\
+         manuell bearbeitet werden können und zum selben Ergebnis führen.\\
 
          Nicht jedes Tool ist dabei für jeden \textit{Workflow} geeignet. Zum
          Teil ist es einfacher und weniger Fehleranfälliger einzelne Schritte manuell
@@ -161,7 +160,7 @@ Je nach Aufgabengebiet unterscheidet sich auch die Arbeitsweise:
         \textit{qt-creator} sowie externes Testen der Komponenten. Bitbake kann
         für diese Aufgabe ein \acl{SDK} bereitstellen, welches die Cross-
         Entwicklung für die Ziel\-plattform ermöglicht. Siehe hierzu
-        \fullref{cha:sdk}.
+    \fullref{cha:sdk}.
     \item Patchen oder erweitern von Software\-komponenten die Bereits in den
         Linux Kernel und Bitbake integriert sind, lassen sie am einfachsten durch
         Tool bewerkstelligen, die von der Yocto / OpenEmbedded Community bereit
@@ -178,10 +177,11 @@ Je nach Aufgabengebiet unterscheidet sich auch die Arbeitsweise:
 
 \end{itemize}
 
-\section{Recipes, Calsses, Packedgroups, Konfigurationsdateien, meta daten, \ldots}%
+\section{Vokabular: Über Recipes, Classes, Packedgroups, Konfigurationsdateien,
+Metadaten, \ldots }%
 \label{sec:recipes_classes_packedgroups}
 Im laufe des Arbeitens mit Bitbake tauchen verschiedene Begrifflichkeiten auf.
-Das wichtigste  Vokabular beschreibt einleitend kurz und knapp \cite{PhyTec:Yocto_Manual} 
+Das wichtigste  Vokabular beschreibt einleitend kurz und knapp \cite{PhyTec:Yocto_Manual}
 
 \begin{description}
     \item[Recipes] Die Regeln in einer eigenen Skriptsprache, beschreiben wie

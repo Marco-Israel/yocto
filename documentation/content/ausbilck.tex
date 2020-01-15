@@ -36,12 +36,13 @@ durchführt oder andere postbuild oder prebuild scripte aufruft. Denkbar wären:
 
 
 Das \textit{run.sh} script erzeugt das \textit{dockerjobs.sh} Script sollte dem
-run.sh script parameter übergeben werden. Anschließend startet das run.sh script
-den Docker container in definierter version (gesetzt über Parameter oder direkt
-innerhalb des run.sh scripts). Das dockerjobs.sh wird innerhalb docker durch das
-image aufgerufen und enthält alle aufgaben welche durch den Container in
-batchmode erfüllt werden sollen. Das dockerjobs.sh script lässt sich manuell
-erweitern / erstellen. Es wird nur überschrieben, wenn dem run.sh
+\textit{run.sh} script parameter übergeben werden. Anschließend startet das
+\textit{run.sh} script den Docker Container in definierter Version
+(gesetzt über Parameter oder direkt innerhalb des run.sh scripts). Das
+\textit{dockerjobs.sh} wird innerhalb docker durch das Image aufgerufen und
+enthält alle Aufgaben, welche durch den Container in Batchbetrieb erfüllt werden
+sollen. Das \textit{dockerjobs.sh} Script lässt sich manuell erweitern bzw,
+erstellen. Es wird nur überschrieben, wenn dem \textit{run.sh}
 Ausführungs\-befehle übergeben werden.
 
 
@@ -83,11 +84,17 @@ Lizenverwaltung und Kompatibilität von:
     \item Neuen Sofwarekomponenten
     \item Bestehenden  Sofwarekomponenten
     \item Verwendeten / Eingebundenen Softwarepaketen, z.B. über genutzte
-        meta-datan Layer aus Community Quellen.
+        Metadatan Layer aus Community Quellen.
 \end{itemize}
 
 
-
+\section{Kerneldebugging, Kerneltracing, Profiling, Binary-Analyse}
+\label{sec:kerneldebugging_kerneltracing_profiling_binaryanalyse}
+Früher oder später wird es erforderlich sein, sie mit Themen des
+Kerneldebugging, Kerneltracing, Profiling, Binary-Analyse und ähnlichen Themen
+zu beschäftigen. Sie es aufgrund unerklärlicher Fehler oder etwa aus Preformance
+Gründen. Hierzu stehen verschiedene Tools und Techniken bereit welche gelistet
+und anhand einfacher Beispiele beschrieben sind unter \cite[Kapitel 5 ]\cite{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 
 
 
