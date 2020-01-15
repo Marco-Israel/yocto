@@ -97,6 +97,28 @@ Gründen. Hierzu stehen verschiedene Tools und Techniken bereit welche gelistet
 und anhand einfacher Beispiele beschrieben sind unter \cite[Kapitel 5 ]\cite{Gonzalez2018:Embedded_Linux_Development_Using_Yocto_Project_Cookbook_2nd}
 
 
+\section{Alternativen zu Yocto}%
+\label{sec:Alternativen zu Yocto}
+
+Neben \textit{bitbake} der Yocto und  Openembedded Community gibt es andere
+Buildumgebungen um Linuxdistributionen gezielt für eine Hardware zu paketieren
+und aus Quelldateien zu compelieren. Bitbake ist dabei die Komplzierteste aber
+gleichzeitig auch das flexibelste Tool mit der größten Weiterentwicklung aus der
+Community und der aktuell größten unterstützung und akzeptanz aus bzw in der
+Wirtschaft.
+\\
+Alternativen sind beispielsweise:
+
+\begin{description}
+    \item[Buildroot] Eine sehr einfache und schlankes  Buildtool  mit wenig
+        Flexibilität. \cite{buildroot}
+    \item[ptxdist] In der Funktionsweise ähnlich wie Bitbake mit gleichen
+        Ansätzen. In der Anwendung einfacher jedoch weniger flexible. Es setzt im
+        Gegensatz auf Makefiles auf, anstelle von Python und Shell-Scripten wie
+        es Bitbake tut. Quelle: \cite{ptxdist}
+\end{description}
+
+
 
 
 
