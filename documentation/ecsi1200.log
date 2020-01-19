@@ -1,0 +1,45 @@
+This is METAFONT, Version 2.7182818 (TeX Live 2019/dev/Debian) (preloaded base=mf 2019.11.22)  19 JAN 2020 23:10
+**\mode:=ljfour; mag:=1+0/600; nonstopmode; input ecsi1200
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/ecsi1200.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exbase.mf)
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/ecsi.mf
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exroman.mf
+ Ok (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exaccess.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/expseudo.mf
+ Ok) (/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exruwest.mf
+ Ok [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
+[216] [217] [218] [219] [220] [221] [222] [223])
+(/usr/share/texlive/texmf-dist/fonts/source/jknappen/ec/exrlwest.mf
+ Ok [224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
+[248] [249] [250] [251] [252]
+! Interruption.
+<to be read again> 
+                   x
+pos->...((EXPR3)-currentbreadth,0)rotated(EXPR4);x
+                                                  (SUFFIX2)=0.5(x(SUFFIX2)l+...
+<for(1)> ...);z6'=z6;pos7(2/3[bot_vair,flare],-85)
+                                                  ;lft.x7l=hround.u;bot.y7r=...
+l.1012 repeat_once
+                  ;
+? 
+! Emergency stop.
+<to be read again> 
+                   x
+pos->...((EXPR3)-currentbreadth,0)rotated(EXPR4);x
+                                                  (SUFFIX2)=0.5(x(SUFFIX2)l+...
+<for(1)> ...);z6'=z6;pos7(2/3[bot_vair,flare],-85)
+                                                  ;lft.x7l=hround.u;bot.y7r=...
+l.1012 repeat_once
+                  ;
+End of file on the terminal!
+
+ 
+Here is how much of METAFONT's memory you used:
+ 562 strings out of 5274
+ 6238 string characters out of 69974
+ 39893 words of memory out of 5000000
+ 1480 symbolic tokens out of 9500
+ 12i,79n,0r,23p,232b stack positions out of 300i,300n,1000r,150p,200000b
+Output written on ecsi1200.600gf (61 characters, 15076 bytes).

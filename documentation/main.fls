@@ -317,8 +317,8 @@ INPUT content/layer_app.aux
 INPUT content/layer_app.aux
 INPUT content/flashen.aux
 INPUT content/flashen.aux
-INPUT sdk_erzeugen.aux
-INPUT sdk_erzeugen.aux
+INPUT content/sdk_erzeugen.aux
+INPUT content/sdk_erzeugen.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_devtool.aux
@@ -433,7 +433,9 @@ INPUT content/layer_app.tex
 OUTPUT content/flashen.aux
 INPUT content/flashen.tex
 INPUT content/flashen.tex
-OUTPUT sdk_erzeugen.aux
+OUTPUT content/sdk_erzeugen.aux
+INPUT content/sdk_erzeugen.tex
+INPUT content/sdk_erzeugen.tex
 OUTPUT content/commands_bitbake.aux
 INPUT content/commands_bitbake.tex
 INPUT content/commands_bitbake.tex
@@ -486,8 +488,8 @@ INPUT content/layer_app.aux
 INPUT content/layer_app.aux
 INPUT content/flashen.aux
 INPUT content/flashen.aux
-INPUT sdk_erzeugen.aux
-INPUT sdk_erzeugen.aux
+INPUT content/sdk_erzeugen.aux
+INPUT content/sdk_erzeugen.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_bitbake.aux
 INPUT content/commands_devtool.aux

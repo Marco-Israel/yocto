@@ -19,6 +19,37 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{buildroot}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bbc627059544fa318c78e0de0e1c7642}{%
+           family={Buildroot.org},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbc627059544fa318c78e0de0e1c7642}
+      \strng{fullhash}{bbc627059544fa318c78e0de0e1c7642}
+      \strng{bibnamehash}{bbc627059544fa318c78e0de0e1c7642}
+      \strng{authorbibnamehash}{bbc627059544fa318c78e0de0e1c7642}
+      \strng{authornamehash}{bbc627059544fa318c78e0de0e1c7642}
+      \strng{authorfullhash}{bbc627059544fa318c78e0de0e1c7642}
+      \field{labelalpha}{Bui19}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Alternative to Bitbake}
+      \field{title}{Making Embedded Linux Easy}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://buildroot.org/
+      \endverb
+      \verb{url}
+      \verb https://buildroot.org/
+      \endverb
+    \endentry
     \entry{Corbet2005}{book}{}
       \name{author}{3}{}{%
         {{hash=729670cd9d39b9b575390147a29d51d7}{%
@@ -147,6 +178,37 @@
       \endverb
       \verb{url}
       \verb https://layers.openembedded.org/layerindex/branch/master/recipes/
+      \endverb
+    \endentry
+    \entry{ptxdist}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a44cba8162bfbd8e041a5330111a8ef9}{%
+           family={Pengutronix},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a44cba8162bfbd8e041a5330111a8ef9}
+      \strng{fullhash}{a44cba8162bfbd8e041a5330111a8ef9}
+      \strng{bibnamehash}{a44cba8162bfbd8e041a5330111a8ef9}
+      \strng{authorbibnamehash}{a44cba8162bfbd8e041a5330111a8ef9}
+      \strng{authornamehash}{a44cba8162bfbd8e041a5330111a8ef9}
+      \strng{authorfullhash}{a44cba8162bfbd8e041a5330111a8ef9}
+      \field{labelalpha}{Pen19}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Alternative to Bitbake. Very simliar, easier but less flexible}
+      \field{title}{Professional Embedded Linux Made Easy}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ptxdist.org/
+      \endverb
+      \verb{url}
+      \verb https://www.ptxdist.org/
       \endverb
     \endentry
     \entry{Pytec:BSP_Manual}{online}{}
@@ -515,6 +577,9 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Gonzalez2018}
+  \missing{OEI}
+  \missing{PTDG}
   \missing{Yocto_Eclipse_Plugin}
 \endrefsection
 \endinput

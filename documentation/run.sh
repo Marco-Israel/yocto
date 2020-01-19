@@ -12,7 +12,7 @@ fi
 
 if ( $# -gt 0 )
 then
-    docker.exe run --name $TASK -it --rm -v $PWD:/$TASK/input $TASK:$VERSION
+    docker run --name $TASK -it --rm -v $PWD:/$TASK/input $TASK:$VERSION
 else
-    docker.exe run --name $TASK -it --rm -v $PWD:/$TASK/input $TASK:$VERSION $@
+    docker run --name $TASK -it --rm -v $PWD:/$TASK/input $TASK:$VERSION $@
 fi
